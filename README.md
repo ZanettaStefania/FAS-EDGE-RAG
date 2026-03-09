@@ -1,4 +1,4 @@
-**First Aid Question Answering with RAG and Small Language Models** \b
+**First Aid Question Answering with RAG and Small Language Models** /b
 This repository contains the implementation of a Retrieval-Augmented Generation (RAG) system based on Small Language Models (SLMs) designed to answer first aid related questions.
 The system retrieves relevant information from a curated First Aid Knowledge Base.
 
