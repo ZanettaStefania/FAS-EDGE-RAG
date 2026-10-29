@@ -1,20 +1,37 @@
-# FAS-EDGE-RAG
+# First Aid Question Answering with RAG and Small Language Models
 
-RAG (Retrieval-Augmented Generation) pipeline for first aid / BLS / CPR questions, using small LLMs (Qwen2.5, Phi-3) that can run on edge devices, with automatic evaluation via [Ragas](https://docs.ragas.io/).
+This repository contains the implementation of a Retrieval-Augmented Generation (RAG) system based on Small Language Models (SLMs) designed to answer first aid related questions. The system retrieves relevant information from a curated First Aid Knowledge Base and generates answers with Qwen2.5 and Phi-3 models suitable for edge devices. Answers are automatically evaluated with [Ragas](https://docs.ragas.io/).
 
-## Structure
+## Knowledge Base File
 
-| Path | Content |
+The knowledge base is formed by the following files (stored in `PDF_files/`):
+
+1. Manual of St. John Ambulance Canada
+   - <https://sja.ca/en/digital_first_aid_reference_guide_preview>
+2. Study Material of the National CPR Association
+   - <https://www.nationalcprassociation.com/free-cpr-study-guide>
+3. First Aid Reference Notes of Actual First Aid Training
+   - <https://actualfirstaid.com/first-aid-notes--feedback.html>
+
+## File Description
+
+| File / Folder | Description |
 |---|---|
-| `main.py` | General pipeline (embedding `BAAI/bge-small-en-v1.5`, config in `config.py`) |
-| `main_med.py` | Medical pipeline (embedding `abhinand/MedEmbed-small-v0.1`, config in `config_med.py`) |
-| `new_config_main_med.py` | Same as `main_med.py` but with `max_new_tokens=500` and `temperature=0.5` |
+| `main.py` | Entry point for the general RAG pipeline (embedding `BAAI/bge-small-en-v1.5`) |
+| `main_med.py` | Entry point for the medical RAG pipeline (embedding `abhinand/MedEmbed-small-v0.1`) |
+| `new_config_main_med.py` | Medical pipeline with `max_new_tokens=500` and `temperature=0.5` |
 | `launcher.py` | Runs every model × pipeline × dataset combination sequentially |
-| `ragas_evaluation.py` | Ragas evaluation (judge `medgemma:27b` via Ollama) |
-| `DB/` | Chroma vector databases (chunk size 500/1000/1500, general and `_med`) and the `new_create.py` script |
-| `EvalSet/` | Question datasets (`Question`, `ground_truths`) |
-| `EvalResults/` | Previously produced results (generation and retrieval) |
-| `PDF_files/` | Knowledge base source documents |
+| `ragas_evaluation.py` | Ragas evaluation using `medgemma:27b` as judge via Ollama |
+| `results_io.py` | Reading and writing of result files |
+| `retrieval_logging.py` | Logging of retrieval results |
+| `utils.py` / `utils_med.py` | Utility functions used by the general / medical pipeline |
+| `config.py` / `config_med.py` | Configuration parameters of the general / medical pipeline |
+| `prompt_config.py` | Prompt templates used for the language models |
+| `imports.py` | Centralized imports |
+| `DB/` | Chroma vector databases (chunk size 500/1000/1500, general and `_med`) and the `new_create.py` build script |
+| `EvalSet/` | Evaluation datasets (`Question`, `ground_truths` columns) |
+| `EvalResults/` | Generation and retrieval results already produced |
+| `PDF_files/` | Source documents used to build the knowledge base |
 
 ## Requirements
 
@@ -25,7 +42,7 @@ RAG (Retrieval-Augmented Generation) pipeline for first aid / BLS / CPR question
 
 ## Installation
 
-Use **`requirements.txt`**. The other files (`requirements1.txt`, `requirements2.txt`, `req.txt`) are historical snapshots of the Jetson environment (torch `2.0.0+nv23.5`, chromadb 0.3.x) and **should not be used** on a regular machine.
+Install the dependencies from **`requirements.txt`**.
 
 ```powershell
 # Windows (PowerShell)
