@@ -1,0 +1,129 @@
+question,context,answer,ground_truth,time,source
+What’s the correct sequence for basic life support?,"[['interruptions\n3. Give 2 breaths.\n4. Continue 30 compressions: 2 breaths. \n280 281Basic Life Support Resuscitation Skills Basic Life Support Resuscitation Skills'], ['You, the first trained person on the scene, are \nresponsible for initiating the sequence. You must \nrecognize the cardiovascular emergency, call for \nmedical help, start CPR if needed, and apply a \ndefibrillator if one is available. You are the crucial \nfirst three links in the Chain of Survival®.\n106 107Cardiovascular emergencies and CPR']]","The correct sequence for basic life support (BLS) involves several key steps:
+1. **Gently place the patient on their back** with their head turned to one side.
+2. **Continue chest compressions at a rate of approximately 100-120 times per minute** until the heart starts beating again or when the patient's breathing stops.
+3. **Give 2 breaths** after every 5 compressions.
+
+Here’s a more detailed breakdown:
+
+### 1. **Gently Place the Patient**
+   - Ensure the patient is lying face down with their head turned to one side to facilitate easy access to the airway.
+
+### 2. **Continue Chest Compressions**
+   - **Rate:** Approximately 100-120 times per minute.
+   - **Frequency:** Once the heart starts beating again or when the patient's breathing stops.
+
+### 3. **Give 2 Breaths**
+   - After each cycle of compression and ventilation, give two deep breaths using your mouth.
+
+### Additional Steps:
+- **Call for Medical Help:** Immediately after completing these steps, call for medical assistance. Do not attempt to perform CPR yourself if there is no one around.
+- **Check for Breathing:** After giving two breaths, check the patient's breathing. A normal adult should breathe rapidly and rhythmically, with a sound similar to gasping.
+- **Perform CPR if Needed:** If the patient stops breathing, begin performing CPR immediately.
+- **Apply a Defibrillator if Available:** In some cases, a defibrillator may be necessary if the patient has stopped breathing and is not breathing properly.
+
+This sequence ensures prompt intervention and survival if the patient fails to respond to basic life support measures alone.","Compressions, Airway, Breathing. The 2010 American Heart Association (AHA) sequence was changed from the ABC’s to CAB. By decreasing the delay in starting compressions, experts believe the survival rates will increase.",26.820510387420654,"[{'source': '../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf', 'page': 281}, {'source': '../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf', 'page': 108}]"
+"When assessing the victim,  should I 'look, listen and feel' for breathing?","[['other hand on their forehead to gently tilt the head back.  \n  \nB  Breathing – is the casualty breathing normally?  \n\uf0b7 When their airway is cleared, check if they a re breathing normally.  You are \nlooking for two breaths in ten seconds.  Take no longer than this to assess \ntheir breathing, as every second counts.  \n\uf0b7 Check whether their chest and abdomen are rising and falling.  \n\uf0b7 Listen for breath (more than a sporadic gasp).'], ['victim. If the victim is unconscious, there are Good Samaritan laws that protect you legally, \nproviding you are following the standard of ca re (providing care as you have learned or have \nbeen trained).  \nTake a close look at the victim. Assess the victim’s breathing. Are they breathing very shallowly \nor quickly? Do they have pain when they breathe? Is their breathing too slow? Also assess their']]","Based on the provided context, it appears that during an assessment of a victim's breathing, you would not need to ""look, listen, and feel"" for breathing. The instructions specifically mention checking for normal breathing through observation, such as:
+
+1. Looking for two breaths in ten seconds.
+2. Checking if the chest and abdomen are rising and falling.
+3. Listening for breath.
+
+Additionally, the instruction states:
+""If the victim is unconscious, there are Good Samaritan laws that protect you legally, providing you are following the standard of care (providing care as you have learned or been trained).""
+
+Given these points, you would focus solely on observing the victim's breathing rather than engaging in additional actions like looking, listening, or feeling for it. This approach aligns with legal protections and standard medical practices for assessing the condition of others.","No. The 2010 AHA recommendations have removed the recommendation to “look, listen and feel” for breaths. If the person does not appear to be breathing, is breathing abnormally or is only gasping, you should begin CPR immediately if the pulse is absent as well.",12.577699899673462,"[{'source': '../PDF_files/Actual_First_Aid_Training_Notes.pdf', 'page': 3}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 43}]"
+"For any victim, what is the correct compression rate?","[['breathing.  Rather, if the victim is not responsive, has no pulse, and is not \nbreathing or is breathing in an irregular fashion (i.e. only gasping), begin CPR \nimmediately! \n\uf0b7 Emphasis on high-quality CPR.  High-quality CPR is defined as: \no Compression rate of 100- 120 beats per minute on all victims; \no Compression depth of AT LEAST 2 inches in adults (no greater than \n2.4 inches), and at least 1/3 the anterior-posterior diameter of the'], ['and feel to determine whether a victim is breathing.  Rather, if the victim is not \nresponsive, has no pulse, and is not breathing or is breathing in an irregular  fashion (i.e. \nonly gasping), begin CPR immediately!  \n• Emphasis on high -quality CPR.  High -quality CPR is defined as:  \no Compression rate of 100 - 120 beats  per minute on victims  of all ages ; \no Compression depth of AT LEAST 2 inches in adults ( but no greate r than 2.4']]","Based on the provided context, for any victim who meets the criteria of being non-responsive, with no pulse, and not breathing or experiencing an irregular heartbeat, immediate CPR should be initiated. The guidelines emphasize using a compression rate of 100-120 times per minute and compressions deep enough to allow for adequate chest expansion while ensuring that the patient's airway remains clear.
+The specific requirements mentioned include:
+1. Compression rate: At least 100-120 beats per minute
+2. Compression depth: At least 2 inches in adults, but no greater than 2.4 inches
+This approach aims to provide sufficient pressure to maintain circulation and oxygenation of blood, which is crucial for survival during such emergencies.
+It's important to note that this information may vary depending on the individual's health condition and other factors, so it's always advisable to consult a healthcare professional for personalized advice.",100 to 120 per minute. The AHA recommendation for all ages is to do compressions at a rate of 100- 120 compressions per minute.,13.524454355239868,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 123}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 14}]"
+What’s the recommended compression depth for an adult?,"[['more comfortable for you.  \n\uf0b7 Press down firmly on the casualty’s breastbone current guidelines suggest \npushing down to a depth of 6cm) then release the  pressure, but tr y not to lose \ncontact with the casual ty.  This is known as a chest compression.  When \napplying pressure, avoid doing so on the ribs, upper abdomen or the  end of \nthe casualt y’s breastbone.  \n\uf0b7 Each co mpression should take the same amount of time .'], ['infant ǯs back. Use your thumbs to deliver compressions at the appropriate \ndepth and rate (100-120 compressions/minute; 1/3 of the depth of the chest \nor approximately 1 ½ inches). This position allows another rescuer to \nsupport airway and breathing without getting in the way of the rescuer \nperforming chest compressions, and is therefore the preferred technique \nwhen two rescuers are present. This technique also allows for more']]","Based on the provided context, there isn't a specific recommendation for compression depths for adults compared to infants. The instructions focus on maintaining consistent pressure and timing while delivering compressions, rather than specifying individual compression depths.
+
+The context emphasizes the importance of using correct techniques when performing CPR, such as keeping the hands above shoulder level during compression and ensuring proper positioning and depth of compression. However, it doesn't provide guidance on how to determine an optimal compression depth specifically for adults versus infants.
+
+For an adult:
+1. Maintain consistent pressure.
+2. Keep hands above shoulder level.
+3. Ensure proper positioning.
+4. Follow the recommended compression depth of 6 cm (about 2 inches).
+
+For an infant:
+1. Use your thumbs to deliver compressions at the appropriate depth and rate (100-120 compressions per minute).
+2. The depth can be adjusted based on comfort and personal preference.
+3. Avoid placing pressure on the ribs, upper abdomen, or end of the child's breastbone.
+
+While both adult and infant CPR techniques involve maintaining the right compression depth, the specific recommendations for adults versus infants are not included in the given context. Therefore, I am unable to provide a definitive answer about the recommended compression depth for an adult from the information provided.","at least 2 inches, but not more than 2.4 inches. The AHA recommendation for adults is to provide compressions to a depth of at least 2 inches, but not more than 2.4 inches (5-6 cm).",17.974125862121582,"[{'source': '../PDF_files/Actual_First_Aid_Training_Notes.pdf', 'page': 4}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 145}]"
+"When performing rescue breathing, what should be avoided to ensure effective ventilation?","[['Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n\uf0b7 Give a further 30 chest compressions.  \n\uf0b7 Remove any visible obstructions in the casualty’s mouth.  \n\uf0b7 Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.'], ['• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants).']]","To ensure effective ventilation during rescue breathing, it's crucial to avoid giving too much assistance at once. According to the provided guidelines, rescuers should give one breath every 6 seconds when an advanced airway is present and continue providing continuous chest compressions until the casualty stops breathing on their own. This approach allows for adequate oxygenation and helps prevent the risk of suffocation or asphyxiation if the rescuer doesn't have enough time to complete all five cycles of respiration and circulation. The other options mentioned—giving a further 30 chest compressions after the initial breath and removing any visible obstructions—are part of the standard procedure but may not necessarily be necessary depending on the specific circumstances and the individual's comfort level with these techniques.","Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",11.107744693756104,"[{'source': '../PDF_files/Actual_First_Aid_Training_Notes.pdf', 'page': 6}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 15}]"
+For how long should you check for a pulse before deciding to start CPR?,"[['soon as possible. If you are alone, call for help by dialing 9 -1-1 and run to get the AED if you \nknow where one is nearby.  If you do not know where a n AED is, begin CPR immediately after \ncalling for help. Mobile phones have made activating the emergency response system much \neasier - you can call 9 -1-1 and put your phone on speaker while you start CPR.  \n \nBegin CPR  \n1. Check for a pul se on the side of the neck.  Feel for a pulse for at least 5 seconds but NO'], ['seconds but NO MORE THAN 10 seconds. To check for a carotid pulse, slide 2 \nor 3 fingers into the groove between the windpipe and the neck muscles at \nthe side of the neck. \n2. If there is no pulse (or if you are unsure if there is a pulse), begin CPR \nstarting with chest compressions. Provide 30 chest compressions, followed \nby two breaths.  NOTE: If you are not comfortable giving rescue breathing \nand/or you do not have a mask available, do ǮCompression Only ǯ CPR.']]","For checking for a pulse before starting CPR, it's generally recommended to wait until the person is lying flat on their back without any head or neck movements. This ensures a more accurate assessment of whether there is an open airway and potential cardiac arrest.
+The specific duration depends on the individual's responsiveness and ability to maintain a stable airway. Generally, waiting longer than 10 seconds might be considered excessive given the importance of timely intervention. However, in emergencies, some hospitals may recommend waiting even longer, up to 20 seconds.
+It's important to note that these guidelines are based on general principles and may vary depending on local medical practices and the specifics of the situation. Always consult with healthcare professionals when making decisions about CPR or other medical interventions.","5-10 seconds. Many responders are unable to detect a pulse, so the recommendation is to feel for a pulse for 5 to 10 seconds maximum. If there is no pulse, or you are not sure if you feel a pulse, begin CPR.",11.13498330116272,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 19}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 128}]"
+What are the correct steps in the AHA Adult Chain of Survival?,"[['The Adult Chain of Survival  \n \n \n \n \nThe Adult Chain of Survival represents a continuum of care, from early recognition of the victim \nin cardiac arrest to post -resuscitation care to provide the best chance of survival from cardiac \narrest. The five links in the Adult Chain of Survival include:  \n \n• Early recognition of cardiac arrest  \n• Activation of the Emergency Response System  \n• Early CPR, with an emphasis on high -quality chest compressions  \n• Early defibrillation'], ['21  \nThe Adult Chain of Survival \n \n \n \n \nThe Adult Chain of Survival represents a continuum of care, from early \nrecognition of the victim in cardiac arrest to post-resuscitation care to \nprovide the best chance of survival from cardiac arrest. In the diagram \nabove, the first two of five steps are visualized The five links in the Adult \nChain of Survival include: \n \n\uf0b7 Early recognition of cardiac arrest \n\uf0b7 Activation of the Emergency Response System']]","Based on the provided context, here are the correct steps in the AHA Adult Chain of Survival:
+
+1. **Early Recognition of Cardiac Arrest**: This involves recognizing symptoms and signs of cardiac arrest, such as:
+   - Sudden onset of severe shortness of breath
+   - Pale or cyanotic skin
+   - Cold, clammy skin
+   - Rapid heartbeat (tachycardia)
+   - Unresponsive pupils
+
+2. **Activation of the Emergency Response System**: Once the patient's condition is recognized, the next step is to activate the emergency response system. This typically includes:
+   - Calling for medical help immediately
+   - Checking for airway obstruction using the Heimlich maneuver if necessary
+   - Providing oxygen via nasal cannula or face mask if available
+   - Administering intravenous fluids and medications as directed by healthcare professionals
+   - Ensuring the patient remains calm and stable until professional medical assistance arrives
+
+3. **Early CPR (Cardiopulmonary Resuscitation)**: Following activation, the next crucial step is to perform early CPR. CPR involves:
+   - Maintaining open airways
+   - Chest compressions at a rate of at least 100-120 compressions per minute
+   - Compression depth of at least 5 cm above the xiphoid process
+   - Using elbows rather than hands to apply pressure
+   - Performing rescue breaths if needed
+   - Keeping the patient's head tilted back to facilitate chest compression
+
+4. **Early Defibrillation**: After initial CPR and early cardiopulmonary resuscitation (CPR), the next step is to start defibrillation. This can be done either by:
+   - Using an automated external defibrillator (AED) if available
+   - Performing a simple chest compression followed by brief shocks of low-voltage electricity (usually between 1000 and 2000 joules)
+
+These steps form the core of the AHA Adult Chain of Survival, providing a structured approach to managing sudden cardiac events and improving chances of survival.",Activate the emergency response system; CPR; Defibrillation; Advanced Life Support; Post-Cardiac arrest care. Early CPR is the best predictor of survival.,29.130403518676758,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 16}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 125}]"
+"If you are alone and come across a person who may need CPR, what is the first thing you should do?","[['24 One Rescuer Adult CPR \n \nIf you are alone and come across an individual who is down, follow the steps below. \nIf someone else is in the area to assist, use the ǮTwo Rescuer ǯ sequence. \n \nStay Safe : If you come upon an individual who may need CPR, look around and \nmake sure you and the victim are in a safe place . If the victim is in water or on a \nroad, try to move the victim to a safer area.  If you are in a safe area, do not try to'], ['One Rescuer Adult CPR  \n \nIf you are alone and come across an individual who is down, follow the steps below. If someone \nelse is in the area to assist, use the ‘Two Rescuer’ sequence.  \n \nStay Safe : If you come upon an individual who may need CPR, look around and make sure you \nand the victim are in a safe place. For example, if  the victim is in water or on a road, try to move \nthe victim to a safer area.  If you are in a safe area, do not try to move  the victim as he/she may']]","To provide the most accurate and up-to-date information available, I would need to consult with a medical professional or a trained emergency responder for specific advice tailored to each situation. However, based solely on the provided context from 2014, here's a general overview of what one might expect when providing CPR:
+
+1. **Assess the Situation**: The first step is to assess the situation. Is the person unconscious? Are they breathing? Are they having a cardiac arrest?
+
+2. **Check for Breathing**: Look for signs of life like open mouth, neck reflexes, and pupils dilating.
+
+3. **Check for Coughing or Breathing**: Check if there has been any coughing or airway movement.
+
+4. **Call for Help**: In case you are alone, call emergency services (911) or dial 112 if you have access to it.
+
+5. **Perform CPR**: Once you have assessed the situation, start performing chest compressions. Follow the ""Two-Rescue"" sequence recommended in the context provided. 
+
+6. **Continue CPR until Professional Help Arrives**: After completing one cycle of CPR, repeat the process for another minute.
+
+7. **Move the Victim**: Move the victim to a safe area away from hazards such as trees, debris, or sharp objects.
+
+8. **Repeat Steps**: Continue this cycle of resuscitation until help arrives or the person starts breathing again.
+
+It's important to note that these guidelines are based on common practices and can vary depending on local laws and cultural norms. Always prioritize safety and ensure proper equipment is used during CPR.","Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",22.697190761566162,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 128}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 19}]"
+"When assessing a victim, which common action is NOT recommended in the current AHA guidelines?","[['victim. If the victim is unconscious, there are Good Samaritan laws that protect you legally, \nproviding you are following the standard of ca re (providing care as you have learned or have \nbeen trained).  \nTake a close look at the victim. Assess the victim’s breathing. Are they breathing very shallowly \nor quickly? Do they have pain when they breathe? Is their breathing too slow? Also assess their'], ['washed your hands well after providing care  \n• Be careful to avoid injury at the site by being aware of any objects that may cut or \nscrape your skin  \nPatient Assessment  \nOnce you have determined that the scene is safe (and only after you have ensured that this is \nso), you may approach the victim to perform an assessment. Assessment has three separate, \nbut equally important, steps.  \n• Check responsiveness and ABC’s to identify any life -threatening emergencies that must']]","Based on the information provided in the context, the option that is NOT recommended in the current AHA guidelines for assessing a victim is:
+
+**Taking a close look at the victim.**
+
+The context clearly states that if the victim is unconscious, legal protection exists based on ""Good Samaritan laws."" This means it's not advisable to take a close look at the victim before providing help, as doing so could be considered a violation of these laws.
+
+Additionally, the context mentions taking ""a close look"" at the victim, indicating that thorough inspection should be done to ensure safety and effectiveness of the assistance provided. Taking a closer look might compromise the patient's safety or potentially cause further harm, which goes against the established guidelines.
+
+Therefore, while it's generally advised to be cautious with potential hazards, especially in cases of unconscious individuals, performing a thorough visual check during the initial assessment would be counterproductive and potentially dangerous.","Look, listen and feel for breathing. In the current AHA recommendations, they have removed the “look, listen and feel” for breathing step. Instead, shake the victim’s shoulder, yell at him or call his name, and observe to see if he is breathing or breathing abnormally/gasping.",12.880632638931274,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 43}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 40}]"
+If you are alone and find an unconscious victim on the ground who may need CPR. The scene is safe. You assess the victim and determine he is not breathing and will not awaken. What should you do first?,"[['Fear of Injury to Self: As you will learn, scene safety is of utmost importance, and checking the \nscene for safety should be your first action when you come across an unconscious victim , even if the \nvictim is a child . If the scene is not safe for you to enter, you must not enter . This will only result in more \nvictims. Under no circumstances should you risk becoming a victim. Instead, you should call for help  \n(activate EMS) .'], ['24 One Rescuer Adult CPR \n \nIf you are alone and come across an individual who is down, follow the steps below. \nIf someone else is in the area to assist, use the ǮTwo Rescuer ǯ sequence. \n \nStay Safe : If you come upon an individual who may need CPR, look around and \nmake sure you and the victim are in a safe place . If the victim is in water or on a \nroad, try to move the victim to a safer area.  If you are in a safe area, do not try to']]","Based on the information provided, the first step in this scenario would be to perform CPR (Cardiopulmonary Resuscitation). CPR involves performing chest compressions and rescue breaths to revive a person who has stopped breathing and is not responding. Here's why:
+
+1. **Breathing**: The goal of CPR is to ensure the victim receives oxygen-rich air through their mouth or nose during respiration.
+2. **Chest Compressions**: These compressions provide blood flow to the heart and lungs, helping to restore normal circulation and function.
+
+The context provides specific instructions on how to perform CPR:
+- Ensure safety before entering the scene.
+- Call for emergency medical assistance (EMS).
+- Use the ""Two Rescuer"" adult CPR method with two rescuers.
+
+Therefore, the primary action to take after assessing the victim and determining they are not breathing is to start performing CPR immediately. CPR should always be performed by trained professionals following these guidelines: two rescuers using the ""Two Rescuer"" sequence.","Call for help. If you are alone with the victim, first call for help. If no one responds immediately, call 911.",14.924840211868286,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 66}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 128}]"

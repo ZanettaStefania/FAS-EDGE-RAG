@@ -2,6 +2,7 @@ import os
 
 # Get process ID
 pid = os.getpid()
+print(pid)
 
 import textwrap
 
@@ -39,12 +40,20 @@ from langchain_community.embeddings import HuggingFaceEmbeddings, HuggingFaceBge
 # Load and process the text files
 loader = DirectoryLoader('../PDF_files/', glob="./*.pdf", loader_cls=PyPDFLoader)
 documents = loader.load()
+print(len(documents))
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
 texts = text_splitter.split_documents(documents)
+print(len(texts))
 
+
+#instructor_embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2", model_kwargs={"device": "cuda"})
 instructor_embeddings = HuggingFaceBgeEmbeddings(model_name="BAAI/bge-small-en-v1.5", model_kwargs={"device": "cuda"})
 
+#instructor_embeddings = HuggingFaceBgeEmbeddings(model_name="/media/jetson/8822e6d5-68f8-44c2-8d88-adde671365d71/[download]Hug_model/Embedding/abhinand/MedEmbed-small-v0.1", model_kwargs={"device": "cuda"})
+
+
+#/media/jetson/8822e6d5-68f8-44c2-8d88-adde671365d71/[download]Hug_model/Embedding/
 # Embed and store the texts
 # Supplying a persist_directory will store the embeddings on disk
 persist_directory = 'new500_db'

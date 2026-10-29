@@ -1,6 +1,8 @@
+import os
 import argparse
 from prompt_config import *
 import pandas as pd
+from results_io import write_generation_results
 global data_store 
 data_store = {
 	'question': [],
@@ -9,8 +11,11 @@ data_store = {
 	'ground_truth': [],
 	'time': [],
 	'source': [],
+	#'count': 0  # Counter to track how many questions have been processed
 	}
 
+
+##### DEPRECATED
 # Initialize variables based on model selection
 def inizialize(args):
 	global intro_marker
@@ -43,6 +48,7 @@ def parse_args():
 	return parser.parse_args()
 
 
+##### DEPRECATED
 # Process and store question, context, and answer data
 def process_question(model, question, answer, context, time, data):
 	q=data['Question'][question]
@@ -54,9 +60,18 @@ def process_question(model, question, answer, context, time, data):
 	data_store['answer'].append(answer)
 	data_store['ground_truth'].append(g)
 	data_store['time'].append(time)
+	#data_store['source'].append(source)
 
 	# Increment the count
 	data_store['count'] += 1
+	#print("Count: \n", data_store['count'])
+	#print("Time: \n", data_store['time'])   
+	#print("DATA STORE: \n", data_store)
+
+	print("data_store['count'] == (len(data)) : ", data_store['count'] == (len(data)))
+	print("data_store : ", data_store['count'])
+	print("data_store : ", data_store)
+	print("(len(data)) : ", (len(data)))
 	# Check if last questions have been processed
 	if data_store['count'] == (len(data)):
 		# Create a DataFrame from the stored data
@@ -65,12 +80,17 @@ def process_question(model, question, answer, context, time, data):
 		'context': data_store['context'],
 		'answer': data_store['answer'],
 		'ground_truth': data_store['ground_truth'],
-		'time': data_store['time']
+		'time': data_store['time'],
+		#'source': data_store['source']
 		})
 
 		# Save the DataFrame to a CSV file
 		csv_filename = f"CSV_Result_med/{db}{model}_{file_name}"
-		df.to_csv(csv_filename, index=False)
+		csv_filename = write_generation_results(df, csv_filename)
+
+		# Save the DataFrame to an Excel file
+		#xlsx_filename = f"{model}.xlsx"
+		#df.to_excel(xlsx_filename, index=False)
 
 		# Print success message
 		print(f"Data saved as '{csv_filename}'.")
@@ -80,9 +100,11 @@ def process_question(model, question, answer, context, time, data):
 		data_store['answer'].clear()
 		data_store['context'].clear()
 		data_store['time'].clear()
+		#data_store['source'].clear()
 		data_store['count'] = 0
-
-
+      
+      
+##### DEPRECATED
 # Split input string into context and answer based on defined prompt
 def split_string(input_string):
 	# Find the positions of the markers
@@ -114,19 +136,26 @@ def split_answer(input_string):
 
 
 def store_answer(db, model, file_name, llm_response, time, ground_truth_data, save_file):
+	#q=llm_response['question']	
 	data_store['question'].append(llm_response['question'])
 	data_store['answer'].append(split_answer(llm_response['answer']))
 	data_store['ground_truth'].append(ground_truth_data)
 	data_store['time'].append(time)
+	#data_store['count']=+1
 	
 	temp_context=[]
 	temp_source=[]
 	context_=[]
+	#### CONTEXT - SOURCE
 	for n in range(0, len(llm_response['context'])):
 		temp_source.append(llm_response['context'][n].metadata)
 		context_.append(llm_response['context'][n].page_content)
 		temp_context.append(context_)
 		context_ = []
+		#print("KEYS : \n", llm_response['context'][n].keys())
+		#print("llm_response['context'][n]: \n", llm_response['context'][n])
+		#print("TEMP CONTEXT 1: \n", temp_context)
+	
 	
 	# Append the new data to the respective lists in the dictionary
 	data_store['context'].append(temp_context)
@@ -149,15 +178,20 @@ def store_answer(db, model, file_name, llm_response, time, ground_truth_data, sa
 		data_store['context'].clear()
 		data_store['time'].clear()
 		data_store['source'].clear()
+		data_store['ground_truth'].clear()
 		#data_store['count'] = 0
 		
 		# Save the DataFrame to a CSV file
-		csv_filename = f"CSV_Result_med/{db}{model}_{file_name}"
-		df.to_csv(csv_filename, index=False)
+		output_dir = os.environ.get("THESIS_RAG_OUTPUT_DIR", "CSV_Result_med")
+		os.makedirs(output_dir, exist_ok=True)
+		csv_filename = os.path.join(output_dir, f"{os.path.basename(db)}{model}_{os.path.basename(file_name)}")
+		csv_filename = write_generation_results(df, csv_filename, model=model, database=db,
+		                                      dataset=os.path.basename(file_name))
 
 
 		# Print success message
 		print(f"Data saved as '{csv_filename}'.")
+		return csv_filename
 		
 
 # Wrap text to a specified width while preserving newlines
@@ -169,6 +203,9 @@ def wrap_text_preserve_newlines(text, width=110):
 
 # Process the response and print sources
 def process_llm_response(llm_response):
+	#print(wrap_text_preserve_newlines(llm_response['result']))
+
+	#print("llm_response: ",llm_response.keys()) dict_keys(['question', 'input', 'context', 'answer'])
 	print('\n\nSources:')
 	for source in llm_response["source_documents"]:
 		print(source.metadata['source'])
@@ -179,5 +216,4 @@ def process_prompt(args):
 		return qwen_rag_prompt_template
 	if args.model_name[0]=='P':
 		return phi_rag_prompt_template
-
 

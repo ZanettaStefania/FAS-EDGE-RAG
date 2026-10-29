@@ -39,4 +39,4 @@ Question: {input}
 Context: {context} <|end|>
 <|assistant|>"""
 
-model_path = "/media/jetson/8822e6d5-68f8-44c2-8d88-adde671365d71/[download]Hug_model/"
+model_path = ""
