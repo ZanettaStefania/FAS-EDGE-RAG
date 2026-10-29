@@ -1,0 +1,9 @@
+InstructorEmbedding==1.0.1
+InstructorEmbedding==1.0.1
+langchain==0.3.23
+langchain_community==0.3.21
+langchain_huggingface==0.1.2
+langchain_text_splitters==0.3.8
+pandas==2.0.3
+torch==2.0.0+nv23.5
+transformers==4.45.1

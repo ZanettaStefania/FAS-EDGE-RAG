@@ -1,9 +1,23 @@
+# Python >= 3.10. Install the PyTorch build appropriate for the target GPU.
+torch>=2.4,<3
+transformers==5.17.0
+accelerate==1.15.0
+sentence-transformers==6.1.0
 InstructorEmbedding==1.0.1
-InstructorEmbedding==1.0.1
-langchain==0.3.23
-langchain_community==0.3.21
-langchain_huggingface==0.1.2
-langchain_text_splitters==0.3.8
-pandas==2.0.3
-torch==2.0.0+nv23.5
-transformers==4.45.1
+langchain==0.3.30
+langchain-community==0.3.31
+langchain-core==0.3.86
+langchain-huggingface==0.3.1
+langchain-text-splitters==0.3.11
+langchain-openai==0.3.35
+# Legacy Chroma Parquet databases require migration before use with this version.
+chromadb==1.5.9
+pydantic==2.13.5
+numpy==1.26.4
+pandas==2.3.3
+pypdf==5.0.1
+huggingface-hub==1.32.0
+ragas==0.4.3
+ollama==0.6.2
+openai==1.109.1
+instructor==1.3.2

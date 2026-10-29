@@ -1,0 +1,38 @@
+source Chroma3/bin/activate
+
+python ./main.py  --model_name Qwen2.5-0.5B-Instruct
+python ./main.py  --model_name Qwen2.5-1.5B-Instruct
+python ./main.py  --model_name Qwen2.5-3B-Instruct
+
+python ./main.py  --model_name Phi-3.5-mini-instruct
+python ./main.py  --model_name Phi-3-mini-128k-instruct
+
+/****** WITH TEST FILE
+
+python ./main.py  --model_name Qwen2.5-0.5B-Instruct --test questions_ground_truths_CPR.csv
+python ./main.py  --model_name Qwen2.5-1.5B-Instruct --test questions_ground_truths_CPR.csv
+python ./main.py  --model_name Qwen2.5-3B-Instruct --test questions_ground_truths_CPR.csv
+
+python ./main.py  --model_name Phi-3.5-mini-instruct --test questions_ground_truths_CPR.csv
+python ./main.py  --model_name Phi-3-mini-128k-instruct --test questions_ground_truths_CPR.csv
+
+/****** FOR OTHER USE CASE *********/
+
+python ./main_patient.py  --model_name Qwen2.5-0.5B-Instruct
+python ./main_patient.py  --model_name Qwen2.5-1.5B-Instruct
+python ./main_patient.py  --model_name Qwen2.5-3B-Instruct
+
+python ./main_patient.py  --model_name Phi-3.5-mini-instruct
+python ./main_patient.py  --model_name Phi-3-mini-128k-instruct
+
+
+/****** WITH TEST FILE
+
+python ./main_patient.py  --model_name Qwen2.5-0.5B-Instruct --test patient.csv
+python ./main_patient.py  --model_name Qwen2.5-1.5B-Instruct --test patient.csv
+python ./main_patient.py  --model_name Qwen2.5-3B-Instruct --test patient.csv
+
+python ./main_patient.py  --model_name Phi-3.5-mini-instruct --test patient.csv
+python ./main_patient.py  --model_name Phi-3-mini-128k-instruct --test patient.csv
+
+

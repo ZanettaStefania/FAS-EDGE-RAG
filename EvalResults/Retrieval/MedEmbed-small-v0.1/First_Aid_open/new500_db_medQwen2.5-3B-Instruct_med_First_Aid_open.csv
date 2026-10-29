@@ -1,0 +1,108 @@
+question,context,answer,ground_truth,time,source
+What are some example of hazards affecting scene safety?,"[['types of risks to be aware of:\n• The energy source that caused the original injury—is the \nmechanism that caused the original injury still active, \ncausing injury to others? Example: where an injury has been \ncaused by machinery, is the machinery still running?\n• There may be hazards caused by external factors. Example: \npassing vehicles may pose a risk at the scene of a motor \nvehicle incident\n• There may be hazards associated with first aid procedures'], ['Scene Safety  \nImagine that you’re driving along in your car, and to your horror you observe the car in front of \nyou lose control, drive into a deep ditch at the side of the road and flip twice, landing on it’s \nside. You have taken CPR and First Aid and you’re prepared to help. What should you do first?  \nScenes like these happen every day. That’s why we take these courses - so that we can help at']]","user
+Based on the provided context, some examples of hazards affecting scene safety include:
+
+1. **Energy Sources**: If an accident involves machinery or vehicles, there could be residual energy sources that remain active and pose a risk to rescuers. For instance, if the vehicle involved was a car with a broken-down engine, the fuel system, or other parts could leak or cause further harm.
+
+2. **External Factors**: In scenarios involving traffic accidents, passing vehicles can create additional hazards for first responders. These vehicles might collide with the rescue team or block emergency access routes.
+
+3. **Hazards Associated with First Aid Procedures**: While not as immediate a threat as the energy source or external factors, improper handling of first aid equipment or procedures can also present risks. For example, using contaminated or improperly stored equipment, or failing to follow proper hygiene protocols, could lead to infections or secondary injuries.
+
+In the specific scenario described, the first step would likely involve assessing the scene for immediate dangers before attempting to assist the injured. This includes checking for ongoing threats such as leaking fuel, broken glass, or unstable vehicles, which could pose additional risks to rescuers.","Traffic, Smoke or flames, Live electrical wires are all examples of hazards that affect scene safety. There are several things that you should look for when determining in the scene is safe for you to enter.",69.24731206893921,"[{'source': '../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf', 'page': 18}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 39}]"
+What are bloodborne pathogens?,"[['Bloodborne Pathogens - What are they, and which ones should I be concerned \nabout?  \nBloodborne pathogens are those organisms that are carried in \nthe blood and are capable of caus ing disease.  Common \nbloodborne pathogens that cause disease in humans include \nhuman immunodeficiency virus (HIV), Hepatitis B (HBV), and \nHepatitis C (HCV) . These  viruses are usually transmitted \nthrough exposure to blood, but you may  also be exposed \nthrough other body fluids.   \nHIV/AIDS'], ['One of your major concerns when providing first aid should be to protect yourself from \nbloodborne pathogens . Bloodborne pathogens  are infectious microorganism that have the \nability to cause disease in humans. They are spread through direct contact with infected blood. \nSome of these include hepatitis C and HIV, the virus that causes AIDS. Unive rsal precautions  are \nmeasures that help to protect against bloodborne pathogens and assume that all victims are']]","user
+What are bloodborne pathogens and which ones should I be concerned about?
+
+Bloodborne pathogens are infectious microorganisms that can enter the human body through direct contact with infected blood. These pathogens can cause serious diseases such as HIV (Human Immunodeficiency Virus), which leads to AIDS (Acquired Immunodeficiency Syndrome), and Hepatitis B (HBV) and Hepatitis C (HCV). These viruses are commonly transmitted through exposure to blood, though they can also be present in other body fluids.
+
+In providing first aid, it's crucial to take measures to protect oneself from these pathogens. Universal precautions are recommended, meaning that all patients are assumed to be infected with bloodborne pathogens until proven otherwise. This includes using appropriate personal protective equipment (PPE) such as gloves, masks, and gowns when handling blood or bodily fluids.","Bloodbornepathogens are infectious microorganism that have the ability to cause disease in humans. Some of these include hepatitis C and HIV, the virus that causes AIDS.",48.090067863464355,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 96}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 40}]"
+How should we obtain the history from the victim?,"[['be able to provide important information that may determine what you do  next. This \ninformation may also be important to emergency responders one they arrive on the scene. An \neasy way to obtain a thorough history is to use the mnemonic SAMPLE:  \nS- signs and symptoms - ask the victim how he/she feels. What can you notice when you  look at \nthe victim? For example, the victim may tell you that their right leg hurts - this is a symptom.'], ['be dealt with immediately.  \n• Obtain a history from the victim and any bystanders.  \n• Perform an examination, using the head -to-toe method.']]","user
+Based on the context provided, how should we obtain the history from the victim?
+
+The context suggests using the mnemonic SAMPLE to obtain a thorough history from the victim. Here's how it can be done:
+
+1. **Signs and Symptoms**: Ask the victim about their current feelings or sensations. Inquire about what you can observe physically when looking at the victim. For example, if a victim tells you their right leg hurts, this would be considered a symptom.
+
+2. **Allergies**: Find out if the victim has any known allergies or sensitivities.
+
+3. **Medications**: Ask the victim about any medications they are currently taking, both prescription and over-the-counter drugs.
+
+4. **Past History**: Inquire about the victim's past medical history, including any previous injuries, illnesses, surgeries, or conditions.
+
+5. **Alcohol and Drug Use**: Ask about alcohol and drug use, as these can affect judgment and reaction times.
+
+6. **Last Meal**: Find out what the victim ate or drank the last time.
+
+7. **Employment**: Learn about the victim's job, work environment, and potential exposures (if applicable).
+
+By systematically gathering this information using the SAMPLE mnemonic, you can gather crucial details that will help guide your response and potentially inform emergency responders upon their arrival.","Asking the patient about their allergies, Asking a bystander what happened, Asking the patient what medications they are taking",72.35218572616577,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 43}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 40}]"
+What does the S in the mnemonic SAMPLE stands for?,[],"<tool_call>user
+The context provided does not contain information about the mnemonic SAMPLE or what 'S' stands for in it. Therefore, I am unsure about the specific answer to your question based solely on the information given.","The S in SAMPLE stands for signs and symptoms, what the victim is feeling and what you, as the first aid responder, can observe.",11.947718381881714,[]
+What should be asked before examining the conscious victim?,"[['victim. If the victim is unconscious, there are Good Samaritan laws that protect you legally, \nproviding you are following the standard of ca re (providing care as you have learned or have \nbeen trained).  \nTake a close look at the victim. Assess the victim’s breathing. Are they breathing very shallowly \nor quickly? Do they have pain when they breathe? Is their breathing too slow? Also assess their'], ['Fear of Injury to Self: As you will learn, scene safety is of utmost importance, and checking the \nscene for safety should be your first action when you come across an unconscious victim , even if the \nvictim is a child . If the scene is not safe for you to enter, you must not enter . This will only result in more \nvictims. Under no circumstances should you risk becoming a victim. Instead, you should call for help  \n(activate EMS) .']]","user
+What should be asked before examining the conscious victim?
+<tool_call> Croat
+The context provided does not directly address what should be asked before examining a conscious victim. However, based on general first aid practices, before examining a conscious victim, one should ask if the person is okay, if they need assistance, and whether they have any known medical conditions or allergies. These inquiries can help ensure that the examination is conducted safely and appropriately.
+
+Given the context focuses more on unconscious victims and the importance of assessing them, it seems the question might be more appropriately addressed in a different section of the provided text or in a broader first aid guide. In summary, while specific questions to ask before examining a conscious victim aren't directly stated, typical considerations include asking about the person's well-being and any pertinent health information.","If the patient is conscious, you should ask for permission (consent) before examining the victim. If the victim is unconscious, there are GoodSamaritan laws that protect you legally, providing you are following the standard of care (providing care as you have learned or have been trained)",46.321752071380615,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 43}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 66}]"
+In which situations would you call 9-1-1 immediately when examining a victim of a motor vehicle collision?,[],"user
+The context provided does not contain specific information about situations where one should immediately call 9-1-1 for a victim of a motor vehicle collision. Without additional details from the context, I must rely on general knowledge about emergency protocols.
+
+In general, it's advisable to call 9-1-1 immediately if a motor vehicle collision results in any of the following situations:
+
+1. **Injuries**: If there are signs of severe injuries such as bleeding, broken bones, difficulty breathing, loss of consciousness, or severe pain.
+2. **Traffic Hazard**: If the accident has caused damage to traffic control devices, roadways, or other vehicles that may pose an immediate danger to other drivers.
+3. **Vehicle Emergency**: If a vehicle is disabled and poses a risk to traffic flow (e.g., blocking lanes).
+4. **Ambulance Needed**: When there are no bystanders available to help, and medical attention is required quickly.
+5. **Multiple Vehicles Involved**: In cases where multiple vehicles are involved, especially if there are people trapped inside or if there are fatalities.
+6. **Pedestrians or Cyclists Injured**: If anyone was hit and injured while crossing the road or riding a bicycle during the collision.
+
+Without more specific context regarding the situation, these are the typical scenarios where immediate 9-1-1 intervention might be necessary.","During your examination, you should immediately call 9-1-1 for help if you find any life-threatening signs or symptoms. Difficulty breathing couldindicate a serious internal injury, while the other injuries are not life-threatening.",70.30302882194519,[]
+You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?,"[['Direct pressure:  \nDirect pressure to the wound is the best way of stemming a bleed.  You can use \nyour hands to do this, but you should take precautions to minimise the risk of \ncoming in contact with t he casualty’s blood, preferably by wearing disposable \ngloves.  Keep pressure on the wound continuously for at least ten minutes.  \nUsing a firm bandage usually stops the bleeding with most minor wounds (make \nsure the bandage is not so tight as to cut off th e circulation to the limb'], ['Page | 40 \n   \nExamine  Examine the wound for foreign objects and make a note of how the \nwound  is bleeding.  Make sure to tell the medical staff how the \nwound was bleeding once it is covered with a bandage.  \n  \nElevate  Elevate the wound so that it is above the heart, which will use \ngravity to restrict the flow of blood to the injury.  \n \nPressure  Apply direct or indirect pressure to help slow the bleeding.  \n  \nDirect pressure:']]","user
+Based on the context provided, what should you do when the blood begins to seep through the pressure bandage after applying direct pressure?
+
+According to the context, if blood begins to seep through the pressure bandage after applying direct pressure, you should consider adding another layer of pressure. The context mentions that ""Using a firm bandage usually stops the bleeding with most minor wounds (make sure the bandage is not so tight as to cut off the circulation to the limb)"". Therefore, you should:
+
+1. Reapply a firm, clean dressing over the existing bandage.
+2. Ensure the new dressing is placed directly over the old one.
+3. Reapply direct pressure to the wound.
+
+This process helps to re-establish effective hemostasis until further medical attention can be obtained. Always ensure that the dressing is not too tight to avoid compromising blood circulation.","If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",50.39908742904663,"[{'source': '../PDF_files/Actual_First_Aid_Training_Notes.pdf', 'page': 39}, {'source': '../PDF_files/Actual_First_Aid_Training_Notes.pdf', 'page': 39}]"
+What are the symptoms of shock?,"[['56 57 \n2\nSigns and symptoms of shock\nSigns Symptoms\n• Pale skin at first, turns \nblue-grey*• Restless\n• blue-purple lips, tongue, \nearlobes, fingernails• Anxious\n• Cold and clammy skin • Disoriented\n• Breathing shallow and \nirregular, fast or gasping \nfor air• Confused\n• Changes in level of \nconsciousness• Afraid\n• Weak, rapid pulse—radial \npulse may be absent• Dizzy\n• Thirsty'], ['calm and still. Raise the victim’s legs above the level of their heart.  \n7. Get the victim to emergency care as soon as possible.  \n \nShock  \nShock  is caused by inadequate blood flow to the body’s organs. It can be caused by blood loss \nor loss of body fl uids, as may occur following untreated severe vomiting or diarrhea. Symptoms \nof shock may include the following:  \n• Drowsiness  \n• Confusion  \n• Loss of consciousness  \n• Extreme thirst  \n• Pale skin color  \n• Rapid heart rate']]","user
+Based on the information provided, what are some symptoms of shock?
+
+I will use the context provided to answer your question.
+
+The symptoms of shock mentioned in the context are:
+
+1. Pale skin (at first, then turning blue-grey or blue-purple)
+2. Restless or anxious behavior
+3. Cold and clammy skin
+4. Shallow and irregular breathing, fast or gasping for air
+5. Changes in level of consciousness (disoriented, confused, dizziness)
+6. Weak, rapid pulse (radial pulse may be absent)
+7. Extreme thirst
+8. Loss of consciousness
+
+These symptoms indicate that the body is not receiving adequate blood flow to its organs, which is a hallmark of shock.","Thirst, pallor (pale skin) and Rapid heart rate are all  symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",42.35655617713928,"[{'source': '../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf', 'page': 58}, {'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 45}]"
+What are the treatment for a victim in shock?,"[['Victims in shock must receive emergency care as soon as possible to prevent death. Call 9 -1-1. \nWhile waiting for emergency services:  \n \n2. Elevate the victim’s legs above the level of their heart, approximately 8 to 12 inches. \nThis will  promote blood flow to the heart.  \n3. Cover the victim with a blanket to keep them warm.  \n4. Keep the victim calm and still.  \nMusculoskeletal Injuries'], ['Page | 44 \n blood flow has been restricted for 15 minutes or more.  \n  \nTreatment for crushing lasting less than 15 minutes:  \n\uf0b7 Remove the crushing weight, or release the cas ualty as soon as possible.  \n\uf0b7 Dial 999 for an ambulance immediately.  \n\uf0b7 Treat any bleeds and cover any open wounds.  \n\uf0b7 Treat the casualty for shock ( see page 33), but be sure not to move any \ninjuries.  \n\uf0b7 Maintain their airway and monitor their breathing until help arrives.']]","user
+Based on the provided context, what are the treatments for a victim in shock?
+
+The context provides specific treatments for victims in shock:
+
+1. **Call 9-1-1** immediately.
+2. **Elevate the victim's legs above the level of their heart** (approximately 8 to 12 inches) to promote blood flow to the heart.
+3. **Cover the victim with a blanket** to keep them warm.
+4. **Keep the victim calm and still**.
+
+These steps are recommended while waiting for emergency services to arrive. 
+
+For situations where the victim has been in shock for longer than 15 minutes due to a crushing injury, additional measures need to be taken:
+- **Release the crushing weight** or **release the casualty** as soon as possible.
+- **Dial 999 for an ambulance** immediately.
+- **Treat any bleeds** and cover any open wounds.
+- **Treat the casualty for shock**, but **be sure not to move any injuries**.
+- **Maintain their airway and monitor their breathing** until help arrives.","Lay the victim down. Elevate the victim’s legs above the level of their heart, approximately 8 to 12 inches. This will promote blood flow to the heart. Keep the victim warm.",62.78705334663391,"[{'source': '../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf', 'page': 46}, {'source': '../PDF_files/Actual_First_Aid_Training_Notes.pdf', 'page': 43}]"
+What does the C is the acronym RICE stands for?,[],"user
+The context provided does not contain information about the acronym RICE. The acronym RICE is commonly used in first aid to describe a method for treating injuries such as sprains and strains, where C stands for ""Compression."" However, without direct reference to this specific context, I cannot confirm if the full acronym RICE includes the letter C. 
+
+To provide a complete answer based on general knowledge:
+RICE stands for Rest, Ice, Compression, and Elevation. So, C indeed stands for Compression.","RICE stands for: Rest, Ice, Compression and Elevation. RICE is used when treating sprains and strains of the extremities (arms, hands, legs and feet).",27.054445028305054,[]
