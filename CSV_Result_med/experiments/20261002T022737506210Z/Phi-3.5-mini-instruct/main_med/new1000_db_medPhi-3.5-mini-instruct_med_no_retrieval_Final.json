@@ -1,0 +1,2066 @@
+{
+  "model": "Phi-3.5-mini-instruct_med_no_retrieval",
+  "database": "DB/new1000_db_med",
+  "dataset": "Final.csv",
+  "ragas": {
+    "status": "completed",
+    "judge_models": {
+      "medgemma": "medgemma:27b"
+    },
+    "retrieval": false,
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "started_at": "2026-10-02T02:29:19.349Z",
+    "completed_at": "2026-10-02T04:21:52.156Z",
+    "setup_elapsed_seconds": 9.933,
+    "elapsed_seconds": 6752.807,
+    "judge_elapsed_seconds": {
+      "medgemma": 6742.839
+    },
+    "evaluated_questions": 60,
+    "evaluated_questions_by_judge": {
+      "medgemma": 60
+    }
+  },
+  "results": [
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "Firstly, ensure the person is in a comfortable position, sitting upright. Help them focus on slow, steady breaths by guiding them through a technique called \"pursed lip breathing.\" Remind them to seek immediate medical assistance. Remember, your role is to provide support and minimize panic while waiting for professional help.\n\nRemember, you cannot substitute medical treatment, but you can help manage the situation until experts arrive. If you're trained in first aid and CPR, offering reassurance, monitoring their condition, and providing rescue breaths if necessary, can be beneficial until help arrives. However, always prioritize getting professional medical attention as soon as possible.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 4.131779744289815,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4409890742477991,
+          "answer_relevancy": 0.6882909281420062,
+          "factual_correctness": 0.67,
+          "factual_precision": 0.71,
+          "factual_recall": 0.62,
+          "semantic_similarity": 0.8039562969911962
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 40.896,
+          "answer_relevancy": 6.034,
+          "factual_correctness": 33.977,
+          "factual_precision": 17.946,
+          "factual_recall": 35.539,
+          "semantic_similarity": 0.042
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 134.434
+      }
+    },
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "Firstly, try to keep the person calm and encourage slow, deep breaths. Secondly, find a safe, smoke-free environment and help them sit upright. Lastly, call emergency services immediately as an asthma attack can be life-threatening without proper medication.\n\nRemember, you cannot administer medication without proper training; your role is to provide comfort, help them remain calm, and facilitate professional medical assistance.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 1.4132673079147935,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6605793905430017,
+          "answer_relevancy": 0.853257889383777,
+          "factual_correctness": 0.73,
+          "factual_precision": 0.8,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.928031847886293
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 31.893,
+          "answer_relevancy": 5.878,
+          "factual_correctness": 34.15,
+          "factual_precision": 16.666,
+          "factual_recall": 34.941,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 123.564
+      }
+    },
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "Firstly, help calm the person by keeping them calm and seated, reducing stress which can worsen symptoms. If available, provide rescue medication like a nebulizer or an emergency inhaler to a bystander to administer to the person. If symptoms persist or worsen, call emergency services immediately as professional medical help is required.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 1.1213949723169208,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5608176604796693,
+          "answer_relevancy": 0.7073176429810445,
+          "factual_correctness": 0.5,
+          "factual_precision": 0.67,
+          "factual_recall": 0.4,
+          "semantic_similarity": 0.8315059360363242
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 27.768,
+          "answer_relevancy": 6.151,
+          "factual_correctness": 27.277,
+          "factual_precision": 10.485,
+          "factual_recall": 27.102,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 98.818
+      }
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "First aid for a Box Jellyfish sting involves: 1) Immediately immersing the affected area in hot water (not scalding) to denature the toxins. 2) Seeking immediate medical attention as the venom can cause severe pain, cardiac issues, and even death. 3) Avoid using ice or applying direct pressure on the sting site, as these can exacerbate the injury.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 1.3678631843067706,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.3091043038727233,
+          "answer_relevancy": 0.9999999999997778,
+          "factual_correctness": 0.2,
+          "factual_precision": 0.33,
+          "factual_recall": 0.14,
+          "semantic_similarity": 0.9206277418066828
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 39.561,
+          "answer_relevancy": 6.114,
+          "factual_correctness": 37.066,
+          "factual_precision": 11.522,
+          "factual_recall": 37.665,
+          "semantic_similarity": 0.224
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 132.152
+      }
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "First aid for a Box Jellyfish sting involves immediate immersion of the affected area in hot water (not scalding, around 40-45°C or 104-113°F) for 20-45 minutes, if possible. Avoid applying ice or freshwater, as these can cause further envenomation. Seek emergency medical treatment immediately, as the sting can be life-threatening.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 1.4328310429118574,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.23319800307710015,
+          "answer_relevancy": 0.9999999999997778,
+          "factual_correctness": 0.2,
+          "factual_precision": 0.33,
+          "factual_recall": 0.14,
+          "semantic_similarity": 0.9327920123084006
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 32.698,
+          "answer_relevancy": 5.667,
+          "factual_correctness": 36.202,
+          "factual_precision": 11.179,
+          "factual_recall": 32.12,
+          "semantic_similarity": 0.103
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 117.97
+      }
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "The first aid treatment for a Box Jellyfish sting includes immersing the affected area in hot water (not scalding) for at least 30-45 minutes to denature the toxins, removing tentacles carefully using tweezers, and seeking immediate medical attention. Avoid rubbing the area and applying ice directly, as these can exacerbate the injury. If the victim is showing signs of severe reaction such as difficulty breathing, call emergency services immediately.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 1.4836018937639892,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4060522395949864,
+          "answer_relevancy": 0.9999999999997778,
+          "factual_correctness": 0.27,
+          "factual_precision": 0.25,
+          "factual_recall": 0.29,
+          "semantic_similarity": 0.9183266054387689
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 36.835,
+          "answer_relevancy": 5.949,
+          "factual_correctness": 45.799,
+          "factual_precision": 22.687,
+          "factual_recall": 45.438,
+          "semantic_similarity": 0.038
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 156.747
+      }
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "An emergency nosebleed is indicated by severe bleeding that doesn't stop after 20 minutes of applying pressure, signs of shock like dizziness or weak pulse, or if the nosebleed occurs in a child under 2 years old. It's important to seek immediate medical attention in these situations. If uncontrollable bleeding, significant blood loss, or other severe symptoms are present, it's crucial to call emergency services right away.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.4370140270330012,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.39451844345645115,
+          "answer_relevancy": 0.9286720355764141,
+          "factual_correctness": 0.62,
+          "factual_precision": 0.8,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.8280737738258045
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 37.712,
+          "answer_relevancy": 5.724,
+          "factual_correctness": 35.407,
+          "factual_precision": 17.894,
+          "factual_recall": 35.904,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 132.677
+      }
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "A nosebleed becomes an emergency if it is severe, lasts longer than 20 minutes, or if the patient has underlying health conditions, such as high blood pressure, blood clotting disorders, or is on anticoagulant medication. Signs include continuous bleeding despite applying pressure, blood flowing down the back of the throat, coughing up or vomiting blood, or fainting. In such cases, immediate medical attention is necessary.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.4528663950040936,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.3709636984033802,
+          "answer_relevancy": 0.9053274971292528,
+          "factual_correctness": 0.35,
+          "factual_precision": 0.37,
+          "factual_recall": 0.37,
+          "semantic_similarity": 0.8522758462451
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 41.836,
+          "answer_relevancy": 5.684,
+          "factual_correctness": 43.813,
+          "factual_precision": 20.026,
+          "factual_recall": 38.33,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 149.726
+      }
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "Signs that a nosebleed is an emergency include: prolonged bleeding lasting more than 20 minutes after applying pressure, blood loss causing dizziness or fainting, blood flowing from only one nostril, and a history of bleeding disorders or frequent nosebleeds. If you observe these signs, seek immediate medical attention.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.0718366517685354,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.3343391932730878,
+          "answer_relevancy": 0.9924732492759721,
+          "factual_correctness": 0.46,
+          "factual_precision": 0.6,
+          "factual_recall": 0.37,
+          "semantic_similarity": 0.8373567730923517
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.392,
+          "answer_relevancy": 5.506,
+          "factual_correctness": 35.104,
+          "factual_precision": 16.773,
+          "factual_recall": 35.545,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 122.353
+      }
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "First, instruct the person to sit down and lean slightly forward to prevent blood from flowing down the throat. Then, pinch the soft part of the nose just below the nostrils for around 10-15 minutes, while they breathe through their mouth. If the bleeding doesn't stop, seek medical attention.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.0331182330846786,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.7865507283401181,
+          "answer_relevancy": 0.9107661812268611,
+          "factual_correctness": 0.8,
+          "factual_precision": 1.0,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.9356765975709991
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 27.401,
+          "answer_relevancy": 5.584,
+          "factual_correctness": 29.856,
+          "factual_precision": 13.975,
+          "factual_recall": 31.02,
+          "semantic_similarity": 0.04
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 107.875
+      }
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "Firstly, calm the person down and have them sit up straight. Next, pinch the soft part of their nose just below the bony bridge and hold it for about 10 minutes. If the bleeding does not stop, seek medical attention.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 0.7573339771479368,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4195300943516863,
+          "answer_relevancy": 0.904374937676645,
+          "factual_correctness": 0.22,
+          "factual_precision": 0.33,
+          "factual_recall": 0.2,
+          "semantic_similarity": 0.9281203774067448
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 31.607,
+          "answer_relevancy": 5.654,
+          "factual_correctness": 27.095,
+          "factual_precision": 10.984,
+          "factual_recall": 27.322,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 102.699
+      }
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "First, have the person sit upright and lean slightly forward to prevent swallowing blood. Pinch the soft part of the nose just below the nostrils together for about 10 minutes to help stop the bleeding. If the nosebleed persists, seek medical attention.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 0.8768810597248375,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6271377937209655,
+          "answer_relevancy": 0.9387895710251088,
+          "factual_correctness": 0.67,
+          "factual_precision": 1.0,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.9085511748838618
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 42.579,
+          "answer_relevancy": 5.954,
+          "factual_correctness": 24.934,
+          "factual_precision": 9.929,
+          "factual_recall": 25.313,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 108.746
+      }
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to pick it up by the crown (the top part), not the root, and rinse it gently if it's dirty. Try to reinsert it into the socket if possible, or store it in a container with milk or saliva. Seek immediate dental or medical attention.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.0767843001522124,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.21674684265021707,
+          "answer_relevancy": 0.9999999999998211,
+          "factual_correctness": 0.4,
+          "factual_precision": 0.0,
+          "factual_recall": 0.25,
+          "semantic_similarity": 0.8669873706008685
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 26.44,
+          "answer_relevancy": 11.146,
+          "factual_correctness": 25.908,
+          "factual_precision": 15.443,
+          "factual_recall": 26.844,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 105.817
+      }
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to pick it up by the crown (top) without touching the root. Handle it gently to minimize damage to the cells necessary for re-implantation. Hold the tooth for no more than 60 seconds and seek immediate dental attention.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 0.9790100059472024,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.20729933337915485,
+          "answer_relevancy": 0.9999999999998211,
+          "factual_correctness": 0.0,
+          "factual_precision": 0.0,
+          "factual_recall": 0.0,
+          "semantic_similarity": 0.8291973335166195
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.101,
+          "answer_relevancy": 5.823,
+          "factual_correctness": 25.398,
+          "factual_precision": 15.717,
+          "factual_recall": 26.991,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 99.067
+      }
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to pick up the tooth by the crown (top part), not the root, to avoid damage. Rinse it gently with milk or saline without scrubbing. Then, try to reinsert it into the socket or store it in a glass of milk or saline solution, and seek immediate dental care.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.176152401138097,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.21757310411607733,
+          "answer_relevancy": 0.9999999999998211,
+          "factual_correctness": 0.0,
+          "factual_precision": 0.0,
+          "factual_recall": 0.0,
+          "semantic_similarity": 0.8702924164643095
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.103,
+          "answer_relevancy": 5.655,
+          "factual_correctness": 27.222,
+          "factual_precision": 14.61,
+          "factual_recall": 26.677,
+          "semantic_similarity": 0.081
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 103.349
+      }
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because it can damage the tooth's cells, reduce the chances of successful reimplantation, and increase the risk of infection. Instead, it should be kept moist, ideally in a special storage solution or milk, to preserve its vitality until professional dental care can be sought.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.1071204831823707,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6822078937481167,
+          "answer_relevancy": 0.9143127212571116,
+          "factual_correctness": 0.91,
+          "factual_precision": 0.83,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8826777288386208
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 27.063,
+          "answer_relevancy": 5.946,
+          "factual_correctness": 31.456,
+          "factual_precision": 15.608,
+          "factual_recall": 25.436,
+          "semantic_similarity": 0.041
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 105.55
+      }
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because it can damage the tooth's vital tissues, such as the periodontal ligament, which is essential for reattachment. Water can also introduce bacteria, increasing the risk of infection. Additionally, keeping the tooth moist without water is preferable, as water alone cannot support the tooth's viability for reimplantation.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.2928544362075627,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5986649950217365,
+          "answer_relevancy": 0.9999999999998229,
+          "factual_correctness": 0.91,
+          "factual_precision": 0.83,
+          "factual_recall": 0.83,
+          "semantic_similarity": 0.8946599800869459
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 22.232,
+          "answer_relevancy": 5.628,
+          "factual_correctness": 26.248,
+          "factual_precision": 17.46,
+          "factual_recall": 27.809,
+          "semantic_similarity": 0.039
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 99.416
+      }
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because it can damage the tooth's cells, reducing the chances of successful replantation. Water can also introduce bacteria, increasing the risk of infection. Lastly, the water can cause the tooth to swell, making it difficult to reinsert and properly align with the surrounding teeth.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.118486792780459,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5877936496556749,
+          "answer_relevancy": 0.9999999999998229,
+          "factual_correctness": 0.57,
+          "factual_precision": 0.29,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.8511745986226997
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 22.352,
+          "answer_relevancy": 5.554,
+          "factual_correctness": 21.047,
+          "factual_precision": 16.093,
+          "factual_recall": 24.887,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 89.968
+      }
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, the casualty should be carefully placed on a stable, flat surface. Avoid moving their head or neck; instead, keep them still and immobilize the spine with bulky clothing or a backpack. Call emergency services immediately and provide continuous monitoring of vital signs while awaiting professional medical assistance.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.049594087060541,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6857776003330526,
+          "answer_relevancy": 0.9272253541955792,
+          "factual_correctness": 0.6,
+          "factual_precision": 0.4,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8969565551783645
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 23.422,
+          "answer_relevancy": 5.758,
+          "factual_correctness": 26.424,
+          "factual_precision": 14.908,
+          "factual_recall": 33.097,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 103.646
+      }
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, carefully immobilize the casualty on a flat surface, using items like rolled towels or backpacks for support. Keep the person's head, neck, and back as still as possible, and avoid moving them unless necessary for safety. Call for emergency medical assistance immediately and continue to minimize movement until professional help arrives.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.1510468400083482,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5993662633862847,
+          "answer_relevancy": 0.9098741467027693,
+          "factual_correctness": 0.67,
+          "factual_precision": 0.5,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8974650535451388
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 24.576,
+          "answer_relevancy": 5.883,
+          "factual_correctness": 29.794,
+          "factual_precision": 17.577,
+          "factual_recall": 31.328,
+          "semantic_similarity": 0.039
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 109.197
+      }
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, carefully stabilize the injured person's head and neck manually. Transport them on a backboard or any flat, rigid surface, ensuring to minimize movement of the spine. Continuously monitor for changes in their condition during transport.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 0.8412814121693373,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.7335237186896841,
+          "answer_relevancy": 0.9420185993704893,
+          "factual_correctness": 0.86,
+          "factual_precision": 0.75,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.9340948747587364
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 19.789,
+          "answer_relevancy": 5.891,
+          "factual_correctness": 23.518,
+          "factual_precision": 11.866,
+          "factual_recall": 24.308,
+          "semantic_similarity": 0.029
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 85.401
+      }
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving them can result in serious injury, including spinal cord damage, paralysis, or even death due to the disruption of neural pathways. It's crucial to maintain proper alignment and use appropriate lifting techniques to minimize the risk. Medical professionals recommend keeping the person's head, neck, and back in a straight, aligned position during any movement.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.3532890090718865,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.693686492339775,
+          "answer_relevancy": 0.9573545413043935,
+          "factual_correctness": 0.57,
+          "factual_precision": 0.4,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8997459693590999
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.771,
+          "answer_relevancy": 6.332,
+          "factual_correctness": 28.318,
+          "factual_precision": 17.244,
+          "factual_recall": 30.203,
+          "semantic_similarity": 0.087
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 111.955
+      }
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving them can cause serious injury or exacerbate existing spinal issues. Proper support prevents potential damage to the spinal cord, which could result in paralysis or other neurological impairments. It's crucial for rescuers to maintain alignment and use techniques like the log roll when repositioning an unconscious individual.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.3084818259812891,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.9714099051394293,
+          "answer_relevancy": 0.9002344122926438,
+          "factual_correctness": 0.89,
+          "factual_precision": 1.0,
+          "factual_recall": 0.8,
+          "semantic_similarity": 0.885639620557717
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 20.924,
+          "answer_relevancy": 5.815,
+          "factual_correctness": 26.416,
+          "factual_precision": 14.239,
+          "factual_recall": 26.436,
+          "semantic_similarity": 0.034
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 93.864
+      }
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving can lead to serious injuries such as spinal cord damage or paralysis. Proper immobilization techniques are crucial to prevent further harm. It's essential to seek immediate medical help and use appropriate tools like cervical collars or backboards.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.0204067640006542,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5511735513484641,
+          "answer_relevancy": 0.9573545413043935,
+          "factual_correctness": 0.67,
+          "factual_precision": 0.6,
+          "factual_recall": 0.75,
+          "semantic_similarity": 0.8713608720605233
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 20.649,
+          "answer_relevancy": 6.231,
+          "factual_correctness": 28.81,
+          "factual_precision": 16.635,
+          "factual_recall": 29.593,
+          "semantic_similarity": 0.033
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 101.952
+      }
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "1. First, ensure the person's leg is stabilized using a splint or sling to prevent further injury.\n2. Ask for assistance from others to distribute the weight evenly, reducing pressure on the injured leg.\n3. Move slowly and carefully, using supportive devices like a wheelchair or gurney, and communicate with the person to ensure they are as comfortable as possible during the process.\n\nNote: Always seek professional medical advice and never attempt to move a severely injured person unless absolutely necessary and trained to do so.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.665509706363082,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6075580216170805,
+          "answer_relevancy": 0.8424231909145279,
+          "factual_correctness": 0.44,
+          "factual_precision": 0.33,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.9302320864683222
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 30.962,
+          "answer_relevancy": 6.074,
+          "factual_correctness": 28.009,
+          "factual_precision": 16.327,
+          "factual_recall": 28.141,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 109.551
+      }
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "1. Ensure you have the right equipment, such as a sturdy gurney or stretcher, to provide support and minimize strain on the injured leg.\n2. Communicate with the injured person, keeping them informed and calm, to help reduce their anxiety and perception of pain.\n3. Move slowly and carefully, using proper lifting techniques and avoiding sudden movements, to prevent further injury and reduce pain.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.3535079187713563,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4011261062627598,
+          "answer_relevancy": 0.8280068627632072,
+          "factual_correctness": 0.33,
+          "factual_precision": 0.33,
+          "factual_recall": 0.33,
+          "semantic_similarity": 0.8986220721098627
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 28.987,
+          "answer_relevancy": 4.992,
+          "factual_correctness": 30.143,
+          "factual_precision": 12.878,
+          "factual_recall": 25.452,
+          "semantic_similarity": 0.04
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 102.492
+      }
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "1. Ensure you have adequate training or first aid certification to properly assist someone with a fractured leg.\n2. Use proper lifting techniques, such as bending at the knees and keeping the load close to your body, to minimize strain on your back and reduce pain.\n3. Provide support and comfort by immobilizing the fractured leg using splints or makeshift supports, and encourage the person to remain still and calm.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.4694873988628387,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.45110271246656714,
+          "answer_relevancy": 0.8730442541124308,
+          "factual_correctness": 0.67,
+          "factual_precision": 0.5,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.8813339267893453
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.623,
+          "answer_relevancy": 5.963,
+          "factual_correctness": 23.96,
+          "factual_precision": 13.247,
+          "factual_recall": 25.028,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 93.858
+      }
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still help move a casualty safely by ensuring they have a clear understanding of the scene, communicating effectively with others involved, and using proper body mechanics to avoid personal injury. It's crucial to avoid moving the casualty unnecessarily, and if possible, wait for professional medical help or more trained individuals. Always prioritize safety for both the injured person and the helper.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.2708753710612655,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.42929885707323734,
+          "answer_relevancy": 0.9932710860550428,
+          "factual_correctness": 0.6,
+          "factual_precision": 0.86,
+          "factual_recall": 0.6,
+          "semantic_similarity": 0.9171954282929494
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.672,
+          "answer_relevancy": 5.643,
+          "factual_correctness": 26.962,
+          "factual_precision": 18.577,
+          "factual_recall": 26.745,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 107.635
+      }
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still help move a casualty safely by asking for assistance from others, maintaining clear communication with the injured person, and ensuring they do not attempt to move the person if it might cause further injury. It is crucial not to move the casualty unless absolutely necessary, and always prioritize waiting for professional emergency responders.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.1150030861608684,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5516665568369951,
+          "answer_relevancy": 0.9932710860550428,
+          "factual_correctness": 0.6,
+          "factual_precision": 0.8,
+          "factual_recall": 0.6,
+          "semantic_similarity": 0.9209519416336946
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 26.982,
+          "answer_relevancy": 5.42,
+          "factual_correctness": 29.551,
+          "factual_precision": 17.183,
+          "factual_recall": 29.724,
+          "semantic_similarity": 0.038
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 108.897
+      }
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still assist in moving a casualty safely by ensuring clear communication with the injured individual, maintaining a stable and supportive body position, and avoiding any unnecessary movement that could worsen their condition. It's essential to prioritize the casualty's comfort and safety over attempting to perform medical procedures. Always defer to trained professionals when possible.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.210919541772455,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5125524740790182,
+          "answer_relevancy": 0.9894184406603513,
+          "factual_correctness": 1.0,
+          "factual_precision": 1.0,
+          "factual_recall": 0.86,
+          "semantic_similarity": 0.925209896316073
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.444,
+          "answer_relevancy": 5.893,
+          "factual_correctness": 30.206,
+          "factual_precision": 17.902,
+          "factual_recall": 30.873,
+          "semantic_similarity": 0.038
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 114.356
+      }
+    },
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "Avoid excessive ventilation; over-ventilation can lead to gastric inflation, reducing lung efficiency. Do not tilt the head too far back, as it may obstruct the airway. Ensure that breaths are smooth and not forceful to prevent lung injury and barotrauma.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 0.933988865930587,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.48082104235636924,
+          "answer_relevancy": 0.8720362282855684,
+          "factual_correctness": 0.67,
+          "factual_precision": 0.5,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8644606400137123
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 28.997,
+          "answer_relevancy": 5.229,
+          "factual_correctness": 28.443,
+          "factual_precision": 12.867,
+          "factual_recall": 29.306,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 104.878
+      }
+    },
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "To ensure effective ventilation during rescue breathing, one should avoid excessive ventilation rates, which can lead to gastric inflation and reduced effectiveness. Also, avoid over-inflating the lungs, causing barotrauma. Ensure that breaths are given smoothly and calmly to prevent agitation and to promote adequate gas exchange.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 1.083684821613133,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.9553618697380107,
+          "answer_relevancy": 0.9424822966785488,
+          "factual_correctness": 0.31,
+          "factual_precision": 0.29,
+          "factual_recall": 0.33,
+          "semantic_similarity": 0.8214474789520427
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 24.413,
+          "answer_relevancy": 5.457,
+          "factual_correctness": 35.711,
+          "factual_precision": 18.299,
+          "factual_recall": 36.397,
+          "semantic_similarity": 0.189
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 120.465
+      }
+    },
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "To ensure effective ventilation during rescue breathing, it's important to avoid excessive volume that may cause gastric inflation. Also, avoid giving breaths too quickly, which can lead to hyperventilation. Lastly, avoid interrupting chest rise and fall with inadequate breath size or duration.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 0.9577627899125218,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.9643533347821379,
+          "answer_relevancy": 0.9330804496883122,
+          "factual_correctness": 0.25,
+          "factual_precision": 0.33,
+          "factual_recall": 0.2,
+          "semantic_similarity": 0.8574133391285519
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 18.742,
+          "answer_relevancy": 4.556,
+          "factual_correctness": 24.599,
+          "factual_precision": 10.83,
+          "factual_recall": 30.474,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 89.236
+      }
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "Firstly, ensure the scene is safe for both you and the individual requiring assistance. Secondly, check for responsiveness by tapping the person and shouting, \"Are you okay?\" Lastly, if there is no response, call emergency services immediately and begin CPR if you are trained to do so.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 0.9371105600148439,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5143830660952885,
+          "answer_relevancy": 0.799096233395492,
+          "factual_correctness": 0.33,
+          "factual_precision": 0.25,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.8575322643811537
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 15.072,
+          "answer_relevancy": 5.639,
+          "factual_correctness": 21.058,
+          "factual_precision": 11.22,
+          "factual_recall": 21.967,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 74.99
+      }
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "The first thing you should do if you come across a person who may need CPR while alone is to ensure your own safety. Call emergency services immediately to report the situation and receive guidance. Then, if you're trained in CPR, begin administering the procedure until help arrives. If you're not trained, try to keep the person comfortable and wait for professional help.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 1.1596419722773135,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.41246373150401294,
+          "answer_relevancy": 0.9615155604003357,
+          "factual_correctness": 0.33,
+          "factual_precision": 0.25,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.7927120688731946
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 20.231,
+          "answer_relevancy": 6.251,
+          "factual_correctness": 23.152,
+          "factual_precision": 13.016,
+          "factual_recall": 24.257,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 86.943
+      }
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "The first thing to do if you are alone and encounter a person who may need CPR is to assess the situation for safety. Check if it's safe for you to approach the person without putting yourself at risk. If safe, call emergency services immediately while preparing to administer CPR if necessary.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 0.9195376737043262,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5743778590988856,
+          "answer_relevancy": 0.9603170126562551,
+          "factual_correctness": 0.57,
+          "factual_precision": 0.5,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.7975114363955422
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 19.185,
+          "answer_relevancy": 6.052,
+          "factual_correctness": 21.93,
+          "factual_precision": 12.517,
+          "factual_recall": 22.713,
+          "semantic_similarity": 0.034
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 82.432
+      }
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, there must be a source of infection (like infected blood or bodily fluids), direct contact with the blood or bodily fluids from an infected person, and a susceptible host without adequate protective measures like gloves and barriers. Additionally, certain pathogens like HIV, hepatitis B, and hepatitis C are more likely to transmit through blood. Healthcare workers are particularly at risk when following standard precautions to prevent the spread of these infections.\n\n\nIf unsure, I'd consult a medical professional or trusted medical literature for detailed information.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 2.0189137677662075,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.21089933331567223,
+          "answer_relevancy": 0.0,
+          "factual_correctness": 0.27,
+          "factual_precision": 0.0,
+          "factual_recall": 0.0,
+          "semantic_similarity": 0.8435973332626887
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.375,
+          "answer_relevancy": 6.031,
+          "factual_correctness": 41.099,
+          "factual_precision": 20.793,
+          "factual_recall": 42.417,
+          "semantic_similarity": 0.045
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 139.76
+      }
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, there must be direct blood-to-blood contact between an infected individual and a susceptible host. The pathogen must be present in sufficient quantity to establish an infection, and there must be successful entry and multiplication within the host's body. Additionally, the host's immune system should not be sufficiently robust to prevent the establishment and progression of the infection.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 1.3157326630316675,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6126413783837574,
+          "answer_relevancy": 0.999999999999812,
+          "factual_correctness": 0.5,
+          "factual_precision": 0.5,
+          "factual_recall": 0.37,
+          "semantic_similarity": 0.871618145113977
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 35.801,
+          "answer_relevancy": 5.853,
+          "factual_correctness": 37.907,
+          "factual_precision": 15.953,
+          "factual_recall": 38.106,
+          "semantic_similarity": 0.048
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 133.669
+      }
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "The necessary conditions for a bloodborne pathogen infection to occur include exposure to infected blood or bodily fluids, a breach in the skin or mucous membranes, and the presence of a pathogen capable of causing disease. Additionally, the infectious agent must be able to survive in the bloodstream and evade the host's immune response to establish an infection. Preventative measures such as using personal protective equipment and following standard infection control practices are crucial to minimize the risk of transmission.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 1.6685654646717012,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4938286086126997,
+          "answer_relevancy": 0.999999999999812,
+          "factual_correctness": 0.12,
+          "factual_precision": 0.14,
+          "factual_recall": 0.11,
+          "semantic_similarity": 0.8844053435417081
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 43.214,
+          "answer_relevancy": 5.831,
+          "factual_correctness": 48.392,
+          "factual_precision": 27.098,
+          "factual_recall": 50.179,
+          "semantic_similarity": 0.044
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 174.759
+      }
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "First, ensure the infant is on a firm, flat surface, ideally your forearm or lap. Place the infant face-up, and position two fingers (typically the middle and ring finger) on the lower half of the infant's breastbone, just below the nipple line. Administer compressions at a depth of about 1.5 inches (approximately 4 cm) at a rate of 100-120 compressions per minute, allowing complete chest recoil between compressions.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 1.610947571694851,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.7883819111478927,
+          "answer_relevancy": 0.8963786280098492,
+          "factual_correctness": 0.73,
+          "factual_precision": 0.67,
+          "factual_recall": 0.8,
+          "semantic_similarity": 0.9430013288020975
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 34.514,
+          "answer_relevancy": 4.428,
+          "factual_correctness": 45.941,
+          "factual_precision": 18.811,
+          "factual_recall": 42.034,
+          "semantic_similarity": 0.041
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 145.768
+      }
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "1. Ensure the infant is on a firm, flat surface and position yourself with your knees bent.\n2. Place the heel of one hand on the center of the infant's chest, with the other hand on top, keeping your arms straight.\n3. Perform compressions at a depth of about 1.5 inches and a rate of 100-120 compressions per minute, allowing full chest recoil between compressions.\n\nRemember to call for emergency help immediately if possible.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 1.644424872007221,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4993088977441833,
+          "answer_relevancy": 0.8853796178106004,
+          "factual_correctness": 0.25,
+          "factual_precision": 0.25,
+          "factual_recall": 0.25,
+          "semantic_similarity": 0.9384120615649681
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 36.481,
+          "answer_relevancy": 5.683,
+          "factual_correctness": 35.843,
+          "factual_precision": 14.57,
+          "factual_recall": 36.042,
+          "semantic_similarity": 0.04
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 128.659
+      }
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "Firstly, ensure the infant is on a firm, flat surface and their head is slightly extended to open the airway. Then, using both thumbs, place them in the center of the infant's chest, just below the nipple line, and press down about 1.5 inches deep at a rate of 100-120 compressions per minute. After each compression, allow the chest to fully recoil before the next compression. Remember to perform rescue breaths at a ratio of 30 compressions to 2 breaths if trained to do so.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 1.781792825087905,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6107208583191273,
+          "answer_relevancy": 0.9167562216845936,
+          "factual_correctness": 0.4,
+          "factual_precision": 0.4,
+          "factual_recall": 0.4,
+          "semantic_similarity": 0.9428834332765087
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 35.707,
+          "answer_relevancy": 5.488,
+          "factual_correctness": 36.184,
+          "factual_precision": 16.331,
+          "factual_recall": 36.68,
+          "semantic_similarity": 0.042
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 130.433
+      }
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "When performing rescue breathing on an infant with a pulse but who is not breathing, you should provide a breath every 3-5 seconds, or about 12-20 breaths per minute. This frequency helps to ensure adequate oxygenation while minimizing potential lung injury. Always follow the latest guidelines from organizations such as the American Heart Association or local emergency services.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.2064069551415741,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.45599780400099454,
+          "answer_relevancy": 0.9277637400351127,
+          "factual_correctness": 0.4,
+          "factual_precision": 1.0,
+          "factual_recall": 0.6,
+          "semantic_similarity": 0.9009142929270553
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 29.725,
+          "answer_relevancy": 6.189,
+          "factual_correctness": 31.12,
+          "factual_precision": 16.966,
+          "factual_recall": 28.519,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 112.556
+      }
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "In infants, rescue breathing should be performed at a rate of about 20 breaths per minute. Each breath should be given over one second to ensure adequate ventilation without overinflating the lungs. It is crucial to monitor the infant for any changes in condition and seek professional medical help immediately.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 0.953601102810353,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5438548605389216,
+          "answer_relevancy": 0.9037676178519591,
+          "factual_correctness": 0.29,
+          "factual_precision": 0.25,
+          "factual_recall": 0.33,
+          "semantic_similarity": 0.8897051564414009
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 27.911,
+          "answer_relevancy": 5.418,
+          "factual_correctness": 24.772,
+          "factual_precision": 12.611,
+          "factual_recall": 25.428,
+          "semantic_similarity": 0.05
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 96.19
+      }
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "When performing rescue breathing on an infant with a pulse but not breathing, you should give breaths every 3-5 seconds. It's crucial to deliver gentle breaths, just enough to see the chest rise, and maintain this until professional help arrives. This rate mimics the normal breathing rate of an infant, which ranges from 30-60 breaths per minute.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.2416906678117812,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.42153798745233495,
+          "answer_relevancy": 0.9355177303599177,
+          "factual_correctness": 0.25,
+          "factual_precision": 0.25,
+          "factual_recall": 0.33,
+          "semantic_similarity": 0.8861519498093398
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 34.678,
+          "answer_relevancy": 6.024,
+          "factual_correctness": 32.531,
+          "factual_precision": 14.525,
+          "factual_recall": 25.709,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 113.504
+      }
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest doesn't rise after two attempts to give breaths during CPR, you should immediately switch to chest compressions. Ensure to perform high-quality chest compressions at the correct depth and rate. Continue alternating between compressions and rescue breaths until professional medical help arrives or the victim shows signs of life.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.1028551822528243,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4386596155502335,
+          "answer_relevancy": 0.9933802264174812,
+          "factual_correctness": 0.5,
+          "factual_precision": 0.33,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8974956050580769
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 21.808,
+          "answer_relevancy": 6.404,
+          "factual_correctness": 26.066,
+          "factual_precision": 16.878,
+          "factual_recall": 26.082,
+          "semantic_similarity": 0.047
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 97.284
+      }
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, you should immediately reposition the head to ensure proper airway alignment, check for obstructions in the mouth or throat, and attempt chest compressions again. If the chest still doesn't rise, continue with cycles of chest compressions and breaths. If untrained, call emergency services for further instructions and do not stop CPR until help arrives.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.4371014712378383,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.4554464010960366,
+          "answer_relevancy": 0.9973520251972601,
+          "factual_correctness": 0.5,
+          "factual_precision": 0.33,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8987086813072236
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 31.325,
+          "answer_relevancy": 6.898,
+          "factual_correctness": 36.517,
+          "factual_precision": 22.51,
+          "factual_recall": 37.607,
+          "semantic_similarity": 0.039
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 134.896
+      }
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If after two attempts to give breaths during CPR the victim's chest does not rise, it may indicate that air is not entering the lungs. In this case, check for and remove any visible obstructions in the mouth or throat. If none are found, switch to chest compressions and seek immediate professional medical help. Remember, it's crucial to maintain a ratio of 30 compressions to 2 breaths during CPR.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.3947907220572233,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5218896221593172,
+          "answer_relevancy": 0.9973520251972601,
+          "factual_correctness": 0.33,
+          "factual_precision": 0.25,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.8875584886372687
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.331,
+          "answer_relevancy": 6.369,
+          "factual_correctness": 30.075,
+          "factual_precision": 16.455,
+          "factual_recall": 34.333,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 112.6
+      }
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, you should avoid over-ventilating the patient. Provide breaths that are sufficient enough to cause visible chest rise, but avoid hyperventilation which can lead to complications such as decreased cardiac output and increased intrathoracic pressure. Also, refrain from using excessive force during mouth-to-mouth breaths to prevent injury to the patient.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.3052675551734865,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.18284312252137652,
+          "answer_relevancy": 0.9500169672287421,
+          "factual_correctness": 0.0,
+          "factual_precision": 0.0,
+          "factual_recall": 0.0,
+          "semantic_similarity": 0.7313724900855062
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.108,
+          "answer_relevancy": 5.983,
+          "factual_correctness": 24.339,
+          "factual_precision": 14.967,
+          "factual_recall": 24.835,
+          "semantic_similarity": 0.598
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 95.83
+      }
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "Avoid excessive ventilation; aim for one breath every 5-6 seconds, which equates to 10-12 breaths per minute. Over-ventilation can cause increased intrathoracic pressure, reducing venous return to the heart and potentially leading to decreased cardiac output. It's also critical not to force air into the lungs, which can cause lung injury.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.2157026077620685,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.1784266701060602,
+          "answer_relevancy": 0.7646691563748869,
+          "factual_correctness": 0.0,
+          "factual_precision": 0.75,
+          "factual_recall": 0.5,
+          "semantic_similarity": 0.7137066804242408
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.689,
+          "answer_relevancy": 5.713,
+          "factual_correctness": 32.6,
+          "factual_precision": 12.48,
+          "factual_recall": 25.192,
+          "semantic_similarity": 0.036
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 101.71
+      }
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "Avoid giving too many breaths or breaths that are too forceful, as this can cause gastric distension or damage to the lungs. The recommended rate is about 10-12 breaths per minute, and each breath should be just enough to cause visible chest rise. It's also crucial to ensure that the airway is clear before initiating rescue breaths.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.2069665603339672,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.1896302869264168,
+          "answer_relevancy": 0.8309809039681694,
+          "factual_correctness": 0.25,
+          "factual_precision": 0.25,
+          "factual_recall": 0.25,
+          "semantic_similarity": 0.7585211477056673
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 28.049,
+          "answer_relevancy": 5.746,
+          "factual_correctness": 25.896,
+          "factual_precision": 12.58,
+          "factual_recall": 27.436,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 99.742
+      }
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions that are not considered risk factors for bloodborne pathogen transmission include:\n\n1. Avoiding sharing personal items like razors or toothbrushes, as these items do not typically come into contact with blood.\n2. Practicing safe sex using barriers like condoms, as it prevents direct exposure to bodily fluids.\n3. Following proper hand hygiene after handling potentially contaminated surfaces, as this significantly reduces the risk of indirect transmission.\n\nThese actions help minimize the risk of exposure to bloodborne pathogens like HIV, hepatitis B, and hepatitis C.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.9651557318866253,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.21356796816804258,
+          "answer_relevancy": 0.9893712618417355,
+          "factual_correctness": 0.57,
+          "factual_precision": 0.25,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.8542718726721702
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 28.254,
+          "answer_relevancy": 5.595,
+          "factual_correctness": 36.057,
+          "factual_precision": 20.196,
+          "factual_recall": 39.988,
+          "semantic_similarity": 0.037
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 130.128
+      }
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions that are not considered risk factors for the transmission of bloodborne pathogens include:\n\n1. Hand washing with soap and water after potential exposure.\n2. Using personal protective equipment (PPE) such as gloves and masks when appropriate.\n3. Avoiding the sharing of personal items like razors or toothbrushes, which may potentially come into contact with blood.\n\nThese actions reduce the risk of exposure to bloodborne pathogens, but do not directly involve activities that may transmit these pathogens.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.7617022059857845,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.218997422766585,
+          "answer_relevancy": 0.9930698699612042,
+          "factual_correctness": 0.89,
+          "factual_precision": 0.25,
+          "factual_recall": 0.6,
+          "semantic_similarity": 0.8759896910663398
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.598,
+          "answer_relevancy": 5.708,
+          "factual_correctness": 35.52,
+          "factual_precision": 21.917,
+          "factual_recall": 37.663,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 126.441
+      }
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions that are not considered risk factors for the transmission of bloodborne pathogens include: practicing good hygiene, such as regular handwashing; using barrier methods like condoms during sexual activities; and maintaining vaccinations for preventable diseases like hepatitis B. These measures help reduce the risk of exposure to bloodborne pathogens rather than acting as risk factors.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.257176618091762,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.21652372381512638,
+          "answer_relevancy": 0.9930698699612042,
+          "factual_correctness": 0.86,
+          "factual_precision": 1.0,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.8660948952605055
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 25.89,
+          "answer_relevancy": 5.912,
+          "factual_correctness": 33.633,
+          "factual_precision": 18.372,
+          "factual_recall": 33.765,
+          "semantic_similarity": 0.035
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 117.607
+      }
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock can include rapid heartbeat, weak pulse, shallow breathing, cold and clammy skin, confusion or loss of consciousness, and decreased urine output. These signs result from inadequate blood flow to the body's tissues, which can be life-threatening if not treated promptly. It's crucial to seek emergency medical attention when experiencing these symptoms.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.7477267780341208,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5971732294822035,
+          "answer_relevancy": 0.999999999999796,
+          "factual_correctness": 0.71,
+          "factual_precision": 0.0,
+          "factual_recall": 0.6,
+          "semantic_similarity": 0.888692917928814
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 34.498,
+          "answer_relevancy": 5.083,
+          "factual_correctness": 30.109,
+          "factual_precision": 14.365,
+          "factual_recall": 30.553,
+          "semantic_similarity": 0.165
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 114.773
+      }
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock can include rapid heartbeat, shallow breathing, cold and clammy skin, weakness or fatigue, confusion, and decreased urine output. Severe cases may lead to unconsciousness or organ failure. It's important to seek immediate medical attention if shock is suspected.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 0.9835616182535887,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6465611672273885,
+          "answer_relevancy": 0.999999999999796,
+          "factual_correctness": 0.53,
+          "factual_precision": 0.44,
+          "factual_recall": 0.8,
+          "semantic_similarity": 0.8719589546238403
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 30.878,
+          "answer_relevancy": 5.295,
+          "factual_correctness": 30.195,
+          "factual_precision": 19.724,
+          "factual_recall": 31.389,
+          "semantic_similarity": 0.033
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 117.515
+      }
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock may include rapid heartbeat, weak pulse, shallow breathing, cold and clammy skin, weakness or fatigue, confusion, and altered mental state. In severe cases, shock can lead to organ failure and death if not promptly recognized and treated. Additionally, symptoms may vary depending on the type and severity of shock.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.1306072962470353,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5343598351866626,
+          "answer_relevancy": 0.999999999999796,
+          "factual_correctness": 0.53,
+          "factual_precision": 0.44,
+          "factual_recall": 0.67,
+          "semantic_similarity": 0.8742814460098081
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 32.79,
+          "answer_relevancy": 5.321,
+          "factual_correctness": 29.981,
+          "factual_precision": 20.652,
+          "factual_recall": 30.924,
+          "semantic_similarity": 0.033
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 119.701
+      }
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "Re-apply a fresh, clean layer of pressure dressing over the wound to ensure continuous pressure. If bleeding persists, maintain pressure and seek immediate medical assistance. Remember, in such cases, calling emergency services is essential as prolonged bleeding may lead to complications.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 0.8493984639644623,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.6423202229228504,
+          "answer_relevancy": 0.8627034203348797,
+          "factual_correctness": 0.57,
+          "factual_precision": 0.4,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.9026142250247351
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 27.374,
+          "answer_relevancy": 5.879,
+          "factual_correctness": 25.635,
+          "factual_precision": 15.808,
+          "factual_recall": 27.259,
+          "semantic_similarity": 0.033
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 101.988
+      }
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "If blood continues to seep through the pressure bandage, it's crucial to apply additional layers of pressure dressing. Call for emergency medical help if not already done, and keep applying pressure until professional help arrives. Ensure the victim is comfortable but stable, and monitor their vital signs if possible.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 0.9343890100717545,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.427332932634085,
+          "answer_relevancy": 0.8673622233790409,
+          "factual_correctness": 0.57,
+          "factual_precision": 0.4,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.9093317305363401
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 32.792,
+          "answer_relevancy": 5.601,
+          "factual_correctness": 22.566,
+          "factual_precision": 13.193,
+          "factual_recall": 25.333,
+          "semantic_similarity": 0.033
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 99.518
+      }
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "If blood continues to seep through the pressure bandage after 10 minutes, you should apply additional direct pressure over the wound with a clean cloth, and consider applying a second layer of sterile dressing. Elevate the injured limb, if possible, to reduce bleeding. If bleeding doesn't stop, seek immediate medical attention as further intervention may be necessary.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 1.167889625299722,
+      "context": [],
+      "source": [],
+      "scores": {
+        "medgemma": {
+          "answer_correctness": 0.5520347936218525,
+          "answer_relevancy": 0.8645485924700003,
+          "factual_correctness": 0.67,
+          "factual_precision": 0.5,
+          "factual_recall": 1.0,
+          "semantic_similarity": 0.9224248887731246
+        }
+      },
+      "metric_errors": {
+        "medgemma": {}
+      },
+      "metric_durations_seconds": {
+        "medgemma": {
+          "answer_correctness": 26.981,
+          "answer_relevancy": 6.086,
+          "factual_correctness": 26.899,
+          "factual_precision": 15.219,
+          "factual_recall": 27.722,
+          "semantic_similarity": 0.045
+        }
+      },
+      "evaluation_durations_seconds": {
+        "medgemma": 102.952
+      }
+    }
+  ]
+}

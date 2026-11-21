@@ -1,0 +1,468 @@
+{
+  "model": "Phi-3.5-mini-instruct_med_no_rerank",
+  "database": "DB/new1000_db_med",
+  "dataset": "Dago1.csv",
+  "ragas": {
+    "status": "completed",
+    "judge_model": "medgemma:27b",
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "evaluated_questions": 10
+  },
+  "results": [
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "If someone is having an asthma attack and doesn't have their inhaler, first, ensure they are in a comfortable position to breathe, typically sitting upright. Encourage them to hold their breath for 10 seconds after taking a medication dose to allow it to reach the lungs properly. If a spacer is available, use it to help them inhale the medication effectively. If symptoms persist, seek immediate medical help. Remember to stay calm and reassure the individual throughout the process to help manage their panic.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 4.08195686340332,
+      "context": [
+        "387 86 \nA person with asthma may carry medication in the form of a:\n• Metered-dose inhaler (MDI)\n• Turbuhaler\n• Diskus®\nUsually the person can give themselves this medication without \nhelp. If the person needs help, a first aider can assist.\nAn inhaler delivers a pre-measured amount of medication. \nAlways read and follow the manufacturer’s instructions. Check the \nprescription label to confirm the casualty’s name and expiry date.\nTo assist with a Metered Dose Inhaler\nThe metered dose inhaler (or “puffer”) is the more \ncommon method of delivering medication for \nasthma.\n1. Shake the container, then remove the cap.\n2. Tell the casualty to breathe out completely, \n3. Tell the casualty to breathe in slowly and deeply—as the \ncasualty does, the MDI will be pressed to release the \nmedication. The MDI can be in the mouth, or just in front of \nthe mouth.\nCheck your \napplicable \nworkplace \nlegislation/\nregulations   Airway and breathing emergencies",
+        "Page | 24 \n  Use of muscles in the upper chest and neck help the casualty to breath.  \n If it is a severe attack, the casualty may become exhausted.  \n If the attack is prolonged, the casualty may become unconscious and stop \nbreathing.  \n  \nTreatment of an asthma attack  \n Sit the casualty upright, with their back to a wall, table or cha ir for support.  \n Help the casualty to use their inhaler (usually a blue inhaler for an atta ck).  \nThis can be administered every few minutes, if the attack does not abate.  \n Keep talking to the casualty, reassuring them and keep them calm.  Ask them \nsimple  questions; keep  their mind off the attack.  \n Should the attack be severe, prolonged, appears to be getting worse or the \ncasualty is becoming exhausted dial 999 for an ambulance . \n Frigid, winter air can worsen an attack, so do not take the casualty outsi de for \nfresh air.  \n Keep the casualty sitting upright while they are conscious, even if they become",
+        "resuscitate as necessary.  \n \n The adrenaline shot ( epinephrine ) can be given again if there is no \nimprovement, or symptoms return after five minutes.  \n  \nAsthma  \n \nAsthma is a fairly common allergic reaction in the lungs, usually cause d by \npollution, dust, pollen or traffic fumes.  The muscles surrounding the \nbronchioles spasm and constrict which makes it very difficult for the casualty to \nbreathe.  Asthma sufferers normally carry around medication in the form of an \ninhaler which when b reathed in dilates the bronchioles helping to relieve the \ncondition.  \n  \nAsthma attacks can be very traumatic for the casualty, especially children, so be \nsure to reassure them and keep them as calm as possible.  This is best achieved \nby being calm yourself and let them know you are a first aider.  If the casualty is \nnot calmed in a timely manner, their attack may lead to ‘hyperventilation’ after \nthe inhaler has been used and their breathing has eased.  \n  \nSigns and symptoms",
+        "• Restlessness at first, and then fatigue\nFirst aid for a severe asthma attack\n1. Perform a scene survey and a primary survey; send for \nmedical help.\n2. Place the casualty in the most comfortable position for \nbreathing. This is usually sitting upright with arms resting on \na table. \n3. Help the casualty take prescribed medication.\n4. Give ongoing casualty care.  \n5. If the unconscious casualty stops breathing, begin CPR. Airway and breathing emergencies    Airway and breathing emergencies",
+        "389 88  \n4. Tell the casualty to hold their breath for 10 seconds so the \nmedication can spread out in the lungs. Then tell them to \nbreathe normally, so the medication won’t be expelled. If \nmore doses are needed, wait at least 30-60 seconds before \nrepeating these steps.\nSpacers (Aerochamber®)\nWhen the medication comes out of the inhaler, it may be deposited \non the back of the throat and not reach the lungs or the casualty \nmay be gasping for air and unable to hold their breath. To deal \nwith this, use a spacer if available. It traps the particles of the spray, \nallowing the casualty to inhale more effectively over several breaths.\nSpacers make it simple to inhale the medication, and should always \nbe used when available. Small children and other casualties who \nhave difficulties coordinating proper inhalation with the release of \nthe medication will often have spacers with them.\nIt allows them to inhale two or three times before the medication is"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 88
+        },
+        {
+          "page": 23,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 22,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 87,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 89,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.22530539478687683,
+        "answer_relevancy": 0.9208282990034116,
+        "context_precision": 0.0,
+        "context_recall": 0.5,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.5,
+        "factual_precision": 0.6,
+        "factual_recall": 0.43,
+        "faithfulness": 0.875,
+        "noise_sensitivity": 0.25,
+        "semantic_similarity": 0.9012215791475074
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "For a Box Jellyfish sting, apply as much vinegar as possible to the affected area to stop venom release, then bathe the area in warm water for about 20 minutes to help relieve pain. Do not use cold water as it can cause stingers to continue releasing venom. Seek medical help if signs of infection appear.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 1.9552624225616455,
+      "context": [
+        "nematocysts, which in simple terms are “stingers.” These stingers \nmay contain venom which can be harmful, but more commonly \ncause an unpleasant stinging or burning sensation.\nFirst aid for jellyfish stings\n1. Perform a scene survey and a primary survey.\n2. Apply as much vinegar as possible to the affected area. \nVinegar will stop the stingers from releasing venom.\n3. To help relieve pain, bathe the affected part in warm water, \nas warm as the casualty can tolerate for about 20 minutes.\n4. Do not apply cold water. Cold water helps the stingers to \ncontinue releasing venom.\n5. If signs of infection occur, seek medical help.\n182 183Wounds and bleeding",
+        "5First aid for lesions from leeches\n1. Detach the leech by first using a fingernail to push the head \nend of the leech off of the skin. The head end is the smaller, \nskinnier part of the leech–not the larger end. After the head \nis released, use a fingernail to push the larger end off.\n2. Once the leech is removed, there may be some bleeding \ndue to the anticoagulant produced by the leech. Wash the \narea with soap and water, and use a baking soda paste or \nammonia solution to relieve irritation.\n3. If the site of the bite shows any sign of infection, the \ncasualty should get medical help.\nJellyfish\nJellyfish can be found in any body of water, whether salt water or \nfresh, with different varieties being found in Canada. Jellyfish that \nhave been known to cause death live in tropical climates and have \nnot been located near Canada. All jellyfish sting their prey using \nnematocysts, which in simple terms are “stingers.” These stingers",
+        "5First aid for an insect bite or sting\n1. Do a scene survey, then a primary survey. Are there any \nsigns of an allergic reaction?\n2. Looking for a stinger that may still be in the skin. Honey \nbees leave their stinger and venom sac attached to the \nskin. Other bees and wasps do not. If it is there, remove it \nby carefully scraping it and the attached poison sac from \nthe skin. \n3. For the irritation at the site of the sting, apply rubbing \nalcohol or a paste of baking soda and water. Ice can also be \nused. Don’t use alcohol near the eyes.\n180 181Wounds and bleeding",
+        "7First Aid for a Suspected Opioid Overdose\nFirst aid for an opioid overdose is a combination of rescue \nbreathing and administration of naloxone (if trained and available). \nRescue breathing is the same as breaths delivered during CPR, \nexcept without chest compressions. Deliver one breath every 5 \nseconds ensuring the chest rises.\nIf you suspect the casualty is having an overdose, follow these first \naid step s:\n1. Perform a scene survey. Make sure the area is safe for you \nto be in - be aware of risks from people in the area as well \nas drug paraphernalia.\n2. Use SAVE ME to remember the steps:\nS - Stimulate. Shake, shout, and activate EMS\nA - Airway. Open the airway\nV - Ventilate. Deliver one breath every 5 seconds ensuring \nthe chest rises\nE - Evaluate. Are these steps helping?\nM - Medication. Prepare and deliver a dose of naloxone if \navailable and you are trained.\nE - Evaluate. Did the naloxone help? You should see \nimprovement within 2-3 minutes."
+      ],
+      "source": [
+        {
+          "page": 184,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 184,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 182,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 233,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.5107826818948666,
+        "answer_relevancy": 0.9935758566682146,
+        "context_precision": 0.9999999999,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.3999999992,
+        "factual_correctness": 0.2,
+        "factual_precision": 0.25,
+        "factual_recall": 0.2,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.7142857142857143,
+        "semantic_similarity": 0.9181307275794663
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "Signs that a nosebleed is an emergency include: dizziness, pain with breathing, stridor or wheezing when breathing, bluish discoloration to the lips or nailbeds, rapid heart rate, difficulty speaking, gasping for breath, hemoptysis (coughing up blood), or a history of frequent nosebleeds, especially if combined with an 'anti-coagulant' drug like warfarin. If bleeding continues for more than 30 minutes, seek immediate medical help.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 2.0919623374938965,
+      "context": [
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops.",
+        "• Dizziness  \n• Pain with breathing  \n• Grunting , high -pitched whistling (stridor)  or wheezing when breathing  \n• Bluish discoloration to the lips, nailbeds or fingers  \n• Rapid heart rate  \n• Diaphoresis (sweating)  \n• Difficulty speaking more than a couple of words at a time  \n• Gasping for breath  \n• Fever (if the cause is infectious)  \n• Hemoptysis (coughing up blood)  \n• Rash or hives (if the victim is suffering an anaphylactic reaction)  \nAs can be seen, respiratory emergencies can present in numerous ways. If you are administering first aid \nto someone experiencing a respiratory emergency, you should:  \n1. Call 9 -1-1.  \n2. Loosen tight clothing that may be restricting the victim’s breathing . \n3. Assist the victim to use any inhalers, oxygen or other medical devices . \n4. Bandage any open wounds of the neck or chest if necessary. If the victim has a ‘sucking’ chest \nwound (a chest wound that allows air to enter the chest cavity with each breath), apply plastic",
+        "couple of hours a s this may trigger another nose bleed . \n However, if the bleeding continues for more than 30 minutes, or the y take an \n‘anti-coagulant’ drug (e.g. warfarin ), get them to hospital ensuring they stay in \nan upright position.  \n If the casualty has a history of frequent nose bleeds, recommend they visit \ntheir doctor to determine why.  \n \nEye injury  \n \nIf there are small particles of dust or dirt in the eye, this can be easily washed \nout using cold tap water.  Make sure the water runs away from the good eye.",
+        "6Head injuries\nThe following signs and symptoms  indicate a possible fracture of \nthe skull or facial bones, concussion or compression:\n• Deformed skull \n• Swollen, bruised or bleeding scalp\n• Straw-coloured fluid or blood coming from the nose or \near(s)\n• Bruising around the eyes (black eye) or behind the ears\n• Nausea, vomiting, especially in children\n• Confused, dazed, possibly combative\n• Semi-conscious or unconscious\n• Stopped breathing or irregular respiration\n• Very slow pulse rate\n• Pupils are of unequal size\n• Pain at the injury site\n• Weakened or paralyzed arms and/or legs\n• Pain when swallowing or moving the jaw\n• Wounds in the mouth\n• Knocked-out teeth\n• Shock\n• Convulsions\nAn unconscious casualty with a head injury may vomit. Be ready \nto turn the casualty to the side (as a unit if possible) and clear the \nairway quickly.\n192 193Bone and joint injuries",
+        "A286 287Quick first aid reference\nSend for an ambulance as soon as there is indication of a life-\nthreatening emergency: \n• loss of consciousness\n• breathing emergency (difficult or stopped breathing)\n• circulatory emergency (severe bleeding, heart attack, \nstroke) \nSigns and symptoms First aid\nAllergic reaction\nItchy, flushed skin\nSneezing, runny nose\nSwelling of the airway\nNausea, vomitingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAngina\nDenial, sense of impending \ndoom\nHeaviness, tightness in chest\nIndigestion, aching jaw\nPale skin, sweatingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAsthma\nShortness of breath\nwith coughing or wheezing\nSitting upright, trying to \nbreathe\nBlue colour to face (cyanosis)\nAnxiety, tightness in ches\ntPosition casualty for comfort \nsitting or semi-sitting\nAssist with medication\nMonitor the ABCs\nGet medical help"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 159
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 50
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 41
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 193
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 288
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.28422418405948313,
+        "answer_relevancy": 0.9906734647914387,
+        "context_precision": 0.0,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.24999999979166665,
+        "factual_correctness": 0.12,
+        "factual_precision": 0.18,
+        "factual_recall": 0.29,
+        "faithfulness": 0.18181818181818182,
+        "noise_sensitivity": 0.0,
+        "semantic_similarity": 0.8211072625537221
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "If someone has a nosebleed, have them sit upright with their head tilted forward to prevent blood from going down the throat. Use a tissue or cloth to gently pinch the soft part of the nose for about 10 minutes or until the bleeding stops, and advise them not to blow their nose for a few hours. If bleeding persists for more than 30 minutes or if the person is on blood-thinning medication, seek medical help immediately.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.727550983428955,
+      "context": [
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops.",
+        "Page | 42 \n attempt to remove it.  Take them directly to hospital where it will be safely \nremoved.  \n  \nNose bleeds  \n \nNose bleeds are usually the result of weakened or dried out b lood tissues in the \nnose.  A nose bleed can be triggered by a bang to the nose, picking or blowing \nit.  However, it can be the symptom of a more serious problem such as high \nblood pressure or a fractured skull.  \n  \n Have the casualty sit with their head tip ped forward to allow the blood to \ndrain.  \n Gently pinch the soft part of the nose, and maintain constant pressure for 10 \nminutes.  \n Tell the casualty to breathe  through their mouth.  \n Give the casualty some tissues or a cloth to clean up the blood while yo u \nmaintain pressure on the  soft part of the nose.  \n Once the bleeding has stopped, recommend to the casualty that they try  to \ncontinue breathing through their mouth and not blow their nose for the next \ncouple of hours a s this may trigger another nose bleed .",
+        "surgically to prevent further damage to the eye.   \nIf you flush a foreign body from the eye but the victim continues to have pain or redness, or if the victim \ncannot see normally, medical at tention is immediately required.   \nNose  \nForeign bodies in the nose can lead to pain and infection.  The important thing to remember is to NEVER \nstick anything in the nose in an attempt to remove an object.  Doing so may push the foreign body \ndeeper into th e nose and may result in damage to the structures of the nose.  If you can see the object \nand grab it with a pair of tweezers, remove it.   \nInstruct the victim to breathe through his mouth until the foreign body is removed.  Breathing through \nhis nose may cause the object to enter the victim's windpipe or lungs.  Instead, have him blow his nose \ngently in an attempt to remove the object.  If the object is not removed using these methods, seek \nmedical help for professional removal.   \nSkin",
+        "couple of hours a s this may trigger another nose bleed . \n However, if the bleeding continues for more than 30 minutes, or the y take an \n‘anti-coagulant’ drug (e.g. warfarin ), get them to hospital ensuring they stay in \nan upright position.  \n If the casualty has a history of frequent nose bleeds, recommend they visit \ntheir doctor to determine why.  \n \nEye injury  \n \nIf there are small particles of dust or dirt in the eye, this can be easily washed \nout using cold tap water.  Make sure the water runs away from the good eye.",
+        "4. Remove restrictive or tight clothing.  \n5. Begin to actively cool the victim by fanning the person  and applying cool compresses to the \narmpits, neck and groin areas.  \n6. If the victim is awake enough to drink and is not vomiting, try giving cool liq uids to drink.  Do \nNOT give the person alcohol  or beverages containing caffeine .  Move the person out of the sun \nand into a shady or air -conditioned space.  \n7. If the victim loses consciousness, monitor airway, breathing and circulation and prepare to \nperform CPR if necessary.  \nHypothermia  \nHypothermia is caused by prolonged exposure to the cold (cold weather or cold water).   \n• Shivering and loss of coordination  \n• Slurred speech, apathy, confusion  \n• Extremely slow breathing  \n• Loss of consciousness (severe hypothermia)  \nIf you suspect someone has hypothermia, there are several things you can do to help the victim:  \n1. Call 9 -1-1 \n2. Move the person to a warmer environment."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 159
+        },
+        {
+          "page": 41,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 57
+        },
+        {
+          "page": 41,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 55
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.7323873739047428,
+        "answer_relevancy": 0.9107661812268611,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.67,
+        "factual_precision": 0.67,
+        "factual_recall": 0.67,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.42857142857142855,
+        "semantic_similarity": 0.9295494956189717
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to handle it by the crown, not the root. Apply direct pressure to stop bleeding from the socket and try to place the tooth back in its socket if possible. If that's not possible, keep the tooth moist in milk or a saltwater solution and seek immediate dental help.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.208883285522461,
+      "context": [
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using",
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 160
+        },
+        {
+          "page": 58,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.2165679637717487,
+        "answer_relevancy": 0.9999999999998211,
+        "context_precision": 0.99999999995,
+        "context_recall": 0.0,
+        "context_entity_recall": 0.49999999875,
+        "factual_correctness": 0.2,
+        "factual_precision": 0.2,
+        "factual_recall": 0.2,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.0,
+        "semantic_similarity": 0.866271855086995
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because water can cause the tooth to dry out, reducing the chances of successful re-implantation. Instead, it should be placed in a balanced salt solution, coconut milk, or the casualty's own saliva, which helps preserve the tooth's vitality. The tooth should be handled by the crown and not the root to prevent damage.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.4268851280212402,
+      "context": [
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using",
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 160
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 58
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.7526473408054034,
+        "answer_relevancy": 0.9137933287769867,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.249999999375,
+        "factual_correctness": 0.67,
+        "factual_precision": 0.5,
+        "factual_recall": 1.0,
+        "faithfulness": 0.9,
+        "noise_sensitivity": 0.6,
+        "semantic_similarity": 0.8677322203644714
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "When no spinal board is available, keep the casualty's head, neck, and upper body aligned and steady. If necessary, get help to maintain this position. If movement is unavoidable, use the recovery position if they begin to vomit or have airway concerns. Always prioritize preventing further injury.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.1450884342193604,
+      "context": [
+        "Page | 57 \n immediate danger.  \n Check their airway and breathing.  If they are breathing fi ne on their own, the \nairway is clear so there is no need to move the head back.  However, if need be \nyou can use the ‘jaw thrust’ technique to keep the  airway open without moving \nthe head ( this t echnique is explained on page 58 ).  Keep a close eye on their  \nbreathing.  \n Dial 999 for an ambulance immediately.  \n Using your hands, keep their head still and in line with their upper body.  \n If for any reason you have to leave  the casualty, if they begin to vomit  or if \nyou have concerns about their airway at all, place the casualty in the recovery \nposition .  Make sure you keep the head, neck and  upper body in line when you \nturn the casualty.  To do this effectively, you will inevitably need more  than \none res cuer, so get local help if you can ( see page 55 for instructions on how to \nplace a suspected  spinal injury casualty in the recovery position ).",
+        "but be sure to remove the ice pack after this time.  \n  \nElevate  Elevate the injury, as this helps reduce swelling.  \n \nPlease bear in mind tha t minor fractures can very easily be mistaken for a sprain \nor strain.  The only way to be sure there is no fracture is to send or take the \ncasualty to hospital for an x -ray. \n  \nSpinal injuries  \n \nApproximately 2% of trauma ( injury ) casualties \nsuffer spinal injury.  Although this percentage \nappears to be fairly low, suspecting and correctly \ntreating a spinal injury is essential.  Poor \ntreatment of a casualty with a suspected spinal \ninjury may result in them being crippled for life, \nor even in death.  \n  \nThe spi nal cord is an extension of the brain stem, \nand is located down the back of the spinal \nvertebrae.  The spinal cord houses vital nerves \nwhich control breathing and movement.  The \nmost vulnerable part of the spinal column is the \nneck, and a neck injury can o ften be the most",
+        "6Stabilizing a head or spinal injury\nThe aim of first aid for spinal injuries is to prevent further injury, \nby preventing movement of the injured area. When moving \nthe casualty is necessary, support them in a way that minimizes \nmovement of the head and spine.\n1. As soon as you suspect a head or spinal injury, tell the \ncasualty not to move. Steady and support the casualty’s \nhead and neck as soon as you can—show a bystander how \nto do this: \n• Keep elbows on the ground to keep arms steady.\n• Firmly hold the head with fingers along the line of the \njaw. \n2. Show a second bystander how to steady and support the \nfeet. The head and feet should be continuously supported \nuntil either the casualty is fully immobilized or medical help \ntakes over. \n196 197Bone and joint injuries",
+        "Page | 12 \n (see spinal injuries, page 55) to lessen the risk of  further damage.  \n Be carefu l not to cause further injury to the c asualty or exacerbate suspected \ninjuries.  \n  \nMechanics of injury  \n \nBefore attempting to move a casualty, it is important to think about the \n‘mechanics of injury’.  This is the process of figuring out what has happened, \nand what injuries are likely to have been sustained by the casualty.  If you \nsuspect there is a neck inj ury involved, you must try to get someone to help you \nby keeping the casualty’s head in line with their body at all times, even when \nthe casualty is lying still.  Any movement can cause serious, irreparable \ndamage.  See page 55 for how to do this, under treatment of spinal injury . \n  \nThe recovery position  \n \nWhen an unconscious casualty is lying on their back, their breathing can be \nhampered by them ‘swallowing their tongue’ (the tongue slides back in their",
+        "40 41Emergency scene management\n2\n5. If a second bystander is available, show them how to steady \nand support the feet to prevent movement.\n6. Keep the head and neck supported (and the feet if \npossible) while giving further first aid until handover to \nmedical help.\nWhen moving a casualty  with a suspected head or spinal injury, \nmove them as a unit as much as possible. This means rolling the \nhead, trunk and legs together, or lifting the whole body at the same \ntime. Do what you can to prevent movement."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 56
+        },
+        {
+          "page": 54,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 198,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 11,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 42
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.6356333543365914,
+        "answer_relevancy": 0.9382345225708647,
+        "context_precision": 0.36666666664833336,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.67,
+        "factual_precision": 0.75,
+        "factual_recall": 0.75,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.25,
+        "semantic_similarity": 0.9061697809827294
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving them can result in serious, irreparable damage to the neck or spinal cord, potentially leading to paralysis or death. It's crucial to stabilize the head and neck and use the jaw thrust maneuver to maintain the airway without causing further injury.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.242668867111206,
+      "context": [
+        " Try to obtain the help of others; they can support the head while you perform \nresuscitation.  \n  \nRemember  – if the resuscitation results in paralysis from a neck injury it is a \ntragedy, but failing to maintain an open airway will result in death.  \n  \nManaging the airway with a spinal injury casualty  \n \nIf an unconscious casualty is laid on their back, the airway is in d anger of \nbecoming blocked by vomit or their tongue sliding back.  \n  \nAn uninjured but unconscious casualty can simply be turned into the recovery \nposition to help protect the  airway.  However, if a spinal injury is suspected, you \nmust take great care not to move the spine.",
+        "Page | 12 \n (see spinal injuries, page 55) to lessen the risk of  further damage.  \n Be carefu l not to cause further injury to the c asualty or exacerbate suspected \ninjuries.  \n  \nMechanics of injury  \n \nBefore attempting to move a casualty, it is important to think about the \n‘mechanics of injury’.  This is the process of figuring out what has happened, \nand what injuries are likely to have been sustained by the casualty.  If you \nsuspect there is a neck inj ury involved, you must try to get someone to help you \nby keeping the casualty’s head in line with their body at all times, even when \nthe casualty is lying still.  Any movement can cause serious, irreparable \ndamage.  See page 55 for how to do this, under treatment of spinal injury . \n  \nThe recovery position  \n \nWhen an unconscious casualty is lying on their back, their breathing can be \nhampered by them ‘swallowing their tongue’ (the tongue slides back in their",
+        "29 breaths/minute) and check for a pulse every 2 minutes. If the victim loses \ntheir pulse, you will need to begin chest compressions. \n \n \n \n \nThe Jaw Thrust Maneuver \n \nIf you suspect that a victim may have a neck or spinal cord injury (i.e., the victim has \nfallen, been in a motor vehicle accident or suffered another mechanism of injury that \ncould result in injury to the neck or spinal cord), you should not use the head tilt-\nchin lift maneuver to open the victim ǯs airway. This could further damage the neck \nor spinal cord. Instead, you should use the jaw thrust maneuver to open and \nmaintain the victim ǯs airway.  \n \nTo perform this maneuver: \n \na) Place your hands on either side of the victim ǯs head. Rest your elbows on the \nsurface that the victim is laying on. \nb) Put the fingers of both your hands under the angle of the victim ǯs lower jaw \nand lift so that the jaw slides forward. \nc)  Use your thumb to push the lower lip away from you if the victim ǯs lips close.",
+        "38 39Emergency scene management\n2\nESM when a head or spinal injury is suspected\nIf you suspect a head or spinal injury, protect the head and neck \nfrom any movement. Head or neck movement could result in life-\nlong disability or death. Adjust your first aid to this situation as \nshown below\n1. As soon as you see there might be a head or spinal injury, \ntell the casualty not to move\n2. Once you have consent to help the casualty, steady and \nsupport the head and neck. Keep elbows firmly supported \non thighs or ground. Then, assess responsiveness.",
+        "pulse every 2 minutes. If the victim loses their pulse, you will need to begin chest \ncompressions.  \n \n \n \n \nThe Jaw Thrust Maneuver  \n \nIf you suspect that a victim may have a neck or spinal cord injury (i.e., the victim has fallen, \nbeen in a motor vehicle accident or suffered another mechanism of injury that could result in \ninjury to the neck or spinal cord), you should not use the head tilt -chin lift maneuver to open \nthe victim’s airway. This could further damage the neck or  spinal cord. Instead, you should use \nthe jaw thrust maneuver to open and maintain the victim’s airway.  \nTo perform this maneuver:  \na) Place your hands on either side of the victim’s head. Rest your elbows on the surface \nthat the victim is laying on.  \nb) Put the f ingers of both your hands under the angle of the victim’s lower jaw and lift so \nthat the jaw slides forward.  \nc)  Use your thumb to push the lower lip away from you if the victim’s lips close."
+      ],
+      "source": [
+        {
+          "page": 56,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 11
+        },
+        {
+          "page": 133,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 40,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 24
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.5982595832327152,
+        "answer_relevancy": 0.9573545413043935,
+        "context_precision": 0.999999999975,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.86,
+        "factual_precision": 0.75,
+        "factual_recall": 1.0,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.4,
+        "semantic_similarity": 0.893038332930861
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "To minimize pain while helping someone with a fractured leg, apply a cold pack or ice to reduce swelling, secure a splint using bandages to immobilize the injury, and ensure circulation is not compromised by the bandages. Avoid moving the fractured area unnecessarily and monitor the victim's comfort, allowing them to assume a comfortable position if that reduces their pain. Always seek professional medical help as soon as possible.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.4449739456176758,
+      "context": [
+        "remote part of the country ) immobilise the injury by gently bandaging the \ninjured leg to the uninjured one.  \n Check that their circulation has not been cut off beyond the injury and \nbandages.  If necessary, loo sen the bandages.",
+        "until help arrives. Do not allow the victim to move his/her neck.  \n• Stabilize the affected body part only if doing so does not c ause additional pain; do not try to \nforce a deformed joint back into place as this may cause further damage.  \n• Many victims of musculoskeletal injury will assume a position of comfort - allow them to do so if \nthis decreases their pain.  \n• Remember the acronym RI CE when treating injured extremities (arms and legs, feet and hands) : \no Rest  any injured joint  \no Apply a cold pack or Ice if available to reduce swelling and control pain  \no Apply Compression  (an elastic bandage) for any sprains or strains  \no Elevate  the injured body part above the heart to reduce swelling  \n• Do not give the victim anything by mouth until seen by a medical professional; the exception to \nthis rule is if medical care is not available within a couple of hours, an over -the-counter pain \nrelie ver may help manage pain.",
+        "66. Immobilize the lower leg. Position the bandages and \nsplints. Use splints long enough to extend from the groin to \nbelow the foot. The bystander doesn’t let go of the leg until \nthe first aider tells them to, which is after the last bandage \nis tied. Tie all knots on the splint for comfort. Position broad \nbandages to be tied at the thigh, knee, above and below \nthe fracture and at the ankle.\n7. Tie the bandages starting at the thigh (the stable end) and \nworking down. The bandage at the ankles is tied as a \nfigure-8. \n216 217Bone and joint injuries",
+        "63. Position padded splints on the inside and outside of the leg\n4. Secure the splint with the bandages, keeping the leg in the \nbent position\nImmobilizing an open fracture of the lower leg (tibia \nand/or fibula)\nWhen there is an open fracture, give first aid for the wound first \nand then immobilize the fracture. For the wound, apply a sterile \ndressing to prevent further contamination. To stop bleeding from \nthe wound, apply pressure around the fracture, but not on it. Apply \na dressing with padding on both sides of the fracture site. Secure \nthis with a broad bandage tied tightly enough to put pressure on \nthe padding. Always check circulation before and after dressing a \nwound of this type.\n214 215Bone and joint injuries",
+        "sling to restrict movement.\n4. Give ongoing casualty care, monitor breathing often. Get \nmedical help.\n198 199Bone and joint injuries"
+      ],
+      "source": [
+        {
+          "page": 53,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 46
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 218
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 215
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 200
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.6651097457761702,
+        "answer_relevancy": 0.9623719940218458,
+        "context_precision": 0.9999999999666667,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.77,
+        "factual_precision": 0.86,
+        "factual_recall": 0.86,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.7142857142857143,
+        "semantic_similarity": 0.8604389831046809
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "Even without first aid training, a person can help move a casualty safely by ensuring there are no immediate threats to themselves or the casualty, moving the casualty the shortest distance to safety, and using bystanders for support during the move. They should also be aware of any difficulties in communication with the casualty and maintain their own safety throughout the process.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.3384220600128174,
+      "context": [
+        "66 67  \n2\nLifting and moving\nAlways try to give necessary first aid where the casualty is found, \nthen wait for the paramedics to move the person. However, there \nare times when this is not possible.\nYou may have to move a casualty when:\n• There are life-threatening hazards to yourself or the casualty  \ne.g. danger from fire, explosion, gas or water\n• Essential first aid for wounds or other conditions cannot be \ngiven in the casualty’s present position or location\n• The casualty must be transported to a medical facility\nIf life-threatening hazards make it necessary to move a casualty \nright away, you may need to use a rescue carry.\nIn urgent and dangerous situations where casualties are moved with \nless than ideal support for injuries, the casualty’s injuries may be \nmade worse by improper movement and handling. The chance of \nfurther injury can be reduced with proper rescue carry techniques.\nAlways move the casualty the shortest possible distance to safety",
+        "do not force first aid on a conscious casualty. If you do not have \nconsent to help, there may be other actions you can take without \ntouching the casualty, such as controlling the scene, and calling for \nmedical help.\nBe aware of difficulties in communicating when a casualty:\n• Is hard of hearing\n• Speaks a different language\n• Is visually impaired\n• Is a child\n• Is in pain\n• Shows signs of mood disorder\nReasonable skill and care\nAs a Good Samaritan, when you give first aid you are expected to \nuse reasonable skill and care according to your level of knowledge \nand skills.\n16 17Introduction to First Aid",
+        "• The response time for EMS to arrive is prohibitively long  \n(i.e. remote areas)\n• If the above conditions are met, and the casualty is a family \nmember or close friend—do not transport strangers to the \nhospital in your own vehicle whenever possible\nCare during transport\nEvery effort must be taken to ensure that injuries are not made \nworse while transporting a casualty to a medical facility. Take steps \nto keep the casualty comfortable and in a position that will not \ncause unneeded movement of injured limbs. Have another person \naccompany you to monitor the casualty if possible.\n Do not drive fast. If a casualty needs to be transported quickly, an \nambulance should be called. Follow all local traffic laws. Find the \nsmoothest route possible to make the ride as comfortable  \nas possible.",
+        "Always move the casualty the shortest possible distance to safety \nand to provide essential first aid. Use bystanders to help you and \nsupport any injuries the best you can during the move. Keep the \nrisks to the casualty, yourself and others to a minimum.\nRolling Cots ( Stretchers)\nIf your workplace uses rolling cots to transport injured workers, it is \ncrucial that you have proper training on how to operate and handle \nthe cot before you use it. Failure can result in the cot tipping or \ndropping, and causing further injury.\nOccupational Hazards\nWhen working in and around occupational hazards such as confined \nspaces, trenches, machinery, and hazardous gases, workers \nshould know the proper response protocols. Ensure you have the \nappropriate training for the type or rescue you will be undertaking \nas well as the proper equipment to keep yourself safe while \nrescuing another worker.",
+        "confidence to, if the worst happens, help keep someone alive.  \n \n \nThe Aims of first aid  \n \nPreserve life  \n This doesn’t just refer to the injured party, but yoursel f and anyone \nhelping you.  Far too often, a helper will inadvertently put themselves in danger \nand subsequently be another casualty for the emergency services to deal with.  \nPlease take a moment to assess the situation, and make sure there are no threats \nto you before you step in.  \n  \nPrevent the situation from getting worse  \n If you are in no danger yourself, try to stop the situation from becoming \nworse by removing any obvious dangers (such as stopping traffic, clearing \npeople away from the casualty, opening  a window to clear any fumes, etc.).  \nAlso, act as quickly as you can to stop the casualty’s condition from worsening.  \n  \nPromote recovery  \n Your role as a first aider is, after ensuring that the situation can not get"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 67
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 17
+        },
+        {
+          "page": 68,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 67,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 0
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.4419304405293225,
+        "answer_relevancy": 0.9871895357427801,
+        "context_precision": 0.249999999975,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.22,
+        "factual_precision": 0.17,
+        "factual_recall": 0.6,
+        "faithfulness": 0.8333333333333334,
+        "noise_sensitivity": 0.16666666666666666,
+        "semantic_similarity": 0.9105789049744331
+      },
+      "metric_errors": {}
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "model": "Phi-3.5-mini-instruct_med",
+  "database": "DB/new1000_db_med",
+  "dataset": "DomandeEsperti.csv",
+  "ragas": {
+    "status": "pending",
+    "evaluated_questions": 0
+  },
+  "results": [
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "When performing rescue breathing, avoid excessive volume or forceful breaths, as they can lead to gastric inflation and reduce the effectiveness of ventilation. It's crucial to give gentle, just enough breaths to see the chest rise, and not to over-ventilate the patient. Additionally, ensure the airway is open by removing any visible obstructions and tilt the head back slightly to facilitate air movement.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 2.5216195583343506,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "First, ensure the scene is safe for both you and the victim. Next, check for responsiveness by gently shaking their shoulders and asking loudly if they're okay. Finally, call emergency services immediately if there's no response, and begin CPR if trained, starting with chest compressions.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 1.564634084701538,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "The necessary conditions for a bloodborne pathogen infection to occur include exposure to infected blood or bodily fluids, breach of the skin or mucous membranes (such as through needlestick injuries, cuts, or sores), and the presence of a pathogen that can survive and replicate in the bloodstream. Additionally, factors such as the viral load, the integrity of the immune system, and adherence to proper infection control measures can influence the risk and likelihood of transmission.\n\nIn summary, for a bloodborne pathogen infection to occur, there must be exposure to infected blood or bodily fluids with a breach in skin or mucous membranes, and the pathogen must be capable of survival and replication in the bloodstream. The presence of sufficient viral load and a strong immune response are also crucial in determining the risk of infection.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 3.2496931552886963,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "As a lone rescuer performing chest compressions on an infant, first ensure the scene is safe. Position the infant on a firm, flat surface, with their head slightly extended and their body supported. Place two fingers (index and middle) on the center of the infant's chest, just below the nipple line, and press down about 1.5 inches at a rate of 100-120 compressions per minute.\n\nMonitor the infant's response, checking for any signs of normal breathing or movement. Continue the cycle of 30 compressions followed by 2 rescue breaths, if trained in infant CPR. Remember to reassess the infant's condition regularly, and if professional help arrives, immediately transfer care to them.\n\nIf you are not trained in infant CPR, it's best to call emergency services immediately and follow their instructions until trained personnel arrive.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 2.9212331771850586,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "When performing rescue breathing on an infant with a pulse but not breathing, you should aim to give one breath every 3-5 seconds. This frequency helps ensure adequate oxygenation while minimizing the risk of gastric inflation. Always ensure you're supporting their head and neck to maintain an open airway during the process.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.0762848854064941,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, you should immediately reposition the victim's head to ensure the airway is clear and try to give breaths again. If the chest still doesn't rise, it's crucial to commence chest compressions immediately. If you are not trained in providing rescue breaths, you should focus solely on chest compressions.\n\nRemember, in a real-life situation, seeking immediate professional medical assistance is vital, and these steps are just initial response actions. Always contact emergency services as soon as possible.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.8816428184509277,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, one should avoid excessive ventilation or forceful breaths. Over-ventilation can lead to gastric inflation, which may cause vomiting and potential aspiration. Additionally, avoid breathing into the person's mouth directly; instead, cover the individual's nose and mouth with your own to create a one-way exchange of air.\n\nIn summary, avoid excessive ventilation, forceful breaths, and direct mouth-to-mouth resuscitation. Instead, provide controlled breaths, cover both the person's nose and mouth, and ensure the airway remains open to support effective rescue breathing.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 2.1174843311309814,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions that are not considered risk factors for the transmission of bloodborne pathogens include regular handwashing, using personal protective equipment (PPE) like gloves and masks correctly, and proper disposal of medical waste. Additionally, not sharing personal items such as razors or toothbrushes, and following standard vaccination protocols can also significantly reduce the risk of transmission. These practices ensure a clean environment and minimize direct contact with potentially contaminated blood or bodily fluids.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.599811315536499,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock can include rapid heartbeat, weak pulse, shallow breathing, cold and clammy skin, confusion or loss of consciousness, and a drop in blood pressure. These signs indicate an inadequate blood flow to organs and tissues, which can lead to severe complications if not promptly treated. Other symptoms may include anxiety, restlessness, and enlarged pupils. It is crucial to seek immediate medical assistance when experiencing these symptoms.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.6120102405548096,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "If blood continues to seep through the pressure dressing after applying it, you should add more layers of dressing and continue to apply direct pressure. If the bleeding persists, elevate the limb above the heart level if possible. Seek immediate professional medical assistance as the situation may require advanced intervention.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 0.9802629947662354,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    }
+  ]
+}

@@ -2,7 +2,8 @@ import os
 import argparse
 from prompt_config import *
 import pandas as pd
-from results_io import write_generation_results
+from results_io import get_logger, log_event, write_generation_results
+logger = get_logger(__name__)
 global data_store 
 data_store = {
 	'question': [],
@@ -45,6 +46,10 @@ def parse_args():
 	parser = argparse.ArgumentParser(description="Run the question answering pipeline.")
 	parser.add_argument('--model_name', type=str, required=True, help="The name or path of the model to be used.")
 	parser.add_argument('--test', type=str, required=False, help="The name or path of the model to be used.")
+	group = parser.add_mutually_exclusive_group()
+	group.add_argument('--no-rerank', action='store_true', help="Disable cross-encoder reranking.")
+	group.add_argument('--no-retrieval', action='store_true', help="Skip retrieval: generate answers without RAG context.")
+	parser.add_argument('--skip-ragas', action='store_true', help="Generate answers without running the Ragas evaluation.")
 	return parser.parse_args()
 
 
@@ -68,10 +73,10 @@ def process_question(model, question, answer, context, time, data):
 	#print("Time: \n", data_store['time'])   
 	#print("DATA STORE: \n", data_store)
 
-	print("data_store['count'] == (len(data)) : ", data_store['count'] == (len(data)))
-	print("data_store : ", data_store['count'])
-	print("data_store : ", data_store)
-	print("(len(data)) : ", (len(data)))
+	logger.info("data_store['count'] == (len(data)): %s", data_store['count'] == len(data))
+	logger.info("data_store count: %s", data_store['count'])
+	logger.info("data_store: %s", data_store)
+	logger.info("len(data): %s", len(data))
 	# Check if last questions have been processed
 	if data_store['count'] == (len(data)):
 		# Create a DataFrame from the stored data
@@ -93,7 +98,7 @@ def process_question(model, question, answer, context, time, data):
 		df.to_excel(xlsx_filename, index=False)
 
 		# Print success message
-		print(f"Data saved as '{csv_filename}' and '{xlsx_filename}'.")
+		logger.info("Data saved as '%s' and '%s'.", csv_filename, xlsx_filename)
 
 		# Reset the data store for the next set of 50 questions
 		data_store['question'].clear()
@@ -131,7 +136,7 @@ def split_answer(input_string):
 	
 	# Extract the answer (everything after answer_marker)
 	answer_ = input_string[answer_pos + len(answer_marker):].strip() if answer_pos != -1 else ""
-	print(answer_)
+	logger.info("%s", answer_)
 	return answer_ 
 
 
@@ -193,7 +198,7 @@ def store_answer(db, model, file_name, llm_response, time, ground_truth_data, sa
 		#df.to_excel(xlsx_filename, index=False)
 		
 		# Print success message
-		print(f"Data saved as '{csv_filename}'.")
+		logger.info("Data saved as '%s'.", csv_filename)
 		return csv_filename
 		
 
@@ -209,14 +214,16 @@ def process_llm_response(llm_response):
 	#print(wrap_text_preserve_newlines(llm_response['result']))
 
 	#print("llm_response: ",llm_response.keys()) dict_keys(['question', 'input', 'context', 'answer'])
-	print('\n\nSources:')
+	logger.info("Sources:")
 	for source in llm_response["source_documents"]:
-		print(source.metadata['source'])
+		logger.info("%s", source.metadata['source'])
         
 # Select the appropriate prompt template based on the model name
 def process_prompt(args):
 	if args.model_name[0]=='Q':
+		if args.no_retrieval:
+			raise ValueError("--no-retrieval is supported only for Phi models")
 		return qwen_rag_prompt_template
 	if args.model_name[0]=='P':
-		return phi_rag_prompt_template
+		return phi_norag_prompt_template if args.no_retrieval else phi_rag_prompt_template
 

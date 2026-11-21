@@ -1,0 +1,238 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10449.27it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 6769.45it/s]
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   3%|▎         | 5/195 [00:00<00:03, 49.03it/s]Loading weights:   9%|▊         | 17/195 [00:00<00:02, 79.93it/s]Loading weights:  14%|█▍        | 27/195 [00:00<00:02, 82.95it/s]Loading weights:  18%|█▊        | 36/195 [00:00<00:01, 83.18it/s]Loading weights:  23%|██▎       | 45/195 [00:00<00:01, 81.02it/s]Loading weights:  28%|██▊       | 54/195 [00:00<00:01, 82.06it/s]Loading weights:  33%|███▎      | 64/195 [00:00<00:01, 83.56it/s]Loading weights:  37%|███▋      | 73/195 [00:00<00:01, 82.83it/s]Loading weights:  42%|████▏     | 82/195 [00:01<00:01, 83.99it/s]Loading weights:  47%|████▋     | 91/195 [00:01<00:01, 83.82it/s]Loading weights:  51%|█████▏    | 100/195 [00:01<00:01, 84.66it/s]Loading weights:  56%|█████▌    | 109/195 [00:01<00:01, 84.81it/s]Loading weights:  61%|██████    | 118/195 [00:01<00:00, 85.51it/s]Loading weights:  65%|██████▌   | 127/195 [00:01<00:00, 85.23it/s]Loading weights:  70%|██████▉   | 136/195 [00:01<00:00, 86.01it/s]Loading weights:  74%|███████▍  | 145/195 [00:01<00:00, 85.53it/s]Loading weights:  79%|███████▉  | 154/195 [00:01<00:00, 86.03it/s]Loading weights:  84%|████████▎ | 163/195 [00:01<00:00, 85.62it/s]Loading weights:  88%|████████▊ | 172/195 [00:02<00:00, 86.21it/s]Loading weights:  93%|█████████▎| 181/195 [00:02<00:00, 85.89it/s]Loading weights:  97%|█████████▋| 190/195 [00:02<00:00, 86.40it/s]Loading weights: 100%|██████████| 195/195 [00:02<00:00, 84.32it/s]
+Question: 
+ How should I assist someone having an asthma attack if they do not have their inhaler with them?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 0
+len(data) : 10
+First, help the person remain calm and encourage slow, deep breathing to prevent hyperventilation. If symptoms persist or worsen, call emergency services immediately as they can provide professional treatment. Avoid using any medications or remedies not prescribed by a healthcare professional, as they may cause harm or interfere with the person's condition.
+
+Note: It's crucial to remember that without a rescue inhaler, the individual's symptoms may not improve without professional medical help.
+First, help the person remain calm and encourage slow, deep breathing to prevent hyperventilation. If symptoms persist or worsen, call emergency services immediately as they can provide professional treatment. Avoid using any medications or remedies not prescribed by a healthcare professional, as they may cause harm or interfere with the person's condition.
+
+Note: It's crucial to remember that without a rescue inhaler, the individual's symptoms may not improve without professional medical help.
+
+Answer:
+ First, help the person remain calm and encourage slow, deep breathing to prevent hyperventilation. If symptoms persist or worsen, call emergency services immediately as they can provide professional treatment. Avoid using any medications or remedies not prescribed by a healthcare professional, as they may cause harm or interfere with the person's condition.
+
+Note: It's crucial to remember that without a rescue inhaler, the individual's symptoms may not improve without professional medical help.
+--------------------------------------------------------------------
+Question: 
+ What is the first aid treatment for a Box Jellyfish sting?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 1
+len(data) : 10
+The first aid treatment for a Box Jellyfish sting involves removing any tentacles still attached to the skin using gloves or a stick and rinsing the area with vinegar for approximately 30 seconds, as vinegar can neutralize the venom. If vinegar is not available, freshwater should not be used, as it may worsen the sting. Seek immediate medical attention, as box jellyfish stings can be life-threatening.
+
+Note: The context provided wasn't explicitly detailed, but based on general first aid guidelines, this response has been created. If more specific information was provided in the context, the answer could be more detailed.
+The first aid treatment for a Box Jellyfish sting involves removing any tentacles still attached to the skin using gloves or a stick and rinsing the area with vinegar for approximately 30 seconds, as vinegar can neutralize the venom. If vinegar is not available, freshwater should not be used, as it may worsen the sting. Seek immediate medical attention, as box jellyfish stings can be life-threatening.
+
+Note: The context provided wasn't explicitly detailed, but based on general first aid guidelines, this response has been created. If more specific information was provided in the context, the answer could be more detailed.
+
+Answer:
+ The first aid treatment for a Box Jellyfish sting involves removing any tentacles still attached to the skin using gloves or a stick and rinsing the area with vinegar for approximately 30 seconds, as vinegar can neutralize the venom. If vinegar is not available, freshwater should not be used, as it may worsen the sting. Seek immediate medical attention, as box jellyfish stings can be life-threatening.
+
+Note: The context provided wasn't explicitly detailed, but based on general first aid guidelines, this response has been created. If more specific information was provided in the context, the answer could be more detailed.
+--------------------------------------------------------------------
+Question: 
+ What are the signs that a nosebleed is an emergency?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 2
+len(data) : 10
+A nosebleed can become an emergency if it is severe, does not stop after 20 minutes of applying pressure, is accompanied by symptoms like dizziness, shortness of breath, or if the person has a high risk of bleeding disorders. Prolonged bleeding may indicate a more serious condition like a clotting disorder or a structural problem within the nose. If someone is experiencing these symptoms, it is crucial to seek immediate medical attention.
+A nosebleed can become an emergency if it is severe, does not stop after 20 minutes of applying pressure, is accompanied by symptoms like dizziness, shortness of breath, or if the person has a high risk of bleeding disorders. Prolonged bleeding may indicate a more serious condition like a clotting disorder or a structural problem within the nose. If someone is experiencing these symptoms, it is crucial to seek immediate medical attention.
+
+Answer:
+ A nosebleed can become an emergency if it is severe, does not stop after 20 minutes of applying pressure, is accompanied by symptoms like dizziness, shortness of breath, or if the person has a high risk of bleeding disorders. Prolonged bleeding may indicate a more serious condition like a clotting disorder or a structural problem within the nose. If someone is experiencing these symptoms, it is crucial to seek immediate medical attention.
+--------------------------------------------------------------------
+Question: 
+ What should you do if someone has a nosebleed?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 3
+len(data) : 10
+If someone experiences a nosebleed, you should first calm and reassure them. Encourage them to sit up straight and lean slightly forward to prevent blood from flowing down their throat. Then, pinch their nostrils together gently for about 10-15 minutes, while breathing through their mouth, to help stop the bleeding. If bleeding persists, seek medical attention.
+
+Note: It's important to remember that the steps provided are general guidelines, and individual situations may vary. Always prioritize safety and, if unsure, consult a healthcare professional.
+If someone experiences a nosebleed, you should first calm and reassure them. Encourage them to sit up straight and lean slightly forward to prevent blood from flowing down their throat. Then, pinch their nostrils together gently for about 10-15 minutes, while breathing through their mouth, to help stop the bleeding. If bleeding persists, seek medical attention.
+
+Note: It's important to remember that the steps provided are general guidelines, and individual situations may vary. Always prioritize safety and, if unsure, consult a healthcare professional.
+
+Answer:
+ If someone experiences a nosebleed, you should first calm and reassure them. Encourage them to sit up straight and lean slightly forward to prevent blood from flowing down their throat. Then, pinch their nostrils together gently for about 10-15 minutes, while breathing through their mouth, to help stop the bleeding. If bleeding persists, seek medical attention.
+
+Note: It's important to remember that the steps provided are general guidelines, and individual situations may vary. Always prioritize safety and, if unsure, consult a healthcare professional.
+--------------------------------------------------------------------
+Question: 
+ What is the first thing to do when a tooth is knocked out?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 4
+len(data) : 10
+The first thing to do when a tooth is knocked out is to find the tooth. If it's clean, try to place it back in the socket without touching the root. If it can't be reinserted, store it in a container with milk or saline solution and seek immediate dental attention.
+
+1. Locate the avulsed tooth.
+2. Handle gently without touching the root.
+3. Store in milk/saline and seek immediate dental care if unable to reinsert.
+The first thing to do when a tooth is knocked out is to find the tooth. If it's clean, try to place it back in the socket without touching the root. If it can't be reinserted, store it in a container with milk or saline solution and seek immediate dental attention.
+
+1. Locate the avulsed tooth.
+2. Handle gently without touching the root.
+3. Store in milk/saline and seek immediate dental care if unable to reinsert.
+
+Answer:
+ The first thing to do when a tooth is knocked out is to find the tooth. If it's clean, try to place it back in the socket without touching the root. If it can't be reinserted, store it in a container with milk or saline solution and seek immediate dental attention.
+
+1. Locate the avulsed tooth.
+2. Handle gently without touching the root.
+3. Store in milk/saline and seek immediate dental care if unable to reinsert.
+--------------------------------------------------------------------
+Question: 
+ Why should a knocked-out tooth not be placed in water?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 5
+len(data) : 10
+Placing a knocked-out tooth in water can expose it to bacteria and reduce its viability for replantation. Water lacks the necessary environment for the tooth's cells to survive, which is crucial for successful reintegration into the jawbone. Additionally, water may cause the tooth's periodontal ligament (PDL) cells to swell and die, further compromising the potential for successful replantation.
+Placing a knocked-out tooth in water can expose it to bacteria and reduce its viability for replantation. Water lacks the necessary environment for the tooth's cells to survive, which is crucial for successful reintegration into the jawbone. Additionally, water may cause the tooth's periodontal ligament (PDL) cells to swell and die, further compromising the potential for successful replantation.
+
+Answer:
+ Placing a knocked-out tooth in water can expose it to bacteria and reduce its viability for replantation. Water lacks the necessary environment for the tooth's cells to survive, which is crucial for successful reintegration into the jawbone. Additionally, water may cause the tooth's periodontal ligament (PDL) cells to swell and die, further compromising the potential for successful replantation.
+--------------------------------------------------------------------
+Question: 
+ How should you transport a casualty with a suspected spinal injury if no spinal board is available?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 6
+len(data) : 10
+If no spinal board is available, transport a casualty with a suspected spinal injury carefully on their back, with as little movement as possible. If possible, use a rigid surface or a makeshift stretcher to keep the spine aligned. Ensure they are immobilized with any available materials such as rolled clothing or blankets to provide additional support.
+
+In summary, keep the casualty's spine aligned and immobilized with any available support while minimizing movement during transportation.
+If no spinal board is available, transport a casualty with a suspected spinal injury carefully on their back, with as little movement as possible. If possible, use a rigid surface or a makeshift stretcher to keep the spine aligned. Ensure they are immobilized with any available materials such as rolled clothing or blankets to provide additional support.
+
+In summary, keep the casualty's spine aligned and immobilized with any available support while minimizing movement during transportation.
+
+Answer:
+ If no spinal board is available, transport a casualty with a suspected spinal injury carefully on their back, with as little movement as possible. If possible, use a rigid surface or a makeshift stretcher to keep the spine aligned. Ensure they are immobilized with any available materials such as rolled clothing or blankets to provide additional support.
+
+In summary, keep the casualty's spine aligned and immobilized with any available support while minimizing movement during transportation.
+--------------------------------------------------------------------
+Question: 
+ What happens if you fail to support the neck and spine of an unconscious person while moving them?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 7
+len(data) : 10
+Failing to support the neck and spine of an unconscious person while moving them can result in potential spinal injuries, including paralysis or exacerbation of existing spinal damage. It's crucial to maintain spinal alignment and support to prevent additional harm. Proper technique and precaution are essential when moving an unconscious individual to avoid further complications.
+Failing to support the neck and spine of an unconscious person while moving them can result in potential spinal injuries, including paralysis or exacerbation of existing spinal damage. It's crucial to maintain spinal alignment and support to prevent additional harm. Proper technique and precaution are essential when moving an unconscious individual to avoid further complications.
+
+Answer:
+ Failing to support the neck and spine of an unconscious person while moving them can result in potential spinal injuries, including paralysis or exacerbation of existing spinal damage. It's crucial to maintain spinal alignment and support to prevent additional harm. Proper technique and precaution are essential when moving an unconscious individual to avoid further complications.
+--------------------------------------------------------------------
+Question: 
+ How can you minimize pain while helping someone with a fractured leg move to safety?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 8
+len(data) : 10
+1. Ensure the injured person is comfortable and secure, using pillows or cushions to support their injured leg and prevent unnecessary movement.
+2. Assist them in moving slowly and cautiously, offering support and stability by holding onto their uninjured limbs or using a makeshift sling for the injured leg.
+3. Coordinate a safe path to safety, avoiding tripping hazards or uneven surfaces and minimizing the distance they need to travel.
+
+Remember, it's essential to seek professional medical help as soon as possible in such situations.
+1. Ensure the injured person is comfortable and secure, using pillows or cushions to support their injured leg and prevent unnecessary movement.
+2. Assist them in moving slowly and cautiously, offering support and stability by holding onto their uninjured limbs or using a makeshift sling for the injured leg.
+3. Coordinate a safe path to safety, avoiding tripping hazards or uneven surfaces and minimizing the distance they need to travel.
+
+Remember, it's essential to seek professional medical help as soon as possible in such situations.
+
+Answer:
+ 1. Ensure the injured person is comfortable and secure, using pillows or cushions to support their injured leg and prevent unnecessary movement.
+2. Assist them in moving slowly and cautiously, offering support and stability by holding onto their uninjured limbs or using a makeshift sling for the injured leg.
+3. Coordinate a safe path to safety, avoiding tripping hazards or uneven surfaces and minimizing the distance they need to travel.
+
+Remember, it's essential to seek professional medical help as soon as possible in such situations.
+--------------------------------------------------------------------
+Question: 
+ How can a person without first aid training still help move a casualty safely?
+Retrieval before threshold: 0 candidates (k=5, threshold=0.1)
+Passed threshold: 0/0
+After reranking: 0 chunks
+n==len(data) : False
+n : 9
+len(data) : 10
+A person without first aid training can still help move a casualty safely by ensuring they do not cause further injury. They should offer support and stability, rather than attempting to lift or move the casualty themselves. It's crucial to communicate with emergency services, providing them with the casualty's location and condition, while ensuring they maintain a safe distance.
+Data saved as '/nethome/acossig/faser/CSV_Result_med/experiments/20260930T072605005470Z/Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_Dago1.json'.
+A person without first aid training can still help move a casualty safely by ensuring they do not cause further injury. They should offer support and stability, rather than attempting to lift or move the casualty themselves. It's crucial to communicate with emergency services, providing them with the casualty's location and condition, while ensuring they maintain a safe distance.
+
+Answer:
+ A person without first aid training can still help move a casualty safely by ensuring they do not cause further injury. They should offer support and stability, rather than attempting to lift or move the casualty themselves. It's crucial to communicate with emergency services, providing them with the casualty's location and condition, while ensuring they maintain a safe distance.
+--------------------------------------------------------------------
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7018.84it/s]
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/ragas_evaluation.py", line 33, in _evaluate_ragas
+    return await _evaluate_results(results_file, embedding_model, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/ragas_evaluation.py", line 70, in _evaluate_results
+    result = await metric.ascore(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/ragas/metrics/collections/factual_correctness/metric.py", line 137, in ascore
+    reference_response = await self._decompose_and_verify_claims(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/ragas/metrics/collections/factual_correctness/metric.py", line 193, in _decompose_and_verify_claims
+    verdicts = await self._verify_claims(claims, reference_text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/ragas/metrics/collections/factual_correctness/metric.py", line 182, in _verify_claims
+    result = await self.llm.agenerate(prompt_str, NLIStatementOutput)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/ragas/llms/base.py", line 1109, in agenerate
+    result = await self.client.chat.completions.create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/instructor/client.py", line 279, in create
+    return await self.create_fn(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/instructor/patch.py", line 125, in new_create_async
+    response = await retry_async(
+               ^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/instructor/retry.py", line 230, in retry_async
+    async for attempt in max_retries:
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 166, in __anext__
+    do = await self.iter(retry_state=self._retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    

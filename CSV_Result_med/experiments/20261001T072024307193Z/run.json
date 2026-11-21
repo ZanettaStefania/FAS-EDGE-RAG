@@ -1,0 +1,18 @@
+{
+  "started_at": "20261001T072024307193Z",
+  "reranking": false,
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Final.csv",
+      "reranking": false,
+      "status": "error",
+      "return_code": -15,
+      "elapsed_seconds": 21881.137,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Final_no_rerank.log",
+      "error": "Pipeline exited with code -15; see log."
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9957.25it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights:  58%|█████▊    | 227/393 [00:00<00:00, 2261.31it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 1739.15it/s]
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   4%|▍         | 8/195 [00:00<00:02, 75.39it/s]Loading weights:  10%|█         | 20/195 [00:00<00:01, 93.46it/s]Loading weights:  15%|█▌        | 30/195 [00:00<00:01, 90.94it/s]Loading weights:  21%|██        | 40/195 [00:00<00:01, 90.41it/s]Loading weights:  26%|██▌       | 50/195 [00:00<00:01, 85.83it/s]Loading weights:  30%|███       | 59/195 [00:00<00:01, 82.25it/s]Loading weights:  36%|███▌      | 70/195 [00:00<00:01, 86.90it/s]Loading weights:  41%|████      | 79/195 [00:00<00:01, 84.42it/s]Loading weights:  45%|████▌     | 88/195 [00:01<00:01, 83.88it/s]Loading weights:  50%|████▉     | 97/195 [00:01<00:01, 82.82it/s]Loading weights:  54%|█████▍    | 106/195 [00:01<00:01, 83.03it/s]Loading weights:  59%|█████▉    | 115/195 [00:01<00:00, 82.53it/s]Loading weights:  64%|██████▎   | 124/195 [00:01<00:00, 83.15it/s]Loading weights:  68%|██████▊   | 133/195 [00:01<00:00, 82.52it/s]Loading weights:  73%|███████▎  | 142/195 [00:01<00:00, 82.95it/s]Loading weights:  77%|███████▋  | 151/195 [00:01<00:00, 82.50it/s]Loading weights:  82%|████████▏ | 160/195 [00:01<00:00, 82.77it/s]Loading weights:  87%|████████▋ | 169/195 [00:02<00:00, 82.36it/s]Loading weights:  91%|█████████▏| 178/195 [00:02<00:00, 82.92it/s]Loading weights:  96%|█████████▌| 187/195 [00:02<00:00, 84.18it/s]Loading weights: 100%|██████████| 195/195 [00:02<00:00, 84.35it/s]
+Question: 
+ How should I assist someone having an asthma attack if they do not have their inhaler with them?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 0
+len(data) : 10
+If someone experiencing an asthma attack doesn't have their inhaler, first ensure they remain calm to prevent further agitation. Encourage them to sit upright and breathe slowly and gently. If symptoms worsen or they're unable to breathe, call emergency medical services immediately.
+
+Note: While these steps can offer immediate relief, they are not substitutes for proper medical treatment. Always consult healthcare professionals for comprehensive management of asthma.
+If someone experiencing an asthma attack doesn't have their inhaler, first ensure they remain calm to prevent further agitation. Encourage them to sit upright and breathe slowly and gently. If symptoms worsen or they're unable to breathe, call emergency medical services immediately.
+
+Note: While these steps can offer immediate relief, they are not substitutes for proper medical treatment. Always consult healthcare professionals for comprehensive management of asthma.
+
+Answer:
+ If someone experiencing an asthma attack doesn't have their inhaler, first ensure they remain calm to prevent further agitation. Encourage them to sit upright and breathe slowly and gently. If symptoms worsen or they're unable to breathe, call emergency medical services immediately.
+
+Note: While these steps can offer immediate relief, they are not substitutes for proper medical treatment. Always consult healthcare professionals for comprehensive management of asthma.
+--------------------------------------------------------------------
+Question: 
+ What is the first aid treatment for a Box Jellyfish sting?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 1
+len(data) : 10
+The first aid treatment for a Box Jellyfish sting includes immersing the affected area in hot water, around 40-45°C (104-113°F), for 30-90 minutes, if possible. This helps denature the toxins and can reduce pain. Seek immediate medical attention, as severe reactions can occur. It's crucial not to apply ice, rub the area, or apply tourniquets, as these actions can cause further harm.
+
+Note: Always follow local advice and consult a medical professional for appropriate care.
+The first aid treatment for a Box Jellyfish sting includes immersing the affected area in hot water, around 40-45°C (104-113°F), for 30-90 minutes, if possible. This helps denature the toxins and can reduce pain. Seek immediate medical attention, as severe reactions can occur. It's crucial not to apply ice, rub the area, or apply tourniquets, as these actions can cause further harm.
+
+Note: Always follow local advice and consult a medical professional for appropriate care.
+
+Answer:
+ The first aid treatment for a Box Jellyfish sting includes immersing the affected area in hot water, around 40-45°C (104-113°F), for 30-90 minutes, if possible. This helps denature the toxins and can reduce pain. Seek immediate medical attention, as severe reactions can occur. It's crucial not to apply ice, rub the area, or apply tourniquets, as these actions can cause further harm.
+
+Note: Always follow local advice and consult a medical professional for appropriate care.
+--------------------------------------------------------------------
+Question: 
+ What are the signs that a nosebleed is an emergency?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 2
+len(data) : 10
+Signs that a nosebleed is an emergency include prolonged bleeding lasting more than 20 minutes despite applying pressure, significant blood loss leading to symptoms like dizziness or fainting, and recurrent nosebleeds which may indicate an underlying health issue. If a child is experiencing a nosebleed, it's also crucial to consider their age and any accompanying symptoms like breathing difficulties or severe pain. In such cases, immediate medical attention is necessary.
+Signs that a nosebleed is an emergency include prolonged bleeding lasting more than 20 minutes despite applying pressure, significant blood loss leading to symptoms like dizziness or fainting, and recurrent nosebleeds which may indicate an underlying health issue. If a child is experiencing a nosebleed, it's also crucial to consider their age and any accompanying symptoms like breathing difficulties or severe pain. In such cases, immediate medical attention is necessary.
+
+Answer:
+ Signs that a nosebleed is an emergency include prolonged bleeding lasting more than 20 minutes despite applying pressure, significant blood loss leading to symptoms like dizziness or fainting, and recurrent nosebleeds which may indicate an underlying health issue. If a child is experiencing a nosebleed, it's also crucial to consider their age and any accompanying symptoms like breathing difficulties or severe pain. In such cases, immediate medical attention is necessary.
+--------------------------------------------------------------------
+Question: 
+ What should you do if someone has a nosebleed?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 3
+len(data) : 10
+First, calm the person and have them sit upright, leaning slightly forward to prevent blood from flowing down the throat. Use a clean tissue or cloth to gently pinch the soft part of the nose, just below the bridge, for about 10-15 minutes. Ensure they breathe through their mouth during this time, and avoid touching their nose until the bleeding stops. If bleeding persists, seek medical help.
+
+Note: It is essential to avoid lying down or tilting the head back, as this could cause blood to flow into the throat, potentially leading to complications.
+First, calm the person and have them sit upright, leaning slightly forward to prevent blood from flowing down the throat. Use a clean tissue or cloth to gently pinch the soft part of the nose, just below the bridge, for about 10-15 minutes. Ensure they breathe through their mouth during this time, and avoid touching their nose until the bleeding stops. If bleeding persists, seek medical help.
+
+Note: It is essential to avoid lying down or tilting the head back, as this could cause blood to flow into the throat, potentially leading to complications.
+
+Answer:
+ First, calm the person and have them sit upright, leaning slightly forward to prevent blood from flowing down the throat. Use a clean tissue or cloth to gently pinch the soft part of the nose, just below the bridge, for about 10-15 minutes. Ensure they breathe through their mouth during this time, and avoid touching their nose until the bleeding stops. If bleeding persists, seek medical help.
+
+Note: It is essential to avoid lying down or tilting the head back, as this could cause blood to flow into the throat, potentially leading to complications.
+--------------------------------------------------------------------
+Question: 
+ What is the first thing to do when a tooth is knocked out?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 4
+len(data) : 10
+When a tooth is knocked out, the first step is to find and pick up the tooth by the crown (the top part), not by the root. Handle it carefully to avoid damaging the cells necessary for reintegration. Do not scrub the tooth or remove any attached tissue fragments.
+
+If possible, try to reinsert the tooth into the socket immediately, holding it in place by biting down gently for 30 minutes. If immediate reinsertion is not possible, store the tooth in a clean container with milk, saline, or the patient's saliva. Seek emergency dental care as soon as possible.
+When a tooth is knocked out, the first step is to find and pick up the tooth by the crown (the top part), not by the root. Handle it carefully to avoid damaging the cells necessary for reintegration. Do not scrub the tooth or remove any attached tissue fragments.
+
+If possible, try to reinsert the tooth into the socket immediately, holding it in place by biting down gently for 30 minutes. If immediate reinsertion is not possible, store the tooth in a clean container with milk, saline, or the patient's saliva. Seek emergency dental care as soon as possible.
+
+Answer:
+ When a tooth is knocked out, the first step is to find and pick up the tooth by the crown (the top part), not by the root. Handle it carefully to avoid damaging the cells necessary for reintegration. Do not scrub the tooth or remove any attached tissue fragments.
+
+If possible, try to reinsert the tooth into the socket immediately, holding it in place by biting down gently for 30 minutes. If immediate reinsertion is not possible, store the tooth in a clean container with milk, saline, or the patient's saliva. Seek emergency dental care as soon as possible.
+--------------------------------------------------------------------
+Question: 
+ Why should a knocked-out tooth not be placed in water?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 5
+len(data) : 10
+A knocked-out tooth should not be placed in water because it can cause further damage to the tooth's delicate tissues. Water can also dilute the vital cells within the root, reducing the tooth's chances of successful reattachment. Lastly, the water can introduce bacteria, increasing the risk of infection.
+A knocked-out tooth should not be placed in water because it can cause further damage to the tooth's delicate tissues. Water can also dilute the vital cells within the root, reducing the tooth's chances of successful reattachment. Lastly, the water can introduce bacteria, increasing the risk of infection.
+
+Answer:
+ A knocked-out tooth should not be placed in water because it can cause further damage to the tooth's delicate tissues. Water can also dilute the vital cells within the root, reducing the tooth's chances of successful reattachment. Lastly, the water can introduce bacteria, increasing the risk of infection.
+--------------------------------------------------------------------
+Question: 
+ How should you transport a casualty with a suspected spinal injury if no spinal board is available?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 6
+len(data) : 10
+If no spinal board is available, immobilize the casualty's head, neck, and spine manually. Keep the casualty as still as possible, using makeshift supports like rolled blankets or cushions. Avoid moving the casualty unless absolutely necessary, and if movement is required, ensure to move them as a unit, keeping their head, neck, and back aligned.
+
+Remember, always prioritize professional medical help in such situations, and try to minimize movement to prevent further injury.
+If no spinal board is available, immobilize the casualty's head, neck, and spine manually. Keep the casualty as still as possible, using makeshift supports like rolled blankets or cushions. Avoid moving the casualty unless absolutely necessary, and if movement is required, ensure to move them as a unit, keeping their head, neck, and back aligned.
+
+Remember, always prioritize professional medical help in such situations, and try to minimize movement to prevent further injury.
+
+Answer:
+ If no spinal board is available, immobilize the casualty's head, neck, and spine manually. Keep the casualty as still as possible, using makeshift supports like rolled blankets or cushions. Avoid moving the casualty unless absolutely necessary, and if movement is required, ensure to move them as a unit, keeping their head, neck, and back aligned.
+
+Remember, always prioritize professional medical help in such situations, and try to minimize movement to prevent further injury.
+--------------------------------------------------------------------
+Question: 
+ What happens if you fail to support the neck and spine of an unconscious person while moving them?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 7
+len(data) : 10
+Failing to support the neck and spine of an unconscious person while moving them can cause serious injury, including spinal cord damage, which may result in paralysis or loss of sensation. It's crucial to maintain proper alignment and use the person's body as a stabilizing structure during movement. Not doing so increases the risk of exacerbating any existing injuries or causing new ones.
+Failing to support the neck and spine of an unconscious person while moving them can cause serious injury, including spinal cord damage, which may result in paralysis or loss of sensation. It's crucial to maintain proper alignment and use the person's body as a stabilizing structure during movement. Not doing so increases the risk of exacerbating any existing injuries or causing new ones.
+
+Answer:
+ Failing to support the neck and spine of an unconscious person while moving them can cause serious injury, including spinal cord damage, which may result in paralysis or loss of sensation. It's crucial to maintain proper alignment and use the person's body as a stabilizing structure during movement. Not doing so increases the risk of exacerbating any existing injuries or causing new ones.
+--------------------------------------------------------------------
+Question: 
+ How can you minimize pain while helping someone with a fractured leg move to safety?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 8
+len(data) : 10
+To minimize pain while assisting someone with a fractured leg, ensure both parties are wearing supportive braces or splints if available. Use proper lifting techniques, such as keeping the injured leg in a stable position and avoiding any twisting motions. Lastly, maintain clear communication to understand their pain level and comfort, allowing for adjustments as needed.
+
+If these measures are not enough, it's crucial to call emergency services for professional assistance.
+To minimize pain while assisting someone with a fractured leg, ensure both parties are wearing supportive braces or splints if available. Use proper lifting techniques, such as keeping the injured leg in a stable position and avoiding any twisting motions. Lastly, maintain clear communication to understand their pain level and comfort, allowing for adjustments as needed.
+
+If these measures are not enough, it's crucial to call emergency services for professional assistance.
+
+Answer:
+ To minimize pain while assisting someone with a fractured leg, ensure both parties are wearing supportive braces or splints if available. Use proper lifting techniques, such as keeping the injured leg in a stable position and avoiding any twisting motions. Lastly, maintain clear communication to understand their pain level and comfort, allowing for adjustments as needed.
+
+If these measures are not enough, it's crucial to call emergency services for professional assistance.
+--------------------------------------------------------------------
+Question: 
+ How can a person without first aid training still help move a casualty safely?
+Retrieval: 0 candidates (k=5, threshold=0.6)
+  Passed threshold: 0/0
+  After reranking: 0 chunks
+n==len(data) : False
+n : 9
+len(data) : 10
+A person without first aid training can still help move a casualty safely by ensuring they do not obstruct the injured person's airway, avoiding moving the person unnecessarily to prevent further injury, and maintaining clear communication to guide the injured person's movements if required. It is crucial to prioritize the person's safety and comfort and avoid any actions that could exacerbate their condition. If possible, wait for trained professionals to take over.
+Data saved as '/nethome/acossig/faser/CSV_Result_med/experiments/20260929T212419177857Z/Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_Dago1.json'.
+A person without first aid training can still help move a casualty safely by ensuring they do not obstruct the injured person's airway, avoiding moving the person unnecessarily to prevent further injury, and maintaining clear communication to guide the injured person's movements if required. It is crucial to prioritize the person's safety and comfort and avoid any actions that could exacerbate their condition. If possible, wait for trained professionals to take over.
+
+Answer:
+ A person without first aid training can still help move a casualty safely by ensuring they do not obstruct the injured person's airway, avoiding moving the person unnecessarily to prevent further injury, and maintaining clear communication to guide the injured person's movements if required. It is crucial to prioritize the person's safety and comfort and avoid any actions that could exacerbate their condition. If possible, wait for trained professionals to take over.
+--------------------------------------------------------------------
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6121.63it/s]
+Ragas: 1/10
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/ragas_evaluation.py", line 33, in _evaluate_ragas
+    return await _evaluate_results(results_file, embedding_model, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/ragas_evaluation.py", line 70, in _evaluate_results
+    result = await metric.ascore(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/ragas/metrics/collections/answer_correctness/metric.py", line 176, in ascore
+    classification = await self._classify_statements(
+                 

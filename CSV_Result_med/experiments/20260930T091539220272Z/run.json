@@ -1,0 +1,16 @@
+{
+  "started_at": "20260930T091539220272Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "DomandeEsperti.csv",
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 2861.25,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_DomandeEsperti.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/DomandeEsperti.log",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "started_at": "20260929T213037907646Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Dago1.csv",
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 1509.816,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_Dago1.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Dago1.log",
+      "error": ""
+    }
+  ]
+}

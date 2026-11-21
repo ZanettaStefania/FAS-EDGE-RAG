@@ -1,0 +1,27 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9549.85it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 7954.49it/s]
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   4%|▍         | 8/195 [00:00<00:02, 70.48it/s]Loading weights:  10%|█         | 20/195 [00:00<00:01, 90.85it/s]Loading weights:  15%|█▌        | 30/195 [00:00<00:01, 90.76it/s]Loading weights:  21%|██        | 40/195 [00:00<00:01, 88.86it/s]Loading weights:  25%|██▌       | 49/195 [00:00<00:01, 85.14it/s]Loading weights:  30%|██▉       | 58/195 [00:00<00:01, 83.65it/s]Loading weights:  34%|███▍      | 67/195 [00:00<00:01, 82.04it/s]Loading weights:  39%|███▉      | 76/195 [00:00<00:01, 83.38it/s]Loading weights:  44%|████▎     | 85/195 [00:01<00:01, 84.48it/s]Loading weights:  48%|████▊     | 94/195 [00:01<00:01, 85.90it/s]Loading weights:  53%|█████▎    | 103/195 [00:01<00:01, 86.31it/s]Loading weights:  58%|█████▊    | 113/195 [00:01<00:00, 83.24it/s]Loading weights:  64%|██████▎   | 124/195 [00:01<00:00, 89.33it/s]Loading weights:  68%|██████▊   | 133/195 [00:01<00:00, 88.99it/s]Loading weights:  73%|███████▎  | 143/195 [00:01<00:00, 84.92it/s]Loading weights:  79%|███████▉  | 154/195 [00:01<00:00, 90.47it/s]Loading weights:  84%|████████▍ | 164/195 [00:01<00:00, 88.27it/s]Loading weights:  89%|████████▊ | 173/195 [00:02<00:00, 85.97it/s]Loading weights:  94%|█████████▍| 183/195 [00:02<00:00, 88.41it/s]Loading weights:  99%|█████████▉| 193/195 [00:02<00:00, 91.34it/s]Loading weights: 100%|██████████| 195/195 [00:02<00:00, 87.28it/s]
+Traceback (most recent call last):
+  File "/nethome/acossig/faser/main_med.py", line 84, in <module>
+    data = pd.read_csv(args.test)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 2 fields in line 10, saw 3
+

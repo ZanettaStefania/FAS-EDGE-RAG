@@ -1,0 +1,18 @@
+{
+  "started_at": "20260930T140823970139Z",
+  "reranking": true,
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "DomandeEsperti.csv",
+      "reranking": true,
+      "status": "interrupted",
+      "return_code": null,
+      "elapsed_seconds": 1800.662,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/DomandeEsperti.log",
+      "error": "Interrupted by user."
+    }
+  ]
+}

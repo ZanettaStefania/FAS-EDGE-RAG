@@ -1,0 +1,16 @@
+{
+  "started_at": "20260929T203224064844Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "CPR_open.csv",
+      "status": "error",
+      "return_code": 1,
+      "elapsed_seconds": 25.372,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/CPR_open.log",
+      "error": "Pipeline exited with code 1; see log."
+    }
+  ]
+}

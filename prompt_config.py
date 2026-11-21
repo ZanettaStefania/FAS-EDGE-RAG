@@ -10,9 +10,9 @@ intro_marker_qwen = "Use the following pieces of context to answer the question 
 context_marker_qwen = "Context: "
 end_context_marker_qwen = f"""
 <|im_end|>
-<|im_start|>assistant<|im_end|>
+<|im_start|>assistant
 """
-answer_marker_qwen = "<|im_start|>assistant<|im_end|>"
+answer_marker_qwen = "<|im_start|>assistant\n"
 
 intro_marker = "Use a maximum of three sentences, and keep your answer concise, accurate, and where applicable, use medical terminology."
 context_marker = "Context: "
@@ -29,7 +29,7 @@ You are Qwen, created by Alibaba Cloud. You are a helpful assistant. You are a k
 Question: {question} 
 Context: {context} 
 <|im_end|>
-<|im_start|>assistant<|im_end|>
+<|im_start|>assistant
 """
 
 phi_rag_prompt_template = f"""<|system|> 
@@ -37,6 +37,12 @@ You are an assistant for question-answering tasks about medical domain. Use the 
 <|user|>
 Question: {input} 
 Context: {context} <|end|>
+<|assistant|>"""
+
+phi_norag_prompt_template = f"""<|system|> 
+You are an assistant for question-answering tasks about medical domain. Answer the question. If you don't know the answer, just say that you don't know. Use three sentences maximum and keep the answer concise.<|end|>""" + """
+<|user|>
+Question: {input} <|end|>
 <|assistant|>"""
 
 model_path = ""

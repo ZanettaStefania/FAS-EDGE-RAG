@@ -1,0 +1,130 @@
+{
+  "model": "Phi-3.5-mini-instruct_med",
+  "database": "DB/new1000_db_med",
+  "dataset": "Dago1.csv",
+  "ragas": {
+    "status": "running",
+    "judge_model": "medgemma:27b",
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "evaluated_questions": 1
+  },
+  "results": [
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "If someone experiencing an asthma attack doesn't have their inhaler, first ensure they remain calm to prevent further agitation. Encourage them to sit upright and breathe slowly and gently. If symptoms worsen or they're unable to breathe, call emergency medical services immediately.\n\nNote: While these steps can offer immediate relief, they are not substitutes for proper medical treatment. Always consult healthcare professionals for comprehensive management of asthma.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 3.5234718322753906,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.5486103056555507,
+        "answer_relevancy": 0.950804975912018,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.44,
+        "factual_precision": 0.4,
+        "factual_recall": 0.5,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9312833278853606
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "The first aid treatment for a Box Jellyfish sting includes immersing the affected area in hot water, around 40-45°C (104-113°F), for 30-90 minutes, if possible. This helps denature the toxins and can reduce pain. Seek immediate medical attention, as severe reactions can occur. It's crucial not to apply ice, rub the area, or apply tourniquets, as these actions can cause further harm.\n\nNote: Always follow local advice and consult a medical professional for appropriate care.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 2.170384645462036,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "Signs that a nosebleed is an emergency include prolonged bleeding lasting more than 20 minutes despite applying pressure, significant blood loss leading to symptoms like dizziness or fainting, and recurrent nosebleeds which may indicate an underlying health issue. If a child is experiencing a nosebleed, it's also crucial to consider their age and any accompanying symptoms like breathing difficulties or severe pain. In such cases, immediate medical attention is necessary.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 2.4538049697875977,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "First, calm the person and have them sit upright, leaning slightly forward to prevent blood from flowing down the throat. Use a clean tissue or cloth to gently pinch the soft part of the nose, just below the bridge, for about 10-15 minutes. Ensure they breathe through their mouth during this time, and avoid touching their nose until the bleeding stops. If bleeding persists, seek medical help.\n\nNote: It is essential to avoid lying down or tilting the head back, as this could cause blood to flow into the throat, potentially leading to complications.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.9431695938110352,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "When a tooth is knocked out, the first step is to find and pick up the tooth by the crown (the top part), not by the root. Handle it carefully to avoid damaging the cells necessary for reintegration. Do not scrub the tooth or remove any attached tissue fragments.\n\nIf possible, try to reinsert the tooth into the socket immediately, holding it in place by biting down gently for 30 minutes. If immediate reinsertion is not possible, store the tooth in a clean container with milk, saline, or the patient's saliva. Seek emergency dental care as soon as possible.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 2.0680770874023438,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because it can cause further damage to the tooth's delicate tissues. Water can also dilute the vital cells within the root, reducing the tooth's chances of successful reattachment. Lastly, the water can introduce bacteria, increasing the risk of infection.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.076629400253296,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, immobilize the casualty's head, neck, and spine manually. Keep the casualty as still as possible, using makeshift supports like rolled blankets or cushions. Avoid moving the casualty unless absolutely necessary, and if movement is required, ensure to move them as a unit, keeping their head, neck, and back aligned.\n\nRemember, always prioritize professional medical help in such situations, and try to minimize movement to prevent further injury.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.6164724826812744,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving them can cause serious injury, including spinal cord damage, which may result in paralysis or loss of sensation. It's crucial to maintain proper alignment and use the person's body as a stabilizing structure during movement. Not doing so increases the risk of exacerbating any existing injuries or causing new ones.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.2418832778930664,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "To minimize pain while assisting someone with a fractured leg, ensure both parties are wearing supportive braces or splints if available. Use proper lifting techniques, such as keeping the injured leg in a stable position and avoiding any twisting motions. Lastly, maintain clear communication to understand their pain level and comfort, allowing for adjustments as needed.\n\nIf these measures are not enough, it's crucial to call emergency services for professional assistance.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.4453682899475098,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still help move a casualty safely by ensuring they do not obstruct the injured person's airway, avoiding moving the person unnecessarily to prevent further injury, and maintaining clear communication to guide the injured person's movements if required. It is crucial to prioritize the person's safety and comfort and avoid any actions that could exacerbate their condition. If possible, wait for trained professionals to take over.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.4257490634918213,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    }
+  ]
+}

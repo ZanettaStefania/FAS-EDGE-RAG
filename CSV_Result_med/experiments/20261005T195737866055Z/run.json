@@ -1,0 +1,23 @@
+{
+  "started_at": "20261005T195737866055Z",
+  "reranking": true,
+  "retrieval": true,
+  "ragas": false,
+  "timings_csv": "timings.csv",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Final.csv",
+      "reranking": true,
+      "retrieval": true,
+      "ragas": false,
+      "status": "error",
+      "return_code": 1,
+      "elapsed_seconds": 53.793,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Final.log",
+      "error": "Pipeline exited with code 1; see log."
+    }
+  ]
+}

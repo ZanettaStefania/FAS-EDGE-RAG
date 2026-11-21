@@ -1,0 +1,17 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/nethome/acossig/faser/main_med.py", line 25, in <module>
+    embedding_function=HuggingFaceBgeEmbeddings(model_name=DB_EMBD_MODEL_NAME, model_kwargs={"device": DEVICE_MAP}))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/langchain_core/_api/deprecation.py", line 226, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/langchain_community/embeddings/huggingface.py", line 349, in __init__
+    self.client = sentence_transformers.SentenceTransformer(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/sentence_transformers/util/decorators.py", line 46, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/sentence_transformers/sentence_transformer/model.py", line 194, in __init__
+    super().__init__(
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/sentence_transformers/base/model.py", line 236, in __init__

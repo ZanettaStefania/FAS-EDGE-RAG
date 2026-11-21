@@ -13,10 +13,11 @@ from pathlib import Path
 
 import config
 import config_med
-from results_io import load_results, write_json
+from results_io import ensure_timings_file, get_logger, load_results, write_json
 
 
 ROOT = Path(__file__).resolve().parent
+logger = get_logger(__name__)
 MODELS = (
     "Qwen2.5-0.5B-Instruct",
     "Qwen2.5-1.5B-Instruct",
@@ -44,7 +45,16 @@ def parse_args(argv=None):
                         help="Print the experiment plan without running models or producing results.")
     parser.add_argument("--stop-on-error", action="store_true",
                         help="Stop at the first failed experiment instead of continuing.")
+    parser.add_argument("--skip-ragas", action="store_true",
+                        help="Generate answers without running the Ragas evaluation.")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--no-rerank", action="store_true",
+                      help="Disable cross-encoder reranking in every selected pipeline.")
+    mode.add_argument("--no-retrieval", action="store_true",
+                      help="Skip retrieval (generation only, no RAG). Supported only by main_med.")
     args = parser.parse_args(argv)
+    if args.no_retrieval and set(args.pipelines) - {"main_med"}:
+        parser.error("--no-retrieval is supported only with --pipelines main_med")
     for model in args.models:
         if not re.fullmatch(r"(?:Qwen|Phi)[A-Za-z0-9_.-]+", model):
             parser.error(f"Use a short Qwen/Phi model name, not a path: {model}")
@@ -78,15 +88,18 @@ def read_questions(dataset):
     return [row["Question"] for row in rows]
 
 
-def validate_output(path, questions):
+def validate_output(path, questions, skip_ragas=False):
     document = load_results(path)
     rows = document["results"]
     if [row["question"] for row in rows] != questions:
         raise ValueError("Output questions or row order do not match the input dataset.")
-    if document.get("ragas", {}).get("status") != "completed":
-        raise ValueError("Ragas evaluation did not finish.")
-    if any(not isinstance(row.get("scores"), dict) or not row["scores"]
-           or not isinstance(row.get("metric_errors"), dict) for row in rows):
+    expected_status = "skipped" if skip_ragas else "completed"
+    if document.get("ragas", {}).get("status") != expected_status:
+        raise ValueError(f"Expected Ragas status {expected_status!r}.")
+    if not skip_ragas and any(
+        not isinstance(row.get("scores"), dict) or not row["scores"]
+        or not isinstance(row.get("metric_errors"), dict) for row in rows
+    ):
         raise ValueError("Output is missing Ragas scores or evaluation errors.")
 
 
@@ -100,34 +113,53 @@ def main(argv=None):
         if not (ROOT / database).is_dir():
             raise FileNotFoundError(f"Database directory missing: {database}")
     jobs = list(itertools.product(args.models, args.pipelines, args.datasets))
-    print(f"{len(args.models)} models x {len(args.pipelines)} pipelines x "
-          f"{len(args.datasets)} datasets = {len(jobs)} experiments", flush=True)
+    logger.info(
+        "%s models x %s pipelines x %s datasets = %s experiments",
+        len(args.models), len(args.pipelines), len(args.datasets), len(jobs),
+    )
     if args.dry_run:
         for model, pipeline, dataset in jobs:
-            print(f"{model} | {pipeline}.py | {dataset} | {len(questions[dataset])} questions")
+            logger.info(
+                "%s | %s.py | %s | %s questions",
+                model, pipeline, dataset, len(questions[dataset]),
+            )
         return 0
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
     run_dir = ROOT / "CSV_Result_med" / "experiments" / stamp
     run_dir.mkdir(parents=True, exist_ok=False)
-    print(f"Results: {run_dir}", flush=True)
+    logger.info("Results: %s", run_dir)
     failures = 0
     run_file = run_dir / "run.json"
-    manifest = {"started_at": stamp, "experiments": []}
+    timings_file = ensure_timings_file(run_dir / "timings.csv")
+    manifest = {"started_at": stamp, "reranking": not (args.no_rerank or args.no_retrieval),
+                "retrieval": not args.no_retrieval, "ragas": not args.skip_ragas,
+                "timings_csv": timings_file.name,
+                "experiments": []}
     write_json(run_file, manifest)
     for index, (model, pipeline, dataset) in enumerate(jobs, 1):
         output_dir = run_dir / model / pipeline
         output_dir.mkdir(parents=True, exist_ok=True)
         database, suffix = PIPELINES[pipeline]
-        result_file = output_dir / f"{Path(database).name}{model}{suffix}_{Path(dataset).stem}.json"
-        log_file = output_dir / f"{Path(dataset).stem}.log"
+        rerank_suffix = "_no_rerank" if args.no_rerank else "_no_retrieval" if args.no_retrieval else ""
+        result_file = output_dir / f"{Path(database).name}{model}{suffix}{rerank_suffix}_{Path(dataset).stem}.json"
+        log_file = output_dir / f"{Path(dataset).stem}{rerank_suffix}.log"
         command = [sys.executable, "-u", str(ROOT / f"{pipeline}.py"),
                    "--model_name", model, "--test", str(ROOT / "EvalSet" / dataset)]
-        env = dict(os.environ, THESIS_RAG_OUTPUT_DIR=str(output_dir), PYTHONIOENCODING="utf-8")
-        row = dict(model=model, pipeline=pipeline, dataset=dataset, status="ok",
+        if args.no_rerank:
+            command.append("--no-rerank")
+        if args.no_retrieval:
+            command.append("--no-retrieval")
+        if args.skip_ragas:
+            command.append("--skip-ragas")
+        env = dict(os.environ, THESIS_RAG_OUTPUT_DIR=str(output_dir),
+                   THESIS_RAG_TIMINGS_FILE=str(timings_file), PYTHONIOENCODING="utf-8")
+        row = dict(model=model, pipeline=pipeline, dataset=dataset,
+                   reranking=not (args.no_rerank or args.no_retrieval),
+                   retrieval=not args.no_retrieval, ragas=not args.skip_ragas, status="ok",
                    return_code=None, elapsed_seconds=None, results_json="",
                    log_file=str(log_file.relative_to(run_dir)), error="")
-        print(f"[{index}/{len(jobs)}] {model} | {pipeline} | {dataset}", flush=True)
+        logger.info("[%s/%s] %s | %s | %s", index, len(jobs), model, pipeline, dataset)
         start = time.perf_counter()
         try:
             with log_file.open("w", encoding="utf-8") as log:
@@ -136,7 +168,7 @@ def main(argv=None):
             row["return_code"] = completed.returncode
             if completed.returncode != 0:
                 raise RuntimeError(f"Pipeline exited with code {completed.returncode}; see log.")
-            validate_output(result_file, questions[dataset])
+            validate_output(result_file, questions[dataset], skip_ragas=args.skip_ragas)
             row["results_json"] = str(result_file.relative_to(run_dir))
         except KeyboardInterrupt:
             row.update(status="interrupted", error="Interrupted by user.")
@@ -146,12 +178,13 @@ def main(argv=None):
         row["elapsed_seconds"] = round(time.perf_counter() - start, 3)
         manifest["experiments"].append(row)
         write_json(run_file, manifest)
-        print(f"  {row['status']}: {row['error'] or row['results_json']}", flush=True)
+        logger.info("%s: %s", row["status"], row["error"] or row["results_json"])
         if row["status"] == "interrupted":
             return 130
         if failures and args.stop_on_error:
             break
-    print(f"Finished. Failed experiments: {failures}. Run info: {run_file}")
+    logger.info("Finished. Failed experiments: %s. Run info: %s. Timings: %s",
+                failures, run_file, timings_file)
     return 1 if failures else 0
 
 
@@ -159,5 +192,5 @@ if __name__ == "__main__":
     try:
         sys.exit(main())
     except (OSError, ValueError) as exc:
-        print(f"Error: {exc}", file=sys.stderr)
+        logger.error("Error: %s", exc)
         sys.exit(1)

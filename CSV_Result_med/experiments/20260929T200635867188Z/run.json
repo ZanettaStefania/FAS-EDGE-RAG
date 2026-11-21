@@ -1,0 +1,16 @@
+{
+  "started_at": "20260929T200635867188Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "CPR_open.csv",
+      "status": "interrupted",
+      "return_code": null,
+      "elapsed_seconds": 23.479,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/CPR_open.log",
+      "error": "Interrupted by user."
+    }
+  ]
+}

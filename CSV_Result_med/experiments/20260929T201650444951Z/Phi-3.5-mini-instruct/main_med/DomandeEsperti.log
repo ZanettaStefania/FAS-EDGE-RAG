@@ -1,0 +1,179 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9010.08it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 6128.06it/s]
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   4%|▎         | 7/195 [00:00<00:02, 68.14it/s]Loading weights:   9%|▊         | 17/195 [00:00<00:02, 84.01it/s]Loading weights:  14%|█▍        | 27/195 [00:00<00:01, 88.81it/s]Loading weights:  18%|█▊        | 36/195 [00:00<00:01, 86.77it/s]Loading weights:  23%|██▎       | 45/195 [00:00<00:01, 87.86it/s]Loading weights:  28%|██▊       | 54/195 [00:00<00:01, 80.56it/s]Loading weights:  33%|███▎      | 64/195 [00:00<00:01, 83.76it/s]Loading weights:  37%|███▋      | 73/195 [00:00<00:01, 82.82it/s]Loading weights:  42%|████▏     | 82/195 [00:00<00:01, 83.97it/s]Loading weights:  47%|████▋     | 91/195 [00:01<00:01, 83.71it/s]Loading weights:  51%|█████▏    | 100/195 [00:01<00:01, 84.67it/s]Loading weights:  56%|█████▌    | 109/195 [00:01<00:01, 84.46it/s]Loading weights:  61%|██████    | 118/195 [00:01<00:00, 84.96it/s]Loading weights:  65%|██████▌   | 127/195 [00:01<00:00, 84.92it/s]Loading weights:  70%|██████▉   | 136/195 [00:01<00:00, 85.59it/s]Loading weights:  74%|███████▍  | 145/195 [00:01<00:00, 85.10it/s]Loading weights:  79%|███████▉  | 154/195 [00:01<00:00, 85.71it/s]Loading weights:  84%|████████▎ | 163/195 [00:01<00:00, 85.36it/s]Loading weights:  88%|████████▊ | 172/195 [00:02<00:00, 85.96it/s]Loading weights:  93%|█████████▎| 181/195 [00:02<00:00, 85.60it/s]Loading weights:  97%|█████████▋| 190/195 [00:02<00:00, 85.96it/s]Loading weights: 100%|██████████| 195/195 [00:02<00:00, 84.99it/s]
+Question: 
+  what should be avoided to ensure effective ventilation?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 0
+len(data) : 10
+To ensure effective ventilation, it is important to avoid placing obstructions such as furniture or heavy curtains in front of air vents and doors. Overcrowding in a room should also be avoided as it can restrict airflow. Additionally, using excessive insulation or sealing too tightly can prevent proper air circulation.
+
+In summary, avoid air blockages, overcrowding, and over-insulation to maintain effective ventilation.
+To ensure effective ventilation, it is important to avoid placing obstructions such as furniture or heavy curtains in front of air vents and doors. Overcrowding in a room should also be avoided as it can restrict airflow. Additionally, using excessive insulation or sealing too tightly can prevent proper air circulation.
+
+In summary, avoid air blockages, overcrowding, and over-insulation to maintain effective ventilation.
+
+Answer:
+ To ensure effective ventilation, it is important to avoid placing obstructions such as furniture or heavy curtains in front of air vents and doors. Overcrowding in a room should also be avoided as it can restrict airflow. Additionally, using excessive insulation or sealing too tightly can prevent proper air circulation.
+
+In summary, avoid air blockages, overcrowding, and over-insulation to maintain effective ventilation.
+--------------------------------------------------------------------
+Question: 
+  what is the first thing you should do?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 1
+len(data) : 10
+The first thing you should do is assess the situation and ensure personal safety. Once safe, gather relevant information and resources, and then proceed with the appropriate action based on the circumstances. Prioritize urgency and importance, and seek professional assistance if necessary.
+The first thing you should do is assess the situation and ensure personal safety. Once safe, gather relevant information and resources, and then proceed with the appropriate action based on the circumstances. Prioritize urgency and importance, and seek professional assistance if necessary.
+
+Answer:
+ The first thing you should do is assess the situation and ensure personal safety. Once safe, gather relevant information and resources, and then proceed with the appropriate action based on the circumstances. Prioritize urgency and importance, and seek professional assistance if necessary.
+--------------------------------------------------------------------
+Question: 
+ In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 2
+len(data) : 10
+For an infection to occur, four conditions must be met: a pathogen must be present, a sufficient quantity to cause disease, the pathogen's virulence, and the person's susceptibility. Vaccinations might not always prevent infection, and some pathogens like HIV have no available vaccines. Additionally, the pathogen must have an entry point in the body, like broken skin, mucous membranes, or the respiratory system.
+
+In summary, for infection to occur, there needs to be a pathogen, enough of it to cause disease, the body's susceptibility, and a pathway for the pathogen to enter the body. Vaccinations, while helpful, can't guarantee immunity and certain pathogens like HIV lack vaccines. The pathogen's entry point into the body is also crucial.
+For an infection to occur, four conditions must be met: a pathogen must be present, a sufficient quantity to cause disease, the pathogen's virulence, and the person's susceptibility. Vaccinations might not always prevent infection, and some pathogens like HIV have no available vaccines. Additionally, the pathogen must have an entry point in the body, like broken skin, mucous membranes, or the respiratory system.
+
+In summary, for infection to occur, there needs to be a pathogen, enough of it to cause disease, the body's susceptibility, and a pathway for the pathogen to enter the body. Vaccinations, while helpful, can't guarantee immunity and certain pathogens like HIV lack vaccines. The pathogen's entry point into the body is also crucial.
+
+Answer:
+ For an infection to occur, four conditions must be met: a pathogen must be present, a sufficient quantity to cause disease, the pathogen's virulence, and the person's susceptibility. Vaccinations might not always prevent infection, and some pathogens like HIV have no available vaccines. Additionally, the pathogen must have an entry point in the body, like broken skin, mucous membranes, or the respiratory system.
+
+In summary, for infection to occur, there needs to be a pathogen, enough of it to cause disease, the body's susceptibility, and a pathway for the pathogen to enter the body. Vaccinations, while helpful, can't guarantee immunity and certain pathogens like HIV lack vaccines. The pathogen's entry point into the body is also crucial.
+--------------------------------------------------------------------
+Question: 
+  what steps would you take when performing chest compressions on an infant?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 3
+len(data) : 10
+When performing chest compressions on an infant, first ensure the scene is safe and check the infant's responsiveness. Place the infant on a firm surface, ideally on their back. Using two fingers (usually the index and middle), position them in the center of the infant's chest just below the nipple line. Push down about 1.5 inches deep at a rate of 100-120 compressions per minute. Remember to allow the chest to fully recoil between compressions. 
+
+(Note: This is a simplified guide and in real situations, it's necessary to get professional medical help immediately).
+When performing chest compressions on an infant, first ensure the scene is safe and check the infant's responsiveness. Place the infant on a firm surface, ideally on their back. Using two fingers (usually the index and middle), position them in the center of the infant's chest just below the nipple line. Push down about 1.5 inches deep at a rate of 100-120 compressions per minute. Remember to allow the chest to fully recoil between compressions. 
+
+(Note: This is a simplified guide and in real situations, it's necessary to get professional medical help immediately).
+
+Answer:
+ When performing chest compressions on an infant, first ensure the scene is safe and check the infant's responsiveness. Place the infant on a firm surface, ideally on their back. Using two fingers (usually the index and middle), position them in the center of the infant's chest just below the nipple line. Push down about 1.5 inches deep at a rate of 100-120 compressions per minute. Remember to allow the chest to fully recoil between compressions. 
+
+(Note: This is a simplified guide and in real situations, it's necessary to get professional medical help immediately).
+--------------------------------------------------------------------
+Question: 
+  how often would you need to provide a breath when performing rescue breathing?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 4
+len(data) : 10
+Rescue breathing should be administered at a rate of one breath every 5 to 6 seconds for an adult. This translates to approximately 10 to 12 breaths per minute. It's important to monitor the victim's chest rise and fall to ensure adequate ventilation.
+
+I don't know additional information beyond this context. If you are seeking more detailed guidelines or specific scenarios, it may be helpful to consult a healthcare professional or reliable medical resources.
+Rescue breathing should be administered at a rate of one breath every 5 to 6 seconds for an adult. This translates to approximately 10 to 12 breaths per minute. It's important to monitor the victim's chest rise and fall to ensure adequate ventilation.
+
+I don't know additional information beyond this context. If you are seeking more detailed guidelines or specific scenarios, it may be helpful to consult a healthcare professional or reliable medical resources.
+
+Answer:
+ Rescue breathing should be administered at a rate of one breath every 5 to 6 seconds for an adult. This translates to approximately 10 to 12 breaths per minute. It's important to monitor the victim's chest rise and fall to ensure adequate ventilation.
+
+I don't know additional information beyond this context. If you are seeking more detailed guidelines or specific scenarios, it may be helpful to consult a healthcare professional or reliable medical resources.
+--------------------------------------------------------------------
+Question: 
+ Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 5
+len(data) : 10
+This context outlines a step-by-step process for performing rescue breathing during a cardiac arrest situation. First, ensure the airway is open with a head tilt-chin lift, then give a breath over 1 second while observing if the chest rises. If the chest doesn't rise, repeat the head tilt-chin lift and try another breath. If the second breath also fails to go in, start chest compressions immediately. This procedure helps maintain oxygen supply to vital organs while awaiting professional medical assistance.
+This context outlines a step-by-step process for performing rescue breathing during a cardiac arrest situation. First, ensure the airway is open with a head tilt-chin lift, then give a breath over 1 second while observing if the chest rises. If the chest doesn't rise, repeat the head tilt-chin lift and try another breath. If the second breath also fails to go in, start chest compressions immediately. This procedure helps maintain oxygen supply to vital organs while awaiting professional medical assistance.
+
+Answer:
+ This context outlines a step-by-step process for performing rescue breathing during a cardiac arrest situation. First, ensure the airway is open with a head tilt-chin lift, then give a breath over 1 second while observing if the chest rises. If the chest doesn't rise, repeat the head tilt-chin lift and try another breath. If the second breath also fails to go in, start chest compressions immediately. This procedure helps maintain oxygen supply to vital organs while awaiting professional medical assistance.
+--------------------------------------------------------------------
+Question: 
+  what action should be avoided?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 6
+len(data) : 10
+Without specific context given, it's challenging to provide a precise answer. However, generally, actions that could potentially harm one's health, safety, or wellbeing, such as smoking, reckless driving, or harmful self-neglect, should be avoided.
+
+If you have a specific context in mind, please provide additional details so a more accurate response can be given.
+Without specific context given, it's challenging to provide a precise answer. However, generally, actions that could potentially harm one's health, safety, or wellbeing, such as smoking, reckless driving, or harmful self-neglect, should be avoided.
+
+If you have a specific context in mind, please provide additional details so a more accurate response can be given.
+
+Answer:
+ Without specific context given, it's challenging to provide a precise answer. However, generally, actions that could potentially harm one's health, safety, or wellbeing, such as smoking, reckless driving, or harmful self-neglect, should be avoided.
+
+If you have a specific context in mind, please provide additional details so a more accurate response can be given.
+--------------------------------------------------------------------
+Question: 
+ Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 7
+len(data) : 10
+Based on the provided context, sharing eating utensils, insects, casual contact, and breathing air around an infected person are not considered risk factors for the transmission of bloodborne pathogens. Bloodborne pathogens typically require direct exposure to infected blood or bodily fluids to transmit, which is not implied by the activities mentioned. Therefore, these activities do not contribute to the spread of bloodborne diseases.
+Based on the provided context, sharing eating utensils, insects, casual contact, and breathing air around an infected person are not considered risk factors for the transmission of bloodborne pathogens. Bloodborne pathogens typically require direct exposure to infected blood or bodily fluids to transmit, which is not implied by the activities mentioned. Therefore, these activities do not contribute to the spread of bloodborne diseases.
+
+Answer:
+ Based on the provided context, sharing eating utensils, insects, casual contact, and breathing air around an infected person are not considered risk factors for the transmission of bloodborne pathogens. Bloodborne pathogens typically require direct exposure to infected blood or bodily fluids to transmit, which is not implied by the activities mentioned. Therefore, these activities do not contribute to the spread of bloodborne diseases.
+--------------------------------------------------------------------
+Question: 
+ Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 8
+len(data) : 10
+Thirst, pallor (pale skin), and rapid heart rate are symptoms of shock, along with drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing, and anxiety. These symptoms are indicative of a serious condition requiring immediate medical attention. The presence of multiple symptoms can help in diagnosing shock and prompt appropriate treatment.
+Thirst, pallor (pale skin), and rapid heart rate are symptoms of shock, along with drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing, and anxiety. These symptoms are indicative of a serious condition requiring immediate medical attention. The presence of multiple symptoms can help in diagnosing shock and prompt appropriate treatment.
+
+Answer:
+ Thirst, pallor (pale skin), and rapid heart rate are symptoms of shock, along with drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing, and anxiety. These symptoms are indicative of a serious condition requiring immediate medical attention. The presence of multiple symptoms can help in diagnosing shock and prompt appropriate treatment.
+--------------------------------------------------------------------
+Question: 
+ If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 9
+len(data) : 10
+If you notice blood seeping through a pressure bandage, do not remove it entirely. Instead, reinforce the existing bandage, ensuring there are no gaps around the original one. Continue applying direct pressure to the wound to control bleeding effectively.
+Traceback (most recent call last):
+  File "/nethome/acossig/faser/main_med.py", line 100, in <module>
+    results_file = store_answer(db=PERSIST_DIRECTORY_DB, model=args.model_name+"_med", file_name=args.test, llm_response=llm_response, time=(time.time() - start), ground_truth_data=g, save_file=(True if n==(len(data)-1) else False))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/utils_med.py", line 188, in store_answer
+    csv_filename = write_generation_results(df, csv_filename, model=model, database=db,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/results_io.py", line 62, in write_generation_results
+    write_json(path, document)
+  File "/nethome/acossig/faser/results_io.py", line 43, in write_json
+    text = json.dumps(document, ensure_ascii=False, indent=2, allow_nan=False) + "\n"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 398, in _iterencode_dict
+    yield _floatstr(value)
+          ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 240, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: nan

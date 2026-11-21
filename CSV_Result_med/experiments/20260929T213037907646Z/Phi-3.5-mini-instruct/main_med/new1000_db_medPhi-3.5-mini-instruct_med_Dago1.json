@@ -1,0 +1,283 @@
+{
+  "model": "Phi-3.5-mini-instruct_med",
+  "database": "DB/new1000_db_med",
+  "dataset": "Dago1.csv",
+  "ragas": {
+    "status": "completed",
+    "judge_model": "medgemma:27b",
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "evaluated_questions": 10
+  },
+  "results": [
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "Firstly, ensure the person is in a comfortable position, ideally sitting upright. Encourage slow, deep breaths to help open up their airways. If symptoms persist, call emergency services immediately as they are trained to provide advanced medical assistance.\n\nNote: It is crucial to remember that you cannot replace the role of a medical professional, and immediate professional help should be sought in severe cases.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 3.3394052982330322,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.5619609504859123,
+        "answer_relevancy": 0.7760539188628967,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.57,
+        "factual_precision": 0.83,
+        "factual_recall": 0.56,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8360790960612964
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "The first aid treatment for a Box Jellyfish sting involves immersing the affected area in hot water, ideally between 40-45°C (104-113°F), for as long as possible (up to 30-45 minutes). This can help denature the venom, reducing pain and limiting tissue damage. It's crucial not to rub the area or apply ice as these actions could worsen the injury. Immediate medical attention is still required.\n\nNote: Always confirm this advice with local health authorities or professionals, as treatment guidelines may vary depending on location or expert recommendations.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 2.342430830001831,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.2247114850321125,
+        "answer_relevancy": 0.9935758566682146,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.33,
+        "factual_precision": 0.22,
+        "factual_recall": 0.33,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8988459401284501
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "A nosebleed becomes an emergency when it is prolonged (lasting more than 20 minutes), heavy, or associated with symptoms like shortness of breath, chest pain, rapid bleeding, or altered mental status. Severe or recurrent nosebleeds in individuals with bleeding disorders or those on anticoagulant medications also require immediate medical attention. Furthermore, if a child experiences a nosebleed, it's crucial to seek help as their smaller airways may quickly become compromised.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.971318244934082,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.4669763941293844,
+        "answer_relevancy": 0.9053274971292528,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.47,
+        "factual_precision": 0.44,
+        "factual_recall": 0.5,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8090820471057732
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "If someone has a nosebleed, first ensure they are in a comfortable sitting or standing position. Pinch their nostrils together gently for about 10 minutes to apply pressure and allow the bleeding to stop. If the bleeding persists after this period, seek medical assistance.\n\n1. Ensure a safe position.\n2. Apply pressure to the nostrils.\n3. Seek medical help if bleeding continues after 10 minutes.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.6247045993804932,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.6871586838572534,
+        "answer_relevancy": 0.9107661812268611,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.6,
+        "factual_precision": 1.0,
+        "factual_recall": 0.43,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9225477789072745
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to pick up the tooth by the crown (oval part), not the root. Avoid touching the root as it contains delicate cells necessary for reattachment. If possible, try to reinsert the tooth into the socket immediately, holding it in place for 15-30 minutes to increase the chances of successful reattachment. If that's not possible, store the tooth in a container with milk or the patient's saliva, and seek immediate dental care.\n\nNote: The given context doesn't directly discuss the first step but provides relevant information about handling a knocked-out tooth. The answer is based on general knowledge in dental emergencies.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 2.3136208057403564,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.20987804855078834,
+        "answer_relevancy": 0.9999999999998211,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.22,
+        "factual_precision": 0.2,
+        "factual_recall": 0.2,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8395121942031534
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because it can damage the delicate cells of the dental pulp, increasing the risk of infection and reducing the chance of successful reimplantation. Storing a knocked-out tooth in water can also lead to tissue damage and potential complications during the reimplantation process. Lastly, water can serve as a growth medium for bacteria, which can cause infection and further harm the tooth and surrounding tissues.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.5436081886291504,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.9261532778631176,
+        "answer_relevancy": 0.9999999999998229,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.6,
+        "factual_precision": 0.5,
+        "factual_recall": 0.8,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8625078482945756
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, immobilize the casualty on a rigid flat surface such as a board or a table, using any available materials for support. Keep the head, neck, and spine aligned, and avoid moving the casualty unnecessarily. It is crucial to maintain spinal immobilization and transport the casualty with caution to prevent further injury.\n\nNote: This should only be considered as a temporary measure until professional medical help arrives. Always seek professional medical assistance for suspected spinal injuries.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.7898623943328857,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.5584233815232066,
+        "answer_relevancy": 0.9098741467027693,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.8,
+        "factual_precision": 0.75,
+        "factual_recall": 0.86,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9003601927594926
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving them can lead to serious injury or spinal cord damage. Proper immobilization is crucial to prevent further harm, as the spine may be vulnerable to trauma even when the person is not fully conscious. Injuries could result in paralysis, pain, or potentially fatal complications.\n\nIn a brief context: Not supporting an unconscious person's neck and spine risks severe injury or paralysis, necessitating immediate and careful handling to prevent exacerbating any potential spinal trauma.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 2.1090235710144043,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.6216076896141688,
+        "answer_relevancy": 0.9216931806927455,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 1.0,
+        "factual_precision": 1.0,
+        "factual_recall": 1.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8864307584566754
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "To minimize pain while assisting someone with a fractured leg, ensure to: \n1. Support their injured leg and body securely, using a splint if necessary.\n2. Move them slowly and steadily, avoiding sudden or jerky motions.\n3. Communicate clearly during the process and ask for their comfort level, adjusting your approach accordingly.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.553889274597168,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.5736813226280655,
+        "answer_relevancy": 0.9516179149931027,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.8,
+        "factual_precision": 0.67,
+        "factual_recall": 1.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8829605846299091
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still help move a casualty safely by ensuring to keep the injured person as comfortable as possible, avoiding any unnecessary movement that could worsen their injury, and calling for professional medical help immediately. It's important not to attempt first aid procedures without proper training, as this could lead to further harm. Always prioritize the safety and well-being of the casualty while waiting for trained professionals to arrive.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.541656732559204,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.4155041787829394,
+        "answer_relevancy": 0.9932710860550428,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.91,
+        "factual_precision": 1.0,
+        "factual_recall": 1.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9120167151317579
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    }
+  ]
+}

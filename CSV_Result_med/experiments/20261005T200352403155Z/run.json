@@ -1,0 +1,23 @@
+{
+  "started_at": "20261005T200352403155Z",
+  "reranking": true,
+  "retrieval": true,
+  "ragas": false,
+  "timings_csv": "timings.csv",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Final.csv",
+      "reranking": true,
+      "retrieval": true,
+      "ragas": false,
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 176.014,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_Final.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Final.log",
+      "error": ""
+    }
+  ]
+}

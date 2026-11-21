@@ -1,0 +1,113 @@
+{
+  "model": "Phi-3.5-mini-instruct_med",
+  "database": "DB/new1000_db_med",
+  "dataset": "Dago1.csv",
+  "ragas": {
+    "status": "running",
+    "judge_model": "medgemma:27b",
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "evaluated_questions": 0
+  },
+  "results": [
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "First, help the person remain calm and encourage slow, deep breathing to prevent hyperventilation. If symptoms persist or worsen, call emergency services immediately as they can provide professional treatment. Avoid using any medications or remedies not prescribed by a healthcare professional, as they may cause harm or interfere with the person's condition.\n\nNote: It's crucial to remember that without a rescue inhaler, the individual's symptoms may not improve without professional medical help.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 5.609488248825073,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "The first aid treatment for a Box Jellyfish sting involves removing any tentacles still attached to the skin using gloves or a stick and rinsing the area with vinegar for approximately 30 seconds, as vinegar can neutralize the venom. If vinegar is not available, freshwater should not be used, as it may worsen the sting. Seek immediate medical attention, as box jellyfish stings can be life-threatening.\n\nNote: The context provided wasn't explicitly detailed, but based on general first aid guidelines, this response has been created. If more specific information was provided in the context, the answer could be more detailed.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 2.2034354209899902,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "A nosebleed can become an emergency if it is severe, does not stop after 20 minutes of applying pressure, is accompanied by symptoms like dizziness, shortness of breath, or if the person has a high risk of bleeding disorders. Prolonged bleeding may indicate a more serious condition like a clotting disorder or a structural problem within the nose. If someone is experiencing these symptoms, it is crucial to seek immediate medical attention.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.5294036865234375,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "If someone experiences a nosebleed, you should first calm and reassure them. Encourage them to sit up straight and lean slightly forward to prevent blood from flowing down their throat. Then, pinch their nostrils together gently for about 10-15 minutes, while breathing through their mouth, to help stop the bleeding. If bleeding persists, seek medical attention.\n\nNote: It's important to remember that the steps provided are general guidelines, and individual situations may vary. Always prioritize safety and, if unsure, consult a healthcare professional.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.8531630039215088,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to find the tooth. If it's clean, try to place it back in the socket without touching the root. If it can't be reinserted, store it in a container with milk or saline solution and seek immediate dental attention.\n\n1. Locate the avulsed tooth.\n2. Handle gently without touching the root.\n3. Store in milk/saline and seek immediate dental care if unable to reinsert.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.6498644351959229,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "Placing a knocked-out tooth in water can expose it to bacteria and reduce its viability for replantation. Water lacks the necessary environment for the tooth's cells to survive, which is crucial for successful reintegration into the jawbone. Additionally, water may cause the tooth's periodontal ligament (PDL) cells to swell and die, further compromising the potential for successful replantation.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.4027211666107178,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, transport a casualty with a suspected spinal injury carefully on their back, with as little movement as possible. If possible, use a rigid surface or a makeshift stretcher to keep the spine aligned. Ensure they are immobilized with any available materials such as rolled clothing or blankets to provide additional support.\n\nIn summary, keep the casualty's spine aligned and immobilized with any available support while minimizing movement during transportation.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.614389419555664,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person while moving them can result in potential spinal injuries, including paralysis or exacerbation of existing spinal damage. It's crucial to maintain spinal alignment and support to prevent additional harm. Proper technique and precaution are essential when moving an unconscious individual to avoid further complications.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.1938402652740479,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "1. Ensure the injured person is comfortable and secure, using pillows or cushions to support their injured leg and prevent unnecessary movement.\n2. Assist them in moving slowly and cautiously, offering support and stability by holding onto their uninjured limbs or using a makeshift sling for the injured leg.\n3. Coordinate a safe path to safety, avoiding tripping hazards or uneven surfaces and minimizing the distance they need to travel.\n\nRemember, it's essential to seek professional medical help as soon as possible in such situations.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.8330187797546387,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still help move a casualty safely by ensuring they do not cause further injury. They should offer support and stability, rather than attempting to lift or move the casualty themselves. It's crucial to communicate with emergency services, providing them with the casualty's location and condition, while ensuring they maintain a safe distance.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.1869750022888184,
+      "context": [],
+      "source": [],
+      "scores": {},
+      "metric_errors": {}
+    }
+  ]
+}

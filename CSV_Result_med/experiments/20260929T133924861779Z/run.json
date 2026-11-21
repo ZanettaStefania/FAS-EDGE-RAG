@@ -1,0 +1,16 @@
+{
+  "started_at": "20260929T133924861779Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "CPR_open.csv",
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 1533.389,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_CPR_open.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/CPR_open.log",
+      "error": ""
+    }
+  ]
+}

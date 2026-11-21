@@ -1,0 +1,283 @@
+{
+  "model": "Phi-3.5-mini-instruct_med",
+  "database": "DB/new1000_db_med",
+  "dataset": "DomandeEsperti.csv",
+  "ragas": {
+    "status": "completed",
+    "judge_model": "medgemma:27b",
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "evaluated_questions": 10
+  },
+  "results": [
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "To ensure effective ventilation during rescue breathing, you should avoid excessive chest compression as it may hinder the influx of air into the lungs. Additionally, avoid covering the patient's nose and mouth excessively which could block air passage. Lastly, make sure the airway is clear of obstructions such as food particles or vomit.\n\nTo summarize, avoid excessive chest compression, covering the mouth and nose excessively, and airway obstructions during rescue breathing.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in                    the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 3.5366029739379883,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.20786082416197146,
+        "answer_relevancy": 0.9330804496883122,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.31,
+        "factual_precision": 0.33,
+        "factual_recall": 0.29,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.831443296647886
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "The first thing you should do if you are alone and come across someone who may need CPR is to ensure your safety and call emergency services immediately. If you're trained in CPR, begin administering chest compressions while waiting for professional help to arrive. If not trained, continue to speak with emergency services until help arrives, as they can guide you through the process.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 2.111752986907959,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.3827524638807977,
+        "answer_relevancy": 0.9603170126562551,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.4,
+        "factual_precision": 0.33,
+        "factual_recall": 0.5,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.781009855523191
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, three primary conditions must be met: \n\n1. Exposure to infected blood: The individual must come into contact with blood that contains a bloodborne pathogen, such as through a needlestick injury or sharing needles.\n2. Pathogen viability: The bloodborne pathogen in the individual's exposure must be capable of infecting another person, which means it must be alive and infectious.\n3. Susceptibility: The individual must be susceptible, meaning their immune system must not be effectively protecting against the specific pathogen. Without these conditions, transmission of a bloodborne pathogen is unlikely.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 2.5620970726013184,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.22118543475204444,
+        "answer_relevancy": 0.9599644985290384,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.0,
+        "factual_precision": 0.0,
+        "factual_recall": 0.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8847417390081777
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "Firstly, ensure the infant is on a firm, flat surface and gently place them on their back. Then, place two fingers (usually the index and middle finger) on the center of the chest, just below the nipple line. Perform compressions at a depth of about 1.5 inches (about 4 cm) at a rate of 100-120 compressions per minute, allowing the chest to fully recoil after each compression.\n\nRemember to also open the airway by briefly lifting their chin and performing a breath to observe for chest rise before each rescue breath. If available, use an infant-specific defibrillator following the appropriate guidelines. If there's no response after about 2 minutes, continue with cycles of 30 compressions and 2 breaths.\n\nAlways call for emergency medical assistance immediately when you're dealing with such a critical situation. These steps are crucial in trying to revive an unresponsive infant, but professional medical help is essential.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 4.1210126876831055,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.6244831704602236,
+        "answer_relevancy": 0.8856534249692903,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.46,
+        "factual_precision": 0.33,
+        "factual_recall": 0.75,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9189853134198412
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "During rescue breathing for an infant with a pulse but not breathing, you should provide a breath every 3-5 seconds. This equates to about 12-20 breaths per minute. It's crucial to monitor the infant's response and adjust as necessary, but generally, this is the recommended rate.\n\nNote: This information is based on standard first aid guidelines; always follow the instructions provided by local authorities or professional medical advice.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 2.4111135005950928,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.42340220921329874,
+        "answer_relevancy": 0.9353419357759898,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.55,
+        "factual_precision": 0.5,
+        "factual_recall": 0.5,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8936088368531949
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, it is recommended to recheck the airway to ensure it is clear, and then attempt chest compressions again. If the chest still does not rise, a second rescuer should be called to help, and an automated external defibrillator (AED) should be prepared for use. Continued attempts should be made to follow the CPR procedure until professional medical help arrives.\n\nNote: This advice is based on commonly accepted steps for CPR and may vary depending on specific guidelines from organizations like the American Heart Association. Always follow the most recent training and guidelines.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 2.5811500549316406,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.5129353427647021,
+        "answer_relevancy": 0.9973520251972601,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.22,
+        "factual_precision": 0.14,
+        "factual_recall": 0.67,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8517413710588084
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, you should avoid excessive ventilation or hyperventilation. Ensure each breath lasts about one second and is gentle to avoid damaging the lungs. Avoid forceful breaths, as they can lead to gastric inflation and potential complications.\n\nIn brief: Avoid hyperventilation, forceful breaths, and excessive ventilation.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.657982587814331,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.18520074356183247,
+        "answer_relevancy": 0.9174680549744613,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.0,
+        "factual_precision": 0.0,
+        "factual_recall": 0.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.7408029742473301
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions not considered risk factors for the transmission of bloodborne pathogens typically involve practices that do not involve blood exposure. These include washing hands with soap and water, using standard precautions like wearing gloves when not handling blood, and avoiding sharing personal items like razors or toothbrushes. Additionally, non-invasive medical procedures such as X-rays and ultrasounds do not pose a risk for transmission.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.6880497932434082,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.21898004452439784,
+        "answer_relevancy": 0.9930913475611054,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.29,
+        "factual_precision": 0.2,
+        "factual_recall": 1.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.8759201780975915
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock include rapid heartbeat, weak and rapid pulse, shallow and rapid breathing, cold and clammy skin, pale or ashen complexion, confusion or loss of consciousness, weakness, and thirst. These symptoms occur due to inadequate blood flow to the body's vital organs, leading to insufficient oxygen and nutrient supply. It's a life-threatening condition that requires immediate medical attention.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.7546780109405518,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.7271574731947981,
+        "answer_relevancy": 0.999999999999796,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.5,
+        "factual_precision": 0.33,
+        "factual_recall": 1.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9086298927791924
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "If blood is seeping through the pressure bandage, you should apply additional dressings on top of the pressure bandage, adding more pressure to control the bleeding. If the bleeding remains uncontrolled, seek immediate medical help. Always ensure your own safety first before approaching the injured person.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 1.072535753250122,
+      "context": [],
+      "source": [],
+      "scores": {
+        "answer_correctness": 0.5798386506932719,
+        "answer_relevancy": 0.8855679886462458,
+        "context_precision": null,
+        "context_recall": null,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.5,
+        "factual_precision": 0.33,
+        "factual_recall": 1.0,
+        "faithfulness": null,
+        "noise_sensitivity": null,
+        "semantic_similarity": 0.9347392181577029
+      },
+      "metric_errors": {
+        "context_precision": "retrieved_contexts cannot be empty",
+        "context_recall": "retrieved_contexts cannot be empty",
+        "faithfulness": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample.",
+        "noise_sensitivity": "retrieved_contexts is missing. Please add retrieved_contexts to the test sample."
+      }
+    }
+  ]
+}

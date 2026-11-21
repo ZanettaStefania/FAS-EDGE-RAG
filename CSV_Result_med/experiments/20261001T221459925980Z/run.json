@@ -1,0 +1,20 @@
+{
+  "started_at": "20261001T221459925980Z",
+  "reranking": false,
+  "retrieval": true,
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Final.csv",
+      "reranking": false,
+      "retrieval": true,
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 15157.348,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_no_rerank_Final.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Final_no_rerank.log",
+      "error": ""
+    }
+  ]
+}

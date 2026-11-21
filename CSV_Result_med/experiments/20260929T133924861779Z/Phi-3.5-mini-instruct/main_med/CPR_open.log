@@ -1,0 +1,227 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9631.17it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 8064.31it/s]
+Loading weights:   0%|          | 0/195 [00:00<?, ?it/s]Loading weights:   4%|▍         | 8/195 [00:00<00:02, 77.08it/s]Loading weights:  10%|█         | 20/195 [00:00<00:01, 98.16it/s]Loading weights:  15%|█▌        | 30/195 [00:00<00:01, 93.93it/s]Loading weights:  21%|██        | 40/195 [00:00<00:01, 93.84it/s]Loading weights:  26%|██▌       | 50/195 [00:00<00:01, 89.20it/s]Loading weights:  30%|███       | 59/195 [00:00<00:01, 85.62it/s]Loading weights:  36%|███▌      | 70/195 [00:00<00:01, 89.57it/s]Loading weights:  41%|████      | 79/195 [00:00<00:01, 86.33it/s]Loading weights:  45%|████▌     | 88/195 [00:01<00:01, 85.13it/s]Loading weights:  50%|████▉     | 97/195 [00:01<00:01, 83.72it/s]Loading weights:  54%|█████▍    | 106/195 [00:01<00:01, 83.39it/s]Loading weights:  59%|█████▉    | 115/195 [00:01<00:00, 82.51it/s]Loading weights:  64%|██████▎   | 124/195 [00:01<00:00, 82.46it/s]Loading weights:  68%|██████▊   | 133/195 [00:01<00:00, 81.88it/s]Loading weights:  73%|███████▎  | 142/195 [00:01<00:00, 82.20it/s]Loading weights:  77%|███████▋  | 151/195 [00:01<00:00, 81.63it/s]Loading weights:  82%|████████▏ | 160/195 [00:01<00:00, 81.87it/s]Loading weights:  87%|████████▋ | 169/195 [00:01<00:00, 81.48it/s]Loading weights:  91%|█████████▏| 178/195 [00:02<00:00, 83.76it/s]Loading weights:  96%|█████████▌| 187/195 [00:02<00:00, 83.20it/s]Loading weights: 100%|██████████| 195/195 [00:02<00:00, 84.90it/s]
+Question: 
+ What’s the correct sequence for basic life support?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 0
+len(data) : 10
+The correct sequence for basic life support (BLS) follows the ABCs: Airway, Breathing, and Circulation. First, ensure the patient has a clear airway and is breathing; if not, start chest compressions. Next, provide rescue breaths and continue monitoring until advanced medical help arrives.
+
+1. Airway: Check for any obstructions and clear if necessary.
+2. Breathing: Look, listen, and feel for normal breathing.
+3. Circulation: If not breathing, start chest compressions at a rate of 100-120 per minute and a depth of 2 inches.
+4. Rescue Breaths: After 30 compressions, give 2 rescue breaths by sealing your mouth over theirs and ensuring chest rise.
+5. Continue: Keep performing cycles of compressions and breaths until professional help arrives or the patient recovers.
+The correct sequence for basic life support (BLS) follows the ABCs: Airway, Breathing, and Circulation. First, ensure the patient has a clear airway and is breathing; if not, start chest compressions. Next, provide rescue breaths and continue monitoring until advanced medical help arrives.
+
+1. Airway: Check for any obstructions and clear if necessary.
+2. Breathing: Look, listen, and feel for normal breathing.
+3. Circulation: If not breathing, start chest compressions at a rate of 100-120 per minute and a depth of 2 inches.
+4. Rescue Breaths: After 30 compressions, give 2 rescue breaths by sealing your mouth over theirs and ensuring chest rise.
+5. Continue: Keep performing cycles of compressions and breaths until professional help arrives or the patient recovers.
+
+Answer:
+ The correct sequence for basic life support (BLS) follows the ABCs: Airway, Breathing, and Circulation. First, ensure the patient has a clear airway and is breathing; if not, start chest compressions. Next, provide rescue breaths and continue monitoring until advanced medical help arrives.
+
+1. Airway: Check for any obstructions and clear if necessary.
+2. Breathing: Look, listen, and feel for normal breathing.
+3. Circulation: If not breathing, start chest compressions at a rate of 100-120 per minute and a depth of 2 inches.
+4. Rescue Breaths: After 30 compressions, give 2 rescue breaths by sealing your mouth over theirs and ensuring chest rise.
+5. Continue: Keep performing cycles of compressions and breaths until professional help arrives or the patient recovers.
+--------------------------------------------------------------------
+Question: 
+ When assessing the victim,  should I 'look, listen and feel' for breathing?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 1
+len(data) : 10
+Yes, when assessing a victim for breathing, you should 'look, listen, and feel'. Visual inspection allows you to see chest movements, auscultation involves listening for breath sounds with a stethoscope, and palpation enables you to feel for air movement in the nostrils or mouth. These methods together can help you determine if the victim is breathing.
+Yes, when assessing a victim for breathing, you should 'look, listen, and feel'. Visual inspection allows you to see chest movements, auscultation involves listening for breath sounds with a stethoscope, and palpation enables you to feel for air movement in the nostrils or mouth. These methods together can help you determine if the victim is breathing.
+
+Answer:
+ Yes, when assessing a victim for breathing, you should 'look, listen, and feel'. Visual inspection allows you to see chest movements, auscultation involves listening for breath sounds with a stethoscope, and palpation enables you to feel for air movement in the nostrils or mouth. These methods together can help you determine if the victim is breathing.
+--------------------------------------------------------------------
+Question: 
+ For any victim, what is the correct compression rate?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 2
+len(data) : 10
+The correct compression rate for CPR on adults is 100 to 120 compressions per minute. For children, the rate is slightly slower, around 100 to 110 compressions per minute. It's important to maintain proper technique and coordination with rescue breaths if trained to do so.
+
+For infants, the compression rate is similar, around 100 to 120 compressions per minute, but the technique is slightly different, with two-finger compressions and allowing for more chest recoil.
+
+Please note that these guidelines may vary slightly depending on the organization (e.g., American Heart Association vs. European Resuscitation Council) and updates to their recommendations.
+The correct compression rate for CPR on adults is 100 to 120 compressions per minute. For children, the rate is slightly slower, around 100 to 110 compressions per minute. It's important to maintain proper technique and coordination with rescue breaths if trained to do so.
+
+For infants, the compression rate is similar, around 100 to 120 compressions per minute, but the technique is slightly different, with two-finger compressions and allowing for more chest recoil.
+
+Please note that these guidelines may vary slightly depending on the organization (e.g., American Heart Association vs. European Resuscitation Council) and updates to their recommendations.
+
+Answer:
+ The correct compression rate for CPR on adults is 100 to 120 compressions per minute. For children, the rate is slightly slower, around 100 to 110 compressions per minute. It's important to maintain proper technique and coordination with rescue breaths if trained to do so.
+
+For infants, the compression rate is similar, around 100 to 120 compressions per minute, but the technique is slightly different, with two-finger compressions and allowing for more chest recoil.
+
+Please note that these guidelines may vary slightly depending on the organization (e.g., American Heart Association vs. European Resuscitation Council) and updates to their recommendations.
+--------------------------------------------------------------------
+Question: 
+ What’s the recommended compression depth for an adult?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 3
+len(data) : 10
+The recommended compression depth for an adult during CPR is at least 2 inches (5 cm) but not greater than 2.4 inches (6 cm). It's important to ensure adequate chest compression depth to effectively circulate blood to vital organs.
+
+Note: Always remember to check the current guidelines from reputable organizations like the American Heart Association as they may update recommendations periodically.
+The recommended compression depth for an adult during CPR is at least 2 inches (5 cm) but not greater than 2.4 inches (6 cm). It's important to ensure adequate chest compression depth to effectively circulate blood to vital organs.
+
+Note: Always remember to check the current guidelines from reputable organizations like the American Heart Association as they may update recommendations periodically.
+
+Answer:
+ The recommended compression depth for an adult during CPR is at least 2 inches (5 cm) but not greater than 2.4 inches (6 cm). It's important to ensure adequate chest compression depth to effectively circulate blood to vital organs.
+
+Note: Always remember to check the current guidelines from reputable organizations like the American Heart Association as they may update recommendations periodically.
+--------------------------------------------------------------------
+Question: 
+ When performing rescue breathing, what should be avoided to ensure effective ventilation?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 4
+len(data) : 10
+To ensure effective ventilation during rescue breathing, it is crucial to avoid excessive ventilation or hyperventilation, as it can lead to gastric distension and decreased cardiac output. It's also important not to lean forward excessively, which can impede the flow of air into the lungs. Lastly, avoid any interruptions in the breathing cycle that could compromise the oxygen supply to the patient.
+
+Note: The context provided was not specifically detailed, hence the general guidelines are based on standard practices in emergency medical care.
+To ensure effective ventilation during rescue breathing, it is crucial to avoid excessive ventilation or hyperventilation, as it can lead to gastric distension and decreased cardiac output. It's also important not to lean forward excessively, which can impede the flow of air into the lungs. Lastly, avoid any interruptions in the breathing cycle that could compromise the oxygen supply to the patient.
+
+Note: The context provided was not specifically detailed, hence the general guidelines are based on standard practices in emergency medical care.
+
+Answer:
+ To ensure effective ventilation during rescue breathing, it is crucial to avoid excessive ventilation or hyperventilation, as it can lead to gastric distension and decreased cardiac output. It's also important not to lean forward excessively, which can impede the flow of air into the lungs. Lastly, avoid any interruptions in the breathing cycle that could compromise the oxygen supply to the patient.
+
+Note: The context provided was not specifically detailed, hence the general guidelines are based on standard practices in emergency medical care.
+--------------------------------------------------------------------
+Question: 
+ For how long should you check for a pulse before deciding to start CPR?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 5
+len(data) : 10
+You should check for a pulse for about 5 to 10 seconds before deciding to start CPR. If no pulse is detected, CPR should be initiated immediately. This time frame is recommended to avoid unnecessary delays in potentially life-saving intervention.
+You should check for a pulse for about 5 to 10 seconds before deciding to start CPR. If no pulse is detected, CPR should be initiated immediately. This time frame is recommended to avoid unnecessary delays in potentially life-saving intervention.
+
+Answer:
+ You should check for a pulse for about 5 to 10 seconds before deciding to start CPR. If no pulse is detected, CPR should be initiated immediately. This time frame is recommended to avoid unnecessary delays in potentially life-saving intervention.
+--------------------------------------------------------------------
+Question: 
+ What are the correct steps in the AHA Adult Chain of Survival?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 6
+len(data) : 10
+The American Heart Association's Adult Chain of Survival consists of the following steps:
+
+1. Early recognition and call for emergency help: Identifying cardiac arrest symptoms and immediately calling emergency services.
+2. Early CPR: Performing chest compressions and rescue breathing to maintain blood circulation and oxygenation.
+3. Rapid defibrillation: Using an automated external defibrillator (AED) to restore a normal heart rhythm if present.
+4. Effective advanced life support: Professional medical personnel providing advanced interventions and care.
+5. Integrated post-cardiac arrest care: Continuing comprehensive care for the patient to improve their outcome post-resuscitation.
+
+These steps aim to enhance survival rates and improve outcomes for individuals experiencing cardiac arrest.
+The American Heart Association's Adult Chain of Survival consists of the following steps:
+
+1. Early recognition and call for emergency help: Identifying cardiac arrest symptoms and immediately calling emergency services.
+2. Early CPR: Performing chest compressions and rescue breathing to maintain blood circulation and oxygenation.
+3. Rapid defibrillation: Using an automated external defibrillator (AED) to restore a normal heart rhythm if present.
+4. Effective advanced life support: Professional medical personnel providing advanced interventions and care.
+5. Integrated post-cardiac arrest care: Continuing comprehensive care for the patient to improve their outcome post-resuscitation.
+
+These steps aim to enhance survival rates and improve outcomes for individuals experiencing cardiac arrest.
+
+Answer:
+ The American Heart Association's Adult Chain of Survival consists of the following steps:
+
+1. Early recognition and call for emergency help: Identifying cardiac arrest symptoms and immediately calling emergency services.
+2. Early CPR: Performing chest compressions and rescue breathing to maintain blood circulation and oxygenation.
+3. Rapid defibrillation: Using an automated external defibrillator (AED) to restore a normal heart rhythm if present.
+4. Effective advanced life support: Professional medical personnel providing advanced interventions and care.
+5. Integrated post-cardiac arrest care: Continuing comprehensive care for the patient to improve their outcome post-resuscitation.
+
+These steps aim to enhance survival rates and improve outcomes for individuals experiencing cardiac arrest.
+--------------------------------------------------------------------
+Question: 
+ If you are alone and come across a person who may need CPR, what is the first thing you should do?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 7
+len(data) : 10
+First, ensure the scene is safe for you to approach. Then, check for responsiveness by tapping the person and shouting. If there's no response, call emergency services immediately and begin CPR if you are trained to do so.
+
+1. Ensure safety: Before approaching the individual, confirm the area is secure and risk-free.
+2. Check responsiveness: Gently tap their shoulder and ask if they're okay.
+3. Initiate emergency response: If unresponsive, dial emergency services and start CPR if trained.
+
+This three-step approach prioritizes safety, evaluates the individual's condition, and activates the necessary emergency response.
+First, ensure the scene is safe for you to approach. Then, check for responsiveness by tapping the person and shouting. If there's no response, call emergency services immediately and begin CPR if you are trained to do so.
+
+1. Ensure safety: Before approaching the individual, confirm the area is secure and risk-free.
+2. Check responsiveness: Gently tap their shoulder and ask if they're okay.
+3. Initiate emergency response: If unresponsive, dial emergency services and start CPR if trained.
+
+This three-step approach prioritizes safety, evaluates the individual's condition, and activates the necessary emergency response.
+
+Answer:
+ First, ensure the scene is safe for you to approach. Then, check for responsiveness by tapping the person and shouting. If there's no response, call emergency services immediately and begin CPR if you are trained to do so.
+
+1. Ensure safety: Before approaching the individual, confirm the area is secure and risk-free.
+2. Check responsiveness: Gently tap their shoulder and ask if they're okay.
+3. Initiate emergency response: If unresponsive, dial emergency services and start CPR if trained.
+
+This three-step approach prioritizes safety, evaluates the individual's condition, and activates the necessary emergency response.
+--------------------------------------------------------------------
+Question: 
+ When assessing a victim, which common action is NOT recommended in the current AHA guidelines?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 8
+len(data) : 10
+Current AHA guidelines recommend not placing a victim in a stress position, which involves twisting the arms behind the back and holding the wrists together. This action can potentially worsen spinal injuries. Therefore, it's not recommended during the assessment of a victim.
+
+Other actions such as checking for responsiveness, breathing, and circulation are recommended. However, it is always crucial to call for professional medical help as soon as possible.
+Current AHA guidelines recommend not placing a victim in a stress position, which involves twisting the arms behind the back and holding the wrists together. This action can potentially worsen spinal injuries. Therefore, it's not recommended during the assessment of a victim.
+
+Other actions such as checking for responsiveness, breathing, and circulation are recommended. However, it is always crucial to call for professional medical help as soon as possible.
+
+Answer:
+ Current AHA guidelines recommend not placing a victim in a stress position, which involves twisting the arms behind the back and holding the wrists together. This action can potentially worsen spinal injuries. Therefore, it's not recommended during the assessment of a victim.
+
+Other actions such as checking for responsiveness, breathing, and circulation are recommended. However, it is always crucial to call for professional medical help as soon as possible.
+--------------------------------------------------------------------
+Question: 
+ If you are alone and find an unconscious victim on the ground who may need CPR. The scene is safe. You assess the victim and determine he is not breathing and will not awaken. What should you do first?
+No relevant docs were retrieved using the relevance score threshold 0.6
+n==len(data) : False
+n : 9
+len(data) : 10
+First, call for emergency medical services (EMS) immediately. Next, start performing high-quality chest compressions at a rate of 100-120 per minute, ensuring you allow complete chest recoil between compressions. If an automated external defibrillator (AED) is available, use it as soon as possible.
+Data saved as '/nethome/acossig/faser/CSV_Result_med/experiments/20260929T133924861779Z/Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_CPR_open.json'.
+First, call for emergency medical services (EMS) immediately. Next, start performing high-quality chest compressions at a rate of 100-120 per minute, ensuring you allow complete chest recoil between compressions. If an automated external defibrillator (AED) is available, use it as soon as possible.
+
+Answer:
+ First, call for emergency medical services (EMS) immediately. Next, start performing high-quality chest compressions at a rate of 100-120 per minute, ensuring you allow complete chest recoil between compressions. If an automated external defibrillator (AED) is available, use it as soon as possible.
+--------------------------------------------------------------------
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7666.35it/s]
+Ragas: 1/10
+Ragas: 2/10
+Ragas: 3/10
+Ragas: 4/10
+Ragas: 5/10
+Ragas: 6/10
+Ragas: 7/10
+Ragas: 8/10
+Ragas: 9/10
+Ragas: 10/10
+Ragas results: /nethome/acossig/faser/CSV_Result_med/experiments/20260929T133924861779Z/Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_CPR_open.json

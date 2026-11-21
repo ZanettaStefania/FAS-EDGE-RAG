@@ -1,0 +1,16 @@
+{
+  "started_at": "20260929T212419177857Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Dago1.csv",
+      "status": "interrupted",
+      "return_code": null,
+      "elapsed_seconds": 258.019,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Dago1.log",
+      "error": "Interrupted by user."
+    }
+  ]
+}

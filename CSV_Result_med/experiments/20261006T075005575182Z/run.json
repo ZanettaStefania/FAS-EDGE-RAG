@@ -1,0 +1,23 @@
+{
+  "started_at": "20261006T075005575182Z",
+  "reranking": true,
+  "retrieval": true,
+  "ragas": true,
+  "timings_csv": "timings.csv",
+  "experiments": [
+    {
+      "model": "Qwen2.5-1.5B-Instruct",
+      "pipeline": "main_med",
+      "dataset": "Final.csv",
+      "reranking": true,
+      "retrieval": true,
+      "ragas": true,
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 24633.345,
+      "results_json": "Qwen2.5-1.5B-Instruct/main_med/new1000_db_medQwen2.5-1.5B-Instruct_med_Final.json",
+      "log_file": "Qwen2.5-1.5B-Instruct/main_med/Final.log",
+      "error": ""
+    }
+  ]
+}

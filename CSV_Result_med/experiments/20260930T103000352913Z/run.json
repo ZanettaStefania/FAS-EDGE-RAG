@@ -1,0 +1,18 @@
+{
+  "started_at": "20260930T103000352913Z",
+  "reranking": false,
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "Dago1.csv",
+      "reranking": false,
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 3968.211,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_no_rerank_Dago1.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/Dago1_no_rerank.log",
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "started_at": "20260929T202705721056Z",
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "DomandeEsperti.csv",
+      "status": "error",
+      "return_code": 1,
+      "elapsed_seconds": 31.041,
+      "results_json": "",
+      "log_file": "Phi-3.5-mini-instruct/main_med/DomandeEsperti.log",
+      "error": "Pipeline exited with code 1; see log."
+    }
+  ]
+}

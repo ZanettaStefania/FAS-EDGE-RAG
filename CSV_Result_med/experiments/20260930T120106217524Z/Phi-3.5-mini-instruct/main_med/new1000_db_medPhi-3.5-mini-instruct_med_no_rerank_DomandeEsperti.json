@@ -1,0 +1,503 @@
+{
+  "model": "Phi-3.5-mini-instruct_med_no_rerank",
+  "database": "DB/new1000_db_med",
+  "dataset": "DomandeEsperti.csv",
+  "ragas": {
+    "status": "completed",
+    "judge_model": "medgemma:27b",
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "evaluated_questions": 10
+  },
+  "results": [
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "To ensure effective ventilation during rescue breathing, one should avoid:\n1. Administering more than two rescue breaths before resuming chest compressions.\n2. Reaching blindly into the child's throat to remove obstructions.\n3. Maintaining a delay or fatigue during the resuscitation process.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 3.444319248199463,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants).",
+        "49 Rescue Breathing \n \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as \nwell as inadequate breathing, the victim will still have some amount of cardiac output, \nwhich you will be able to detect as a palpable pulse. \n \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, \nwhich may be seen as slow, irregular or gasping respirations. These abnormal respirations \nare inadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not \ntreated, therefore healthcare providers should intervene quickly to prevent this \ndeterioration by providing rescue breathing . \n \nThe table below provides a summary of rescue breathing guidelines for different age \ngroups. \n \nRescue Breathing for Adults  Rescue Breathing for Children and \nInfants  \n1 breath every 5 to 6 seconds (10- 12 \nbreaths/minute) 1 breath every 3 to 5 seconds (12- 20 \nbreaths/minute) \nEach breath should last 1 second",
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds.",
+        "If your rescue breaths do not make the child’s chest rise effectively:  \nGive a further 30 chest compressions before attempting the following:  \n Check inside the mouth and remove any clearly visible obstruction ( do not reach blindly \ninto the child’s throat ) \n Recheck that the head is adequately tilted back and the chin is lifted  \n Do not administer more than 2 rescue breaths before resuming chest compressions  \n  \nNote: If there is another rescuer with you, change over every two minutes to prevent either of \nyou getting fatigued.  Ensure as short a delay as possible as you change over.  \n  \nAppen dix: Resuscitation – baby under 1 year:  \n \nNOTE: This section deals with the differences between adult and baby resuscitation.  \n  \nREMEMBER: If you are at all unsure, it is better to perform the adult sequence on a child \nwho is unresponsive and not breathing t han not to do anything at all."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 6
+        },
+        {
+          "page": 15,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 153,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 32,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 76,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.3277275994889531,
+        "answer_relevancy": 0.9854403023610949,
+        "context_precision": 0.32499999998375,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.0,
+        "factual_precision": 0.0,
+        "factual_recall": 0.0,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 1.0,
+        "semantic_similarity": 0.7654558525012671
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "First, ensure the safety of both yourself and the victim by moving them to a safer location if necessary. Then, assess the victim's breathing by shaking their shoulder and asking if they're okay. If they are not breathing normally, call for emergency help immediately. If available, switch roles with another rescuer after every two minutes to prevent exhaustion. If no one is available to assist, perform chest compressions at a rate of 100 to 120 per minute.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 1.958414077758789,
+      "context": [
+        "One Rescuer Adult CPR  \n \nIf you are alone and come across an individual who is down, follow the steps below. If someone \nelse is in the area to assist, use the ‘Two Rescuer’ sequence.  \n \nStay Safe : If you come upon an individual who may need CPR, look around and make sure you \nand the victim are in a safe place. For example, if  the victim is in water or on a road, try to move \nthe victim to a safer area.  If you are in a safe area, do not try to move  the victim as he/she may \nhave other injuries  (i.e., to the head or neck)  that you cannot see.  Simply roll him over onto his \nback. Make sure the victim is on a firm surface, in case compressions are needed.  \nAssess the Victim : To quickly assess the victim,  shake his shoulder and yell at him.  Check for \nbreathing.  If he/she is not breathing, or is not breathing normally (i.e., only gasping), you must \nsummon help.  Note: Agonal breathing  is breathing that is very slow, shallow and/or gasping.",
+        "24 One Rescuer Adult CPR \n \nIf you are alone and come across an individual who is down, follow the steps below. \nIf someone else is in the area to assist, use the ǮTwo Rescuer ǯ sequence. \n \nStay Safe : If you come upon an individual who may need CPR, look around and \nmake sure you and the victim are in a safe place . If the victim is in water or on a \nroad, try to move the victim to a safer area.  If you are in a safe area, do not try to \nmove the victim as he/she may have other injuries that you cannot see.  Simply roll \nhim over onto his back. Make sure the victim is on a firm surface, in case \ncompressions are needed. \n \nAssess the Victim : To quickly assess the victim, shake his shoulder and yell at him.  \nCheck for breathing.  If he/she is not breathing, or is not breathing normally (i.e., \nonly gasping) , you must summon help. \n \nActivate the Emergency Response System and Find an AED : Yell for help. If someone",
+        "30 Two Rescuer Adult CPR (without an AED) \n \nIf you come across a victim who is down and another person is available to help, \nsend that person to activate the Emergency Response System and find an AED while \nyou assess whether the victim needs CPR. When you have determined that the \nvictim requires CPR, start CPR beginning with compressions.  When the second \nperson returns (without an AED in this case): \n \n You should continue chest compressions and count the compressions aloud \neach time you compress the victim ǯs chest. \n The second rescuer should keep the person ǯs airway open using the head tilt-\nchin lift maneuver. The second rescuer should give two rescue breaths after \nevery 30 compressions, using a face mask or a bag-mask device. \n You and the second rescuer should switch positions/roles about every two \nminutes so neither one of you gets tired.  If you are counting out loud, two \nminutes is about 5 cycles of thirty compressions and two breaths.  You",
+        "4How to take over CPR from another rescuer\n1. Offer to help, tell the rescuer that you are trained in CPR. \nEnsure medical help has been called.  \n2. Give 30 compressions followed by 2 breaths. Use your own \nbarrier device if available\n120 121Cardiovascular emergencies and CPR",
+        "4Chest compression only CPR\nCPR guidelines stress early recognition of the emergency and stress \nthe importance of calling 9-1-1 or the local emergency number if \nyou find someone collapsed and unresponsive.\nIf you have not been trained in CPR or are hesitant to perform \nventilations, for any reason—don’t give up. Your actions can still \nsave a life.\nCompression only CPR is CPR without mouth-to-mouth breaths. \nProvide high quality chest compressions by pushing hard and fast \non the centre of the chest, at a rate of 100 to 120 compressions per \nminute. \nAlthough this does not give the casualty any oxygen, this option \ncan be used by people not trained in conventional CPR, or those \nwho are unsure of their ability.\nDispatcher-assisted CPR\nIn many locales, the 9-1-1 dispatcher is trained to coach you \nthrough an emergency until medical help arrives. Put your phone \non speaker and place it by the casualty’s head and talk to the \ndispatcher throughout the rescue."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 19
+        },
+        {
+          "page": 128,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 134,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 122
+        },
+        {
+          "page": 121,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.5108258630523618,
+        "answer_relevancy": 0.7838873091463426,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.33,
+        "factual_precision": 0.2,
+        "factual_recall": 1.0,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.375,
+        "semantic_similarity": 0.8433034522094471
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, there must be direct contact with infected blood or body fluids through a portal of entry (like broken skin, mucous membranes, or respiratory system). Additionally, the pathogen must have access to the body, which excludes casual contact, water, or food transmission. There's also no vaccine for some pathogens, like HIV.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 1.4726204872131348,
+      "context": [
+        "Bloodborne Pathogens  \n \nProtect Yourself!",
+        "One of your major concerns when providing first aid should be to protect yourself from \nbloodborne pathogens . Bloodborne pathogens  are infectious microorganism that have the \nability to cause disease in humans. They are spread through direct contact with infected blood. \nSome of these include hepatitis C and HIV, the virus that causes AIDS. Unive rsal precautions  are \nmeasures that help to protect against bloodborne pathogens and assume that all victims are \npotentially infectious. By observing universal precautions, you are protecting yourself against \nexposure to potentially disease -causing microorg anism present in another’s blood or body \nfluids. To protect yourself, you should use PPE, or personal protective equipment, such as \ngloves. If you do not have gloves, you can improvise by using a plastic bag to cover your hands. \nAlways follow these guideli nes when providing first aid to protect yourself:",
+        "Bloodborne Pathogens - What are they, and which ones should I be concerned \nabout?  \nBloodborne pathogens are those organisms that are carried in \nthe blood and are capable of caus ing disease.  Common \nbloodborne pathogens that cause disease in humans include \nhuman immunodeficiency virus (HIV), Hepatitis B (HBV), and \nHepatitis C (HCV) . These  viruses are usually transmitted \nthrough exposure to blood, but you may  also be exposed \nthrough other body fluids.   \nHIV/AIDS  \nHuman immunodeficiency virus is one of the common bloodborne pathogens.  Also called HIV , \nthis is the virus  that causes  acquired immune deficiency syndrome  (AIDS ).  Since the virus was \nfirst identified  in the United States in the early 1980's, two types of  HIV virus es have been \nidentified.  They are called HIV -1 and HIV -2. HIV -1 is the type most people talk about when they \nuse the te rm HIV.  Both types of HIV destroy T cells in the body.  These T cells are critical in",
+        "Welcome!  \nIn this course, you will learn:  \n• The definition of bloodborne pathogens  \n• Which bloodborne pathogens are of greatest concern  \n• How bloodborne pathogens can enter the body  \n• The importance of handwashing and PPE (personal protective equipment) in protecting \nagainst infection and reducing the spread of bloodborne pathogens  \n• Practices that can reduce the transmission of bloodborne pathogens  \n• How to remove disposable gloves safely and appropriately  \n• What you should do if you are exposed to a bloodborne pathogen  \nOnce you complete the course, complete the multiple -choice exam to receive your certification \ncard.  \nLet’s get started!",
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens"
+      ],
+      "source": [
+        {
+          "page": 94,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 40
+        },
+        {
+          "page": 96,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 95
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 101
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.5624587291532178,
+        "answer_relevancy": 0.9876185531448683,
+        "context_precision": 0.699999999965,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.21428571413265304,
+        "factual_correctness": 0.33,
+        "factual_precision": 0.5,
+        "factual_recall": 0.25,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.4,
+        "semantic_similarity": 0.8861985529765077
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "As a lone rescuer, first ensure the infant's airway by tilting their head and lifting their chin. Then seal your mouth around the baby's nose and mouth to give 5 initial rescue breaths, making sure the chest rises visibly. If rescue breaths are ineffective, perform 30 chest compressions using two fingers on the lower half of the infant's sternum, compressing it about 1 ½ inches deep at a rate of 100 compressions per minute. Repeat this cycle of 30 compressions followed by 2 rescue breaths, minimizing interruptions. If alone and needing to ensure help is on the way, perform resuscitation for about 1 minute before leaving the baby.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 3.0114006996154785,
+      "context": [
+        "4. Rescuer 2  should place the thumbs of both hands on the lower half of the infant’s \nbreastbone, while being careful not to press on the end of the breastbone (xiphoid \nprocess). Put the fingers of both  hands around the infant’s back to provide support. Use \nthe thumbs to depress the sternum approximately 1/3 the depth of the chest,  or \napproximately 1 ½ inches. Compress at a rate of 100 -120 compressions per minute.  \n \n5. Rescuer 1  should provide breaths as described above.",
+        "8Infant CPR/AED\nIn the case of the infant casualty, the rescuer may encircle the infant \ncasualty’s chest and use their thumbs side-by-side or one on top of \nthe other to provide compressions. The method used will depend \non the size of the infant casualty and the rescuer’s thumbs.\nOne rescuer 30:2\n1. Give 30 chest compressions just below the nipple line using \ntwo fingers.\n2. Push hard, push fast (100 to 120 per minute) to a depth of \nabout 1 1/2 inches (4 cm) or 1/3 of the depth of the chest. \nThe pressure and release phases take the same time. \nRelease pressure and completely remove your weight at \nthe top of each compression to allow chest to return to \nthe resting position after each compression. Minimize \ninterruptions.\n3. Give 2 breaths.\n4. Continue 30 compressions: 2 breaths. \n282 283Basic Life Support Resuscitation Skills Basic Life Support Resuscitation Skills",
+        " If you are not alone, ask the nearest person to dial 999 for an ambulance immediately .  If \nyou are alone and need to leave the child to ensure help is on the way , perform resuscitation \nfor about 1 minute first:  \n Maintain the child’s airway by tilting their head and lifting the chin  \n Pinch the fleshy part of the nose and seal your mouth around the child’s  \n Give 5 initial rescue breaths.  Blow in just enough air to make the child’s chest rise visibly  \nCombine rescue breaths with chest compressions:  \n Using 1 or 2 hands as required to depress the child’s chest a third of its depth  \n Give 30 chest compressions at a rate of 100 compressions per minute  \n Open the airwa y again by tilting the child’s head and lifting the chin, and give 2 more \nrescue breaths  \n Continue to administer 30 chest compressions followed by 2 rescue breaths  \n  \nIf your rescue breaths do not make the child’s chest rise effectively:",
+        "present, the chest is compressed using two fingers on the lower half of the \nsternum, avoiding the xiphoid process (the very end of the sternum where it \nnarrows). To landmark, place 2 fingers in the center of the infant ǯs chest, just \nbelow the nipple line. Push down on the infant ǯs chest one-third the depth of \nthe chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return \nto its neutral position) in between compressions. Compressions should be \ndelivered at a rate of 100-120 compressions/minute.  \n 2 thumb-encircling hand technique: When two rescuers are present, the \ncompression: ventilation ratio drops to 15:2, the same as in children. To \nperform this technique, position yourself at the infant ǯs feet. Place your \nthumbs side by side on the center of the infant ǯs chest just below the nipple \nline. Encircle the infant ǯs chest so that the fingers of both hands support the \ninfant ǯs back. Use your thumbs to deliver compressions at the appropriate",
+        "If the baby is not breathing normally:  \n If you are not alone, ask the nearest person to dial 999 for an ambulance immediately .  If \nyou are alone and need to leave the baby to ensure help is on the way, perform resuscitation \nfor about 1 minute first:  \n Maintain the baby’s airway by tilting their head and lifting the chin ensuring you do not \nover-extend the baby’s neck  \n Seal your mo uth around the baby’s nose and mouth  \n Give 5 initial rescue breaths.  Blow in just enough air to make the baby’s chest rise visibly.  \nBe careful not to over inflate the baby’s lungs  \n  \nCombine rescue breaths with chest compressions:  \n Use 2 fingers to depr ess the baby’s chest to a third of its depth  \n Give 30 chest compressions at a rate of 100 compressions per minute  \n Open the airway again by tilting the baby’s head and lifting the chin, and give 2 more \nrescue breaths  \n Continue to administer 30 chest compressions followed by 2 rescue breaths"
+      ],
+      "source": [
+        {
+          "page": 87,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 283,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 76
+        },
+        {
+          "page": 145,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 77,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.46803290984602247,
+        "answer_relevancy": 0.9563427983417275,
+        "context_precision": 0.99999999998,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.8333333319444445,
+        "factual_correctness": 0.0,
+        "factual_precision": 0.0,
+        "factual_recall": 0.2,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.6666666666666666,
+        "semantic_similarity": 0.9247632183314585
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "An infant victim with a pulse but not breathing should receive a breath every 5 to 6 seconds, which translates to 12-15 breaths per minute. Each breath should last for 1 second and cause the chest to rise.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.306607723236084,
+      "context": [
+        "49 Rescue Breathing \n \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as \nwell as inadequate breathing, the victim will still have some amount of cardiac output, \nwhich you will be able to detect as a palpable pulse. \n \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, \nwhich may be seen as slow, irregular or gasping respirations. These abnormal respirations \nare inadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not \ntreated, therefore healthcare providers should intervene quickly to prevent this \ndeterioration by providing rescue breathing . \n \nThe table below provides a summary of rescue breathing guidelines for different age \ngroups. \n \nRescue Breathing for Adults  Rescue Breathing for Children and \nInfants  \n1 breath every 5 to 6 seconds (10- 12 \nbreaths/minute) 1 breath every 3 to 5 seconds (12- 20 \nbreaths/minute) \nEach breath should last 1 second",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants).",
+        "44 shoulder and elbow. Press the fingers down gently for 5 to 10 seconds to feel \nfor a pulse. Remember: pushing too firmly may occlude the infant ǯs pulse. \n \n3. Rescuer 1- If you are not sure you can feel the pulse, the pulse is absent or \nthe infant ǯs heart rate is below 60 beats per minute with signs of poor \nperfusion (pale or bluish discoloration in the face, extremities or nail beds), \nstart CPR, beginning with 30 compressions followed by two breaths.   \n \na. Place the infant on his back on the ground or on a firm surface. \nb. Place 2 fingers in the center of the infant ǯs chest just below the nipple \nline; do not press on the end of the breastbone. \nc. Provide 100-120 chest compressions per minute to a depth of 1/3 the \ndepth of the chest or approximately 1 ½ inches. \nd. The principles of providing breaths for infants are the same as for \nchildren and adults. Use the correct sized face mask or bag-mask \ndevice for the infant (the mask should cover the mouth and nose",
+        "6. Continue CPR at a ratio of 15 compressions to 2 breaths and switch roles every 2 \nminutes to avoid fatigue.  \n \n7. Use the  AED when available.  \n \n \nMouth -to-Mouth -and Nose Breathing  \nTo provide breaths to an infant  when there is no face mask available : \n \n1. Use a head tilt -chin lift to maintain an open airway (sniffing position), being careful not \nto hyperextend the neck, which could  block the airway . \n2. Place your mouth over the victim’s mouth AND NOSE to create a tight seal.  \n3. Blow into the infant’s nose and mouth over 1 second, with just enough volume and force \nto cause the chest to rise with each breath. Be careful not to ventilate too  forcefully, as \ndoing so may cause lung damage.  \n4. If the chest does not rise, repeat the head tilt -chin lift and try to ventilate the victim again. \nYou may need to try to provide breaths at a few different positions before you achieve \nairway patency (airway  is in an open position).",
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds."
+      ],
+      "source": [
+        {
+          "page": 153,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 15
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 148
+        },
+        {
+          "page": 88,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 32
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.5446377039470344,
+        "answer_relevancy": 0.9165194375180654,
+        "context_precision": 0.699999999965,
+        "context_recall": 0.5,
+        "context_entity_recall": 0.49999999937499995,
+        "factual_correctness": 0.44,
+        "factual_precision": 0.5,
+        "factual_recall": 0.4,
+        "faithfulness": 0.8,
+        "noise_sensitivity": 0.5,
+        "semantic_similarity": 0.8928365300738517
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, remove any visible obstructions from the mouth, ensure the airway is clear by tilting the head back and lifting the chin, and then continue with 30 chest compressions immediately. Check for a pulse every two minutes and follow the CPR cycle of 30 compressions and 2 rescue breaths, swapping between the two every 2 minutes. Continue until EMS arrives or the victim regains circulation.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 2.4864420890808105,
+      "context": [
+        "breaths/minute) \nEach breath should last 1 second \nDid the chest rise?  If not, try again \nBe sure to check the victim ǯs pulse every 2 minutes and begin chest compressions \ncombined with breaths if needed",
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "and feel to determine whether a victim is breathing.  Rather, if the victim is not \nresponsive, has no pulse, and is not breathing or is breathing in an irregular  fashion (i.e. \nonly gasping), begin CPR immediately!  \n• Emphasis on high -quality CPR.  High -quality CPR is defined as:  \no Compression rate of 100 - 120 beats  per minute on victims  of all ages ; \no Compression depth of AT LEAST 2 inches in adults ( but no greate r than 2.4 \ninches). Allow  the chest to completely expand (recoil) after each compression \n(do not lean on the chest between compressions);  \no Not interrupting CPR except to use an AED (keep interruptions in chest \ncompressions to less than 10 seconds);  \no Avoiding excess ive ventilations;  \no Above all else, PUSH HARD AND FAST!  \n• Since many responders (even professionals) are unable to feel or palpate a pulse \nquickly, the recommendation is to feel for a pulse for NO MORE THAN 10 seconds. If you",
+        "breaths for 30  comps  \n➢ If you cannot provide  respiration, \njust give chest  comps  \n \n \n➢ Check for a pulse and cardiac rhythm every two minutes. Follow directions on the AED. \nAfter providing a shock, immediately re sume CPR. Keep going until EMS arrives or the \nvictim regains  circulation.",
+        "sure it rises (this  should take about a second).  This is known as a rescue \nbreath.  \n Remove your mouth from the casualty’s and leave enoug h room for you to \ntake a fresh breath of air.  Keep the casualty’s airway open and watch f or the \nchest deflating, as the air is expelled.  \n Place your mouth over the casualty’s forming the seal  again and  give another \nrescue breath.  You need to do this twice.  \n Replace your hands on the casualty’s chest  immediately  and perform another \n30 chest compressions, followed by 2 more rescue breaths.  \n  \nContinue swapping between 30 chest compressions and 2 rescue breaths."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 153
+        },
+        {
+          "page": 6,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 14,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 167,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 5
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.6749274644392609,
+        "answer_relevancy": 0.9882621363666485,
+        "context_precision": 0.99999999995,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.9999999900000002,
+        "factual_correctness": 0.25,
+        "factual_precision": 0.29,
+        "factual_recall": 1.0,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.42857142857142855,
+        "semantic_similarity": 0.8997098577570435
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, avoid giving more than two rescue breaths before continuing with chest compressions. Additionally, do not interrupt the chest compressions for extended periods.\n\nTo sum up, the actions to avoid are: giving more than two rescue breaths before resuming chest compressions and causing prolonged interruptions in chest compressions.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.6238725185394287,
+      "context": [
+        "49 Rescue Breathing \n \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as \nwell as inadequate breathing, the victim will still have some amount of cardiac output, \nwhich you will be able to detect as a palpable pulse. \n \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, \nwhich may be seen as slow, irregular or gasping respirations. These abnormal respirations \nare inadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not \ntreated, therefore healthcare providers should intervene quickly to prevent this \ndeterioration by providing rescue breathing . \n \nThe table below provides a summary of rescue breathing guidelines for different age \ngroups. \n \nRescue Breathing for Adults  Rescue Breathing for Children and \nInfants  \n1 breath every 5 to 6 seconds (10- 12 \nbreaths/minute) 1 breath every 3 to 5 seconds (12- 20 \nbreaths/minute) \nEach breath should last 1 second",
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds.",
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "pulse >60 BPM should be treated with rescue \nbreathing.  \n \n➢➢ A child who has a pulse  <60 BPM should  be treated \nwith CPR and according to the cardiac arrest \nalgorithm.  \n \n➢➢ A child who has a pulse  <60 BPM should  be treated \nwith CPR and according to the cardiac arrest \nalgorithm.  PALS Systematic Approach",
+        "and feel to determine whether a victim is breathing.  Rather, if the victim is not \nresponsive, has no pulse, and is not breathing or is breathing in an irregular  fashion (i.e. \nonly gasping), begin CPR immediately!  \n• Emphasis on high -quality CPR.  High -quality CPR is defined as:  \no Compression rate of 100 - 120 beats  per minute on victims  of all ages ; \no Compression depth of AT LEAST 2 inches in adults ( but no greate r than 2.4 \ninches). Allow  the chest to completely expand (recoil) after each compression \n(do not lean on the chest between compressions);  \no Not interrupting CPR except to use an AED (keep interruptions in chest \ncompressions to less than 10 seconds);  \no Avoiding excess ive ventilations;  \no Above all else, PUSH HARD AND FAST!  \n• Since many responders (even professionals) are unable to feel or palpate a pulse \nquickly, the recommendation is to feel for a pulse for NO MORE THAN 10 seconds. If you"
+      ],
+      "source": [
+        {
+          "page": 153,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 32
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 6
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 193
+        },
+        {
+          "page": 14,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.1840807621115118,
+        "answer_relevancy": 0.9802376803336168,
+        "context_precision": 0.0,
+        "context_recall": 0.0,
+        "context_entity_recall": 0.14285714265306124,
+        "factual_correctness": 0.0,
+        "factual_precision": 0.0,
+        "factual_recall": 0.0,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.0,
+        "semantic_similarity": 0.7363230484460472
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions not considered risk factors for transmitting bloodborne pathogens include casual contact like shaking hands, sharing dishes or utensils, or breathing air around an infected person. Additionally, bodily fluids such as saliva, tears, or air are not transmission routes for these pathogens. Bloodborne pathogens can only be transmitted through direct contact with infected blood or contaminated body fluids, not through indirect contact with contaminated surfaces.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.6794662475585938,
+      "context": [
+        "Bloodborne Pathogens  \n \nProtect Yourself!",
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "Bloodborne Pathogens - What are they, and which ones should I be concerned \nabout?  \nBloodborne pathogens are those organisms that are carried in \nthe blood and are capable of caus ing disease.  Common \nbloodborne pathogens that cause disease in humans include \nhuman immunodeficiency virus (HIV), Hepatitis B (HBV), and \nHepatitis C (HCV) . These  viruses are usually transmitted \nthrough exposure to blood, but you may  also be exposed \nthrough other body fluids.   \nHIV/AIDS  \nHuman immunodeficiency virus is one of the common bloodborne pathogens.  Also called HIV , \nthis is the virus  that causes  acquired immune deficiency syndrome  (AIDS ).  Since the virus was \nfirst identified  in the United States in the early 1980's, two types of  HIV virus es have been \nidentified.  They are called HIV -1 and HIV -2. HIV -1 is the type most people talk about when they \nuse the te rm HIV.  Both types of HIV destroy T cells in the body.  These T cells are critical in",
+        "One of your major concerns when providing first aid should be to protect yourself from \nbloodborne pathogens . Bloodborne pathogens  are infectious microorganism that have the \nability to cause disease in humans. They are spread through direct contact with infected blood. \nSome of these include hepatitis C and HIV, the virus that causes AIDS. Unive rsal precautions  are \nmeasures that help to protect against bloodborne pathogens and assume that all victims are \npotentially infectious. By observing universal precautions, you are protecting yourself against \nexposure to potentially disease -causing microorg anism present in another’s blood or body \nfluids. To protect yourself, you should use PPE, or personal protective equipment, such as \ngloves. If you do not have gloves, you can improvise by using a plastic bag to cover your hands. \nAlways follow these guideli nes when providing first aid to protect yourself:",
+        "to child particularly during the birth process.  \n• HBV can be transmitted through medical or dental practices if the doctor or dentist does \nnot practice the safety standards recommended by the CDC and OSHA.  \n• Tattooing or body piercing may present a potential risk of HBV transmission; however, if \nequipment is properly sterilized, this risk is almost non -existent.   \n• Sharing personal care items such as razors, toothbrushes or other items that might \nharbor HBV may present a risk for infection.  \nAs with HIV, HBV cannot be spread by insects, saliva, tears, casual contact, sharing dishes or \nutensils, or breathing air around an HBV infected person."
+      ],
+      "source": [
+        {
+          "page": 94,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 101
+        },
+        {
+          "page": 96,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 40
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 98
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.6319754976151882,
+        "answer_relevancy": 0.9659723788481296,
+        "context_precision": 0.4499999999775,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.0,
+        "factual_correctness": 0.33,
+        "factual_precision": 0.5,
+        "factual_recall": 0.5,
+        "faithfulness": 0.5714285714285714,
+        "noise_sensitivity": 0.14285714285714285,
+        "semantic_similarity": 0.8915383540971167
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock include pale or blue-grey skin, restlessness, blue-purple lips, tongue, earlobes, nail beds, confusion, rapid and shallow breathing, rapid and weak pulse, disorientation, and potentially loss of consciousness.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.0244557857513428,
+      "context": [
+        "56 57 \n2\nSigns and symptoms of shock\nSigns Symptoms\n• Pale skin at first, turns \nblue-grey*• Restless\n• blue-purple lips, tongue, \nearlobes, fingernails• Anxious\n• Cold and clammy skin • Disoriented\n• Breathing shallow and \nirregular, fast or gasping \nfor air• Confused\n• Changes in level of \nconsciousness• Afraid\n• Weak, rapid pulse—radial \npulse may be absent• Dizzy\n• Thirsty",
+        "calm and still. Raise the victim’s legs above the level of their heart.  \n7. Get the victim to emergency care as soon as possible.  \n \nShock  \nShock  is caused by inadequate blood flow to the body’s organs. It can be caused by blood loss \nor loss of body fl uids, as may occur following untreated severe vomiting or diarrhea. Symptoms \nof shock may include the following:  \n• Drowsiness  \n• Confusion  \n• Loss of consciousness  \n• Extreme thirst  \n• Pale skin color  \n• Rapid heart rate  \n• Cool, clammy skin  \n• Rapid breathing  \n• Anxiety",
+        "enough oxygenated blood.\nShock is a danger because any physical injury or illness can be \naccompanied by shock, and it can quickly progress into a life-\nthreatening condition. Pain, anxiety and fear do not cause shock, \nbut they can make it worse, or make it progress faster. This is why \nreassuring a casualty and making them comfortable is important.\nMedical shock should not be confused with electrical shock or \nbeing shocked and surprised. Medical shock is life-threatening, as \nthe brain and other organs cannot function properly.\nThe following information provides some causes of shock. Severe \nshock can also result from medical emergencies such as diabetes, \nepilepsy, infection, poisoning or a drug overdose.\n*For casualties with dark skin colour, the colour changes may be \nobserved in the following areas of the body: lips, gums and tongue, \nnail beds and palms, earlobes, membrane of the inner eyelid.",
+        " Hypovolaemic Shock.  \n Cardiogenic Shock.  \n Anaphylactic Shock.  \n  \nHypovolaemic Shock  \nHypo  = low   vol = volume   aemic  = blood  \n  \nHypovolaemic shock is caused by loss of bodily fluids, the result of which is \nlow blood volume.  Hypovolaemic shock is usually caused by:  \n External bleeding.  \n Internal bleeding.  \n Burns.  \n V omiting and diarrhoea.  \n Excessive sweating.  \n  \nSigns and symptoms  \nUsually the first response is a release of adrenaline which will cause:  \n Pulse  rate to rise.  \n Pale, clammy skin.  For dark skinned casualties check the colour of the skin \ninside the lips.",
+        "56 57  \n2\nCommon causes of severe shock\nCause of shock How it causes a circulation \nproblem\nSevere bleeding - internal \nor external (includes major \nfractures)Not enough blood to fill blood \nvessels\nSevere burns Loss of blood plasma (fluid) into \ntissues—not enough blood to fill \nblood vessels\nCrush injuries Loss of blood and blood plasma \ninto tissues—not enough blood to \nfill blood vessels\nHeart attack Heart is not strong enough to \npump blood effectively\nSpinal cord or nerve injuries Brain can’t control the size of the \nblood vessels—the blood can’t get \nto the tissues properly\nsevere allergic reactions Many things can be affected—\nbreathing, heart function, etc."
+      ],
+      "source": [
+        {
+          "page": 58,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 45
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 56
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 32
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 57
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.5289651899048482,
+        "answer_relevancy": 0.999999999999796,
+        "context_precision": 0.9166666666361111,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.09090909082644627,
+        "factual_correctness": 0.92,
+        "factual_precision": 1.0,
+        "factual_recall": 0.92,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.45454545454545453,
+        "semantic_similarity": 0.9158607596193927
+      },
+      "metric_errors": {}
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "If blood is seeping through the pressure bandage, instead of removing it, reinforce the bandage around the wound to stop the bleeding. Continue applying pressure until medical help arrives. Remember, removing the bandage may disturb blood clots and expose the wound to further contamination.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 1.2907404899597168,
+      "context": [
+        "Page | 40 \n   \nExamine  Examine the wound for foreign objects and make a note of how the \nwound  is bleeding.  Make sure to tell the medical staff how the \nwound was bleeding once it is covered with a bandage.  \n  \nElevate  Elevate the wound so that it is above the heart, which will use \ngravity to restrict the flow of blood to the injury.  \n \nPressure  Apply direct or indirect pressure to help slow the bleeding.  \n  \nDirect pressure:  \nDirect pressure to the wound is the best way of stemming a bleed.  You can use \nyour hands to do this, but you should take precautions to minimise the risk of \ncoming in contact with t he casualty’s blood, preferably by wearing disposable \ngloves.  Keep pressure on the wound continuously for at least ten minutes.  \nUsing a firm bandage usually stops the bleeding with most minor wounds (make \nsure the bandage is not so tight as to cut off th e circulation to the limb \naltogether).  If there is a foreign object embedded in the wound do not remove it",
+        "5First aid for severe external bleeding\n1. Perform a scene survey, then do a primary survey. \n2. To control severe bleeding, apply direct pressure to the \nwound.\n3. Place the casualty at rest.\n4. Once bleeding is under control, continue the primary \nsurvey, looking for other life-threatening injuries.  \n5. Before bandaging the wound, check circulation below the \ninjury. Bandage the dressing in place.\n6. Check the circulation below the injury and compare it with \nthe other side. If it is worse than it was before the injury was \nbandaged, loosen the bandage just enough to improve \ncirculation if possible.\n7. Give ongoing casualty care.\nIf the dressings become blood-soaked, don’t remove them—add \nmore dressings and continue pressure. Removing the blood-soaked \ndressings may disturb blood clots and expose the wound to further \ncontamination. \nTourniquets and hemostatic dressings\nFor catastrophic wounds, where it will be difficult to control",
+        "Although most bleeding episodes are not life -threatening, severe bleeding can result in death if \nnot stopped. As a first aid responder, protect yourself from bloodborne pathogens by wearing \ngloves if they are available - a plastic bag over your hand can be used if you don’t have any \ngloves.  \nTry to i denti fy the source of the bleeding. If blood is spurting, it is likely t hat an artery has been \ncut.  Apply direct pressure  to stop the bleeding.  If the wound is in the victim's belly and organs \nare visible, do NOT try to put the organs back into t he abdomen; simply cover the wound with a \nclean dressing , apply pressure as needed to control the bleeding  and get the victim to medical \ncare.   \nFor other bleeding wounds, do the following:",
+        "51. Expose the injured area and assess the wound. Check the \ncirculation below the injury.\n2. To stop the bleeding, put pressure around the embedded \nobject. If the embedded object is short, “tent” a clean \ndressing loosely over the object to keep the wound clean, \nthen place bulky dressings around the object to keep it \nfrom moving. This will apply pressure around the wound \n3. Secure the bulky material (dressings) in place with a narrow \nbandage, taking care that pressure is not exerted on the \nembedded object. \n4. Check the circulation below the injury again. \n5. Give ongoing casualty care and get medical help.\n150 151Wounds and bleeding",
+        "1. Encoura ge the victim to lie down; if the victim is dizzy, raise th e victim’s  feet above \nhis/her  head.  \n2.  Do NOT remove any object that is deeply embedded in the wound.  \n3. If the source of blood is an extremity, raise the affected arm or leg above the level of the \nvictim’s heart. Apply pressure directly to the wound using a cl ean cloth or clean/ sterile \nbandage. Hold pressure for ten  minutes; do NOT peek to see if bleeding has stopped.   \n4. Apply a pressure bandage. If you note that there is blood coming through the pressure \nbandage, do not remove it - simply  reinforce the bandage i f you notice bleeding around \nthe original bandage.  \n5. Continue to apply pressure to the wound.  \n6. If the victim becomes drowsy,  extremely anxious, thirsty, or if his skin becomes very \ncool  and/or clammy , you should susp ect shock . If the victim is anxious, try to  keep them \ncalm and still. Raise the victim’s legs above the level of their heart."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 39
+        },
+        {
+          "page": 142,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 44
+        },
+        {
+          "page": 152,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 45
+        }
+      ],
+      "scores": {
+        "answer_correctness": 0.8001604895179844,
+        "answer_relevancy": 0.8815340384277698,
+        "context_precision": 0.8666666666377778,
+        "context_recall": 1.0,
+        "context_entity_recall": 0.6666666644444444,
+        "factual_correctness": 1.0,
+        "factual_precision": 1.0,
+        "factual_recall": 1.0,
+        "faithfulness": 1.0,
+        "noise_sensitivity": 0.4444444444444444,
+        "semantic_similarity": 0.9506419580719381
+      },
+      "metric_errors": {}
+    }
+  ]
+}

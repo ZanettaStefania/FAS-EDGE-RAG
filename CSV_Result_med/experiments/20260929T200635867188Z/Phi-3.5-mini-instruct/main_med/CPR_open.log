@@ -1,0 +1,70 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8837.69it/s]
+Traceback (most recent call last):
+  File "/nethome/acossig/faser/main_med.py", line 23, in <module>
+    vectordb = Chroma(persist_directory=PERSIST_DIRECTORY_DB, 
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/langchain_core/_api/deprecation.py", line 226, in warn_if_direct_instance
+    return wrapped(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/langchain_community/vectorstores/chroma.py", line 83, in __init__
+    import chromadb
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/__init__.py", line 6, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/api/__init__.py", line 2, in <module>
+    from chromadb.execution.expression import (  # noqa: F401, F403
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/execution/expression/__init__.py", line 5, in <module>
+    from chromadb.execution.expression.operator import (
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/execution/expression/operator.py", line 20, in <module>
+    from chromadb.types import (
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/types.py", line 18, in <module>
+    from chromadb.api.collection_configuration import (
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/api/collection_configuration.py", line 9, in <module>
+    from chromadb.utils.embedding_functions import (
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/utils/embedding_functions/__init__.py", line 9, in <module>
+    from chromadb.utils.embedding_functions.cohere_embedding_function import (
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/utils/embedding_functions/cohere_embedding_function.py", line 12, in <module>
+    from chromadb.utils.embedding_functions.schemas import validate_config_schema
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/utils/embedding_functions/schemas/__init__.py", line 1, in <module>
+    from chromadb.utils.embedding_functions.schemas.schema_utils import (
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/chromadb/utils/embedding_functions/schemas/schema_utils.py", line 4, in <module>
+    import jsonschema
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/jsonschema/__init__.py", line 13, in <module>
+    from jsonschema._format import FormatChecker
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/jsonschema/_format.py", line 11, in <module>
+    from jsonschema.exceptions import FormatError
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/jsonschema/exceptions.py", line 15, in <module>
+    from referencing.exceptions import Unresolvable as _Unresolvable
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/referencing/__init__.py", line 5, in <module>
+    from referencing._core import Anchor, Registry, Resource, Specification
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/referencing/_core.py", line 90, in <module>
+    @frozen
+     ^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/referencing/_attrs.py", line 17, in frozen
+    return _frozen(cls)
+           ^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_next_gen.py", line 430, in define
+    return wrap(maybe_cls)
+           ^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_next_gen.py", line 421, in wrap
+    return do_it(cls, True)
+           ^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_next_gen.py", line 366, in do_it
+    return attrs(
+           ^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_make.py", line 1583, in attrs
+    return wrap(maybe_cls)
+           ^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_make.py", line 1576, in wrap
+    return builder.build_class()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_make.py", line 802, in build_class
+    self._eval_snippets()
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_make.py", line 787, in _eval_snippets
+    locs = _linecache_and_compile(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_make.py", line 260, in _linecache_and_compile
+    _compile_and_eval(script, globs, locs, filename)
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/attr/_make.py", line 227, in _compile_and_eval
+    eval(bytecode, globs, locs)
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/filelock/_api.py", line 1810, in _audit_fork_safety

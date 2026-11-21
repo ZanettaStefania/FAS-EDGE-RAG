@@ -1,0 +1,21 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10375.75it/s]
+Loading weights:   0%|          | 0/393 [00:00<?, ?it/s]Loading weights: 100%|██████████| 393/393 [00:00<00:00, 8177.69it/s]
+[W929 20:31:42.596078077 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 7614758912 bytes (free: 5571936256, total: 47665709056).
+[W929 20:31:42.596400139 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 7614758912 bytes (free: 5571936256, total: 47665709056).
+Traceback (most recent call last):
+  File "/nethome/acossig/faser/main_med.py", line 39, in <module>
+    model = AutoModelForCausalLM.from_pretrained(model_id, device_map=DEVICE_MAP)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4313, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4393, in _load_pretrained_model
+    caching_allocator_warmup(model, expanded_device_map, load_config.hf_quantizer)
+  File "/nethome/acossig/faser/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 5064, in caching_allocator_warmup
+    _ = torch.empty(int(byte_count // 2), dtype=torch.float16, device=device, requires_grad=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 7.09 GiB. GPU 0 has a total capacity of 44.39 GiB of which 5.19 GiB is free. Process 281929 has 26.48 GiB memory in use. Process 991204 has 532.00 MiB memory in use. Process 991542 has 9.49 GiB memory in use. Including non-PyTorch memory, this process has 2.68 GiB memory in use. Of the allocated memory 2.24 GiB is allocated by PyTorch, and 26.79 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

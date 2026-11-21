@@ -1,0 +1,18 @@
+{
+  "started_at": "20260930T120106217524Z",
+  "reranking": false,
+  "experiments": [
+    {
+      "model": "Phi-3.5-mini-instruct",
+      "pipeline": "main_med",
+      "dataset": "DomandeEsperti.csv",
+      "reranking": false,
+      "status": "ok",
+      "return_code": 0,
+      "elapsed_seconds": 4080.791,
+      "results_json": "Phi-3.5-mini-instruct/main_med/new1000_db_medPhi-3.5-mini-instruct_med_no_rerank_DomandeEsperti.json",
+      "log_file": "Phi-3.5-mini-instruct/main_med/DomandeEsperti_no_rerank.log",
+      "error": ""
+    }
+  ]
+}

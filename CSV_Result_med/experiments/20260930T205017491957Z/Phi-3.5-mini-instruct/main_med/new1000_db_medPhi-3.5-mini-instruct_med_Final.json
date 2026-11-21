@@ -1,0 +1,2083 @@
+{
+  "model": "Phi-3.5-mini-instruct_med",
+  "database": "DB/new1000_db_med",
+  "dataset": "Final.csv",
+  "ragas": {
+    "status": "running",
+    "judge_models": {
+      "judge_1": "qwen3.8:27b",
+      "judge_2": "medgemma:27b"
+    },
+    "embedding_model": "abhinand/MedEmbed-small-v0.1",
+    "started_at": "2026-09-30T20:52:26.240Z",
+    "completed_at": null,
+    "setup_elapsed_seconds": 4.493,
+    "elapsed_seconds": null,
+    "judge_elapsed_seconds": {},
+    "evaluated_questions": 0,
+    "evaluated_questions_by_judge": {
+      "judge_1": 3,
+      "judge_2": 0
+    }
+  },
+  "results": [
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "If someone is having an asthma attack without their inhaler, help them sit upright with support, keep them calm by talking to them and asking simple questions. If the attack is severe or prolonged, call 999 for an ambulance. Avoid exposing them to cold air, as it can worsen the attack.\n\nRemember not to give an adrenaline shot (epinephrine) unless specifically trained to do so and instructed, as incorrect administration can be harmful.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 3.5234472029842436,
+      "context": [
+        "Page | 24 \n  Use of muscles in the upper chest and neck help the casualty to breath.  \n If it is a severe attack, the casualty may become exhausted.  \n If the attack is prolonged, the casualty may become unconscious and stop \nbreathing.  \n  \nTreatment of an asthma attack  \n Sit the casualty upright, with their back to a wall, table or cha ir for support.  \n Help the casualty to use their inhaler (usually a blue inhaler for an atta ck).  \nThis can be administered every few minutes, if the attack does not abate.  \n Keep talking to the casualty, reassuring them and keep them calm.  Ask them \nsimple  questions; keep  their mind off the attack.  \n Should the attack be severe, prolonged, appears to be getting worse or the \ncasualty is becoming exhausted dial 999 for an ambulance . \n Frigid, winter air can worsen an attack, so do not take the casualty outsi de for \nfresh air.  \n Keep the casualty sitting upright while they are conscious, even if they become",
+        "resuscitate as necessary.  \n \n The adrenaline shot ( epinephrine ) can be given again if there is no \nimprovement, or symptoms return after five minutes.  \n  \nAsthma  \n \nAsthma is a fairly common allergic reaction in the lungs, usually cause d by \npollution, dust, pollen or traffic fumes.  The muscles surrounding the \nbronchioles spasm and constrict which makes it very difficult for the casualty to \nbreathe.  Asthma sufferers normally carry around medication in the form of an \ninhaler which when b reathed in dilates the bronchioles helping to relieve the \ncondition.  \n  \nAsthma attacks can be very traumatic for the casualty, especially children, so be \nsure to reassure them and keep them as calm as possible.  This is best achieved \nby being calm yourself and let them know you are a first aider.  If the casualty is \nnot calmed in a timely manner, their attack may lead to ‘hyperventilation’ after \nthe inhaler has been used and their breathing has eased.  \n  \nSigns and symptoms"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 23
+        },
+        {
+          "page": 22,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {
+          "answer_correctness": 0.6093674987538644,
+          "answer_relevancy": 0.9534307593710433,
+          "context_precision": 0.9999999999,
+          "context_recall": 0.0,
+          "context_entity_recall": 0.0,
+          "factual_correctness": 0.0,
+          "factual_precision": 0.0,
+          "factual_recall": 0.0,
+          "faithfulness": 0.8,
+          "noise_sensitivity": 0.6666666666666666,
+          "semantic_similarity": 0.9374699950154581
+        },
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {
+          "answer_correctness": 106.612,
+          "answer_relevancy": 21.92,
+          "context_precision": 55.477,
+          "context_recall": 36.794,
+          "context_entity_recall": 65.699,
+          "factual_correctness": 75.847,
+          "factual_precision": 66.312,
+          "factual_recall": 85.548,
+          "faithfulness": 46.698,
+          "noise_sensitivity": 167.419,
+          "semantic_similarity": 0.52
+        },
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {
+        "judge_1": 728.844
+      }
+    },
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "If someone is having an asthma attack without their inhaler, help them sit upright and reassure them. Encourage them to relax and breathe slowly, using muscles in the upper chest and neck to aid breathing. If the attack worsens, becomes severe, or the person becomes unconscious, call emergency services immediately.\n\nRemember not to expose them to cold air as it can exacerbate the attack. If medication like epinephrine is available, it can be administered again if no improvement is seen within five minutes. However, first aid should prioritize keeping the person calm and seeking emergency help.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 2.8292736439034343,
+      "context": [
+        "Page | 24 \n  Use of muscles in the upper chest and neck help the casualty to breath.  \n If it is a severe attack, the casualty may become exhausted.  \n If the attack is prolonged, the casualty may become unconscious and stop \nbreathing.  \n  \nTreatment of an asthma attack  \n Sit the casualty upright, with their back to a wall, table or cha ir for support.  \n Help the casualty to use their inhaler (usually a blue inhaler for an atta ck).  \nThis can be administered every few minutes, if the attack does not abate.  \n Keep talking to the casualty, reassuring them and keep them calm.  Ask them \nsimple  questions; keep  their mind off the attack.  \n Should the attack be severe, prolonged, appears to be getting worse or the \ncasualty is becoming exhausted dial 999 for an ambulance . \n Frigid, winter air can worsen an attack, so do not take the casualty outsi de for \nfresh air.  \n Keep the casualty sitting upright while they are conscious, even if they become",
+        "resuscitate as necessary.  \n \n The adrenaline shot ( epinephrine ) can be given again if there is no \nimprovement, or symptoms return after five minutes.  \n  \nAsthma  \n \nAsthma is a fairly common allergic reaction in the lungs, usually cause d by \npollution, dust, pollen or traffic fumes.  The muscles surrounding the \nbronchioles spasm and constrict which makes it very difficult for the casualty to \nbreathe.  Asthma sufferers normally carry around medication in the form of an \ninhaler which when b reathed in dilates the bronchioles helping to relieve the \ncondition.  \n  \nAsthma attacks can be very traumatic for the casualty, especially children, so be \nsure to reassure them and keep them as calm as possible.  This is best achieved \nby being calm yourself and let them know you are a first aider.  If the casualty is \nnot calmed in a timely manner, their attack may lead to ‘hyperventilation’ after \nthe inhaler has been used and their breathing has eased.  \n  \nSigns and symptoms"
+      ],
+      "source": [
+        {
+          "page": 23,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 22,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {
+          "answer_correctness": 0.5830146040749488,
+          "answer_relevancy": 0.9534307593710433,
+          "context_precision": 0.9999999999,
+          "context_recall": 0.25,
+          "context_entity_recall": 0.0,
+          "factual_correctness": 0.22,
+          "factual_precision": 0.2,
+          "factual_recall": 0.25,
+          "faithfulness": 0.5,
+          "noise_sensitivity": 0.5833333333333334,
+          "semantic_similarity": 0.9474430316844104
+        },
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {
+          "answer_correctness": 93.383,
+          "answer_relevancy": 50.151,
+          "context_precision": 53.013,
+          "context_recall": 37.668,
+          "context_entity_recall": 60.269,
+          "factual_correctness": 78.744,
+          "factual_precision": 66.867,
+          "factual_recall": 92.741,
+          "faithfulness": 84.217,
+          "noise_sensitivity": 247.208,
+          "semantic_similarity": 0.043
+        },
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {
+        "judge_1": 864.305
+      }
+    },
+    {
+      "question": "How should I assist someone having an asthma attack if they do not have their inhaler with them?",
+      "answer": "If someone is having an asthma attack without their inhaler, help them sit upright for support and maintain calm to prevent hyperventilation. Reassure them and keep simple conversations going. If the attack is severe, persistent, or the casualty becomes exhausted, call emergency services (999) for immediate medical assistance. Avoid exposing them to cold air, as it can worsen the attack. Remember, do not attempt to give an adrenaline shot without proper medical training.",
+      "ground_truth": "If someone is having an asthma attack and they don't have their medication with them, call an ambulance immediately and inform them it's an asthma emergency. While waiting, help the person sit in a quiet, warm place and stay calm. Do not leave them alone, and avoid lying them down. Ambulances are equipped to handle asthma, including in children.",
+      "time": 1.7212873022072017,
+      "context": [
+        "Page | 24 \n  Use of muscles in the upper chest and neck help the casualty to breath.  \n If it is a severe attack, the casualty may become exhausted.  \n If the attack is prolonged, the casualty may become unconscious and stop \nbreathing.  \n  \nTreatment of an asthma attack  \n Sit the casualty upright, with their back to a wall, table or cha ir for support.  \n Help the casualty to use their inhaler (usually a blue inhaler for an atta ck).  \nThis can be administered every few minutes, if the attack does not abate.  \n Keep talking to the casualty, reassuring them and keep them calm.  Ask them \nsimple  questions; keep  their mind off the attack.  \n Should the attack be severe, prolonged, appears to be getting worse or the \ncasualty is becoming exhausted dial 999 for an ambulance . \n Frigid, winter air can worsen an attack, so do not take the casualty outsi de for \nfresh air.  \n Keep the casualty sitting upright while they are conscious, even if they become",
+        "resuscitate as necessary.  \n \n The adrenaline shot ( epinephrine ) can be given again if there is no \nimprovement, or symptoms return after five minutes.  \n  \nAsthma  \n \nAsthma is a fairly common allergic reaction in the lungs, usually cause d by \npollution, dust, pollen or traffic fumes.  The muscles surrounding the \nbronchioles spasm and constrict which makes it very difficult for the casualty to \nbreathe.  Asthma sufferers normally carry around medication in the form of an \ninhaler which when b reathed in dilates the bronchioles helping to relieve the \ncondition.  \n  \nAsthma attacks can be very traumatic for the casualty, especially children, so be \nsure to reassure them and keep them as calm as possible.  This is best achieved \nby being calm yourself and let them know you are a first aider.  If the casualty is \nnot calmed in a timely manner, their attack may lead to ‘hyperventilation’ after \nthe inhaler has been used and their breathing has eased.  \n  \nSigns and symptoms"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 23
+        },
+        {
+          "page": 22,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {
+          "answer_correctness": 0.5808983272060455,
+          "answer_relevancy": 0.9534307593710433,
+          "context_precision": 0.9999999999,
+          "context_recall": 0.0,
+          "context_entity_recall": 0.0,
+          "factual_correctness": 0.0,
+          "factual_precision": 0.0,
+          "factual_recall": 0.0,
+          "faithfulness": 0.8333333333333334,
+          "noise_sensitivity": 0.75,
+          "semantic_similarity": 0.938977924208797
+        },
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {
+          "answer_correctness": 106.073,
+          "answer_relevancy": 62.307,
+          "context_precision": 51.28,
+          "context_recall": 36.897,
+          "context_entity_recall": 69.347,
+          "factual_correctness": 77.271,
+          "factual_precision": 62.972,
+          "factual_recall": 83.495,
+          "faithfulness": 49.388,
+          "noise_sensitivity": 189.129,
+          "semantic_similarity": 0.042
+        },
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {
+        "judge_1": 788.201
+      }
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "The first aid treatment for a Box Jellyfish sting involves applying as much vinegar as possible to the affected area to stop the stingers from releasing venom. After that, bathe the affected part in warm water that the casualty can tolerate for about 20 minutes to help relieve pain. Avoid using cold water as it can cause the stingers to continue releasing venom. If signs of infection occur, seek medical help.\n\n(Note: The provided context does not explicitly mention Box Jellyfish, but the treatment steps are generally applicable to jellyfish stings and are extracted from the given context.)",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 2.0920809330418706,
+      "context": [
+        "nematocysts, which in simple terms are “stingers.” These stingers \nmay contain venom which can be harmful, but more commonly \ncause an unpleasant stinging or burning sensation.\nFirst aid for jellyfish stings\n1. Perform a scene survey and a primary survey.\n2. Apply as much vinegar as possible to the affected area. \nVinegar will stop the stingers from releasing venom.\n3. To help relieve pain, bathe the affected part in warm water, \nas warm as the casualty can tolerate for about 20 minutes.\n4. Do not apply cold water. Cold water helps the stingers to \ncontinue releasing venom.\n5. If signs of infection occur, seek medical help.\n182 183Wounds and bleeding",
+        "5First aid for lesions from leeches\n1. Detach the leech by first using a fingernail to push the head \nend of the leech off of the skin. The head end is the smaller, \nskinnier part of the leech–not the larger end. After the head \nis released, use a fingernail to push the larger end off.\n2. Once the leech is removed, there may be some bleeding \ndue to the anticoagulant produced by the leech. Wash the \narea with soap and water, and use a baking soda paste or \nammonia solution to relieve irritation.\n3. If the site of the bite shows any sign of infection, the \ncasualty should get medical help.\nJellyfish\nJellyfish can be found in any body of water, whether salt water or \nfresh, with different varieties being found in Canada. Jellyfish that \nhave been known to cause death live in tropical climates and have \nnot been located near Canada. All jellyfish sting their prey using \nnematocysts, which in simple terms are “stingers.” These stingers"
+      ],
+      "source": [
+        {
+          "page": 184,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 184
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "The first aid treatment for a Box Jellyfish sting involves applying vinegar to the affected area to stop the stingers from releasing venom, and immersing the affected part in warm water for about 20 minutes to relieve pain. Avoid using cold water as it can actually facilitate more venom release. If signs of infection occur, seek medical attention immediately.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 1.2941156085580587,
+      "context": [
+        "nematocysts, which in simple terms are “stingers.” These stingers \nmay contain venom which can be harmful, but more commonly \ncause an unpleasant stinging or burning sensation.\nFirst aid for jellyfish stings\n1. Perform a scene survey and a primary survey.\n2. Apply as much vinegar as possible to the affected area. \nVinegar will stop the stingers from releasing venom.\n3. To help relieve pain, bathe the affected part in warm water, \nas warm as the casualty can tolerate for about 20 minutes.\n4. Do not apply cold water. Cold water helps the stingers to \ncontinue releasing venom.\n5. If signs of infection occur, seek medical help.\n182 183Wounds and bleeding",
+        "5First aid for lesions from leeches\n1. Detach the leech by first using a fingernail to push the head \nend of the leech off of the skin. The head end is the smaller, \nskinnier part of the leech–not the larger end. After the head \nis released, use a fingernail to push the larger end off.\n2. Once the leech is removed, there may be some bleeding \ndue to the anticoagulant produced by the leech. Wash the \narea with soap and water, and use a baking soda paste or \nammonia solution to relieve irritation.\n3. If the site of the bite shows any sign of infection, the \ncasualty should get medical help.\nJellyfish\nJellyfish can be found in any body of water, whether salt water or \nfresh, with different varieties being found in Canada. Jellyfish that \nhave been known to cause death live in tropical climates and have \nnot been located near Canada. All jellyfish sting their prey using \nnematocysts, which in simple terms are “stingers.” These stingers"
+      ],
+      "source": [
+        {
+          "page": 184,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 184,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What is the first aid treatment for a Box Jellyfish sting?",
+      "answer": "Apply as much vinegar as possible to the affected area to neutralize the stingers and stop the venom release. Bathe the affected part in warm water, tolerable for about 20 minutes to relieve pain. Avoid using cold water as it may cause the stingers to continue releasing venom. If signs of infection appear, seek medical help.",
+      "ground_truth": "If stung by a Box Jellyfish, immediately pour household vinegar onto the stung skin. This neutralizes the venom and makes the tentacles harmless. Do not rub the area, as this can cause further envenomation. If the casualty becomes unconscious, place them in the lateral position, check the airway, breathing, and pulse, and begin CPR if necessary. Always seek urgent medical aid.",
+      "time": 1.2446822179481387,
+      "context": [
+        "nematocysts, which in simple terms are “stingers.” These stingers \nmay contain venom which can be harmful, but more commonly \ncause an unpleasant stinging or burning sensation.\nFirst aid for jellyfish stings\n1. Perform a scene survey and a primary survey.\n2. Apply as much vinegar as possible to the affected area. \nVinegar will stop the stingers from releasing venom.\n3. To help relieve pain, bathe the affected part in warm water, \nas warm as the casualty can tolerate for about 20 minutes.\n4. Do not apply cold water. Cold water helps the stingers to \ncontinue releasing venom.\n5. If signs of infection occur, seek medical help.\n182 183Wounds and bleeding",
+        "5First aid for lesions from leeches\n1. Detach the leech by first using a fingernail to push the head \nend of the leech off of the skin. The head end is the smaller, \nskinnier part of the leech–not the larger end. After the head \nis released, use a fingernail to push the larger end off.\n2. Once the leech is removed, there may be some bleeding \ndue to the anticoagulant produced by the leech. Wash the \narea with soap and water, and use a baking soda paste or \nammonia solution to relieve irritation.\n3. If the site of the bite shows any sign of infection, the \ncasualty should get medical help.\nJellyfish\nJellyfish can be found in any body of water, whether salt water or \nfresh, with different varieties being found in Canada. Jellyfish that \nhave been known to cause death live in tropical climates and have \nnot been located near Canada. All jellyfish sting their prey using \nnematocysts, which in simple terms are “stingers.” These stingers"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 184
+        },
+        {
+          "page": 184,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "A nosebleed becomes an emergency when there are signs of a life-threatening condition such as loss of consciousness, difficulty or stoppage in breathing, or severe bleeding, heart attack, or stroke. In such cases, immediate medical attention is required. It's also important to assess the situation for potential head or spinal injuries before giving first aid.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.2702265693806112,
+      "context": [
+        "A286 287Quick first aid reference\nSend for an ambulance as soon as there is indication of a life-\nthreatening emergency: \n• loss of consciousness\n• breathing emergency (difficult or stopped breathing)\n• circulatory emergency (severe bleeding, heart attack, \nstroke) \nSigns and symptoms First aid\nAllergic reaction\nItchy, flushed skin\nSneezing, runny nose\nSwelling of the airway\nNausea, vomitingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAngina\nDenial, sense of impending \ndoom\nHeaviness, tightness in chest\nIndigestion, aching jaw\nPale skin, sweatingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAsthma\nShortness of breath\nwith coughing or wheezing\nSitting upright, trying to \nbreathe\nBlue colour to face (cyanosis)\nAnxiety, tightness in ches\ntPosition casualty for comfort \nsitting or semi-sitting\nAssist with medication\nMonitor the ABCs\nGet medical help",
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 288
+        },
+        {
+          "page": 159,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "A nosebleed requires immediate medical attention if it is accompanied by loss of consciousness, difficulty or cessation in breathing, or severe bleeding that could indicate circulatory emergencies such as a heart attack or stroke. Additionally, if there is a suspected skull fracture, indicated by straw-colored fluid mixed with the blood, it is an emergency situation. In such cases, it is crucial to call for an ambulance and follow proper first aid procedures, like compressing the nostrils and monitoring vital signs.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.7949949060566723,
+      "context": [
+        "A286 287Quick first aid reference\nSend for an ambulance as soon as there is indication of a life-\nthreatening emergency: \n• loss of consciousness\n• breathing emergency (difficult or stopped breathing)\n• circulatory emergency (severe bleeding, heart attack, \nstroke) \nSigns and symptoms First aid\nAllergic reaction\nItchy, flushed skin\nSneezing, runny nose\nSwelling of the airway\nNausea, vomitingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAngina\nDenial, sense of impending \ndoom\nHeaviness, tightness in chest\nIndigestion, aching jaw\nPale skin, sweatingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAsthma\nShortness of breath\nwith coughing or wheezing\nSitting upright, trying to \nbreathe\nBlue colour to face (cyanosis)\nAnxiety, tightness in ches\ntPosition casualty for comfort \nsitting or semi-sitting\nAssist with medication\nMonitor the ABCs\nGet medical help",
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 288
+        },
+        {
+          "page": 159,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the signs that a nosebleed is an emergency?",
+      "answer": "A nosebleed becomes an emergency if there are signs of circulatory distress such as severe bleeding, or if it occurs alongside life-threatening symptoms like loss of consciousness, difficulty or cessation of breathing, or signs of a heart attack or stroke. Immediate medical attention is required in these situations, and first aid measures should be taken while waiting for help to arrive. It's crucial to assess the mechanism of injury and maintain the casualty's position to prevent complications.",
+      "ground_truth": "Signs of an emergency include persistent bleeding longer than 20 minutes, very heavy bleeding, difficulty breathing, signs of shock such as pale skin or rapid pulse, or if it follows a head injury. The presence of clear fluid mixed with blood may indicate a skull fracture and requires immediate medical intervention.",
+      "time": 1.6944353822618723,
+      "context": [
+        "A286 287Quick first aid reference\nSend for an ambulance as soon as there is indication of a life-\nthreatening emergency: \n• loss of consciousness\n• breathing emergency (difficult or stopped breathing)\n• circulatory emergency (severe bleeding, heart attack, \nstroke) \nSigns and symptoms First aid\nAllergic reaction\nItchy, flushed skin\nSneezing, runny nose\nSwelling of the airway\nNausea, vomitingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAngina\nDenial, sense of impending \ndoom\nHeaviness, tightness in chest\nIndigestion, aching jaw\nPale skin, sweatingPosition casualty at rest\nIf casualty has medication, help \nthem to take it\nMonitor the ABCs\nGet medical help\nAsthma\nShortness of breath\nwith coughing or wheezing\nSitting upright, trying to \nbreathe\nBlue colour to face (cyanosis)\nAnxiety, tightness in ches\ntPosition casualty for comfort \nsitting or semi-sitting\nAssist with medication\nMonitor the ABCs\nGet medical help",
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 288
+        },
+        {
+          "page": 159,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "If someone has a nosebleed, first ensure they are sitting upright with their head slightly forward to allow blood to drain. Then, have them gently pinch the soft part of the nose with a thumb and index finger and maintain pressure for about 10 minutes or until the bleeding stops. After the bleeding has ceased, advise them not to blow their nose for a few hours as it may trigger another nosebleed.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.4238470532000065,
+      "context": [
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops.",
+        "Page | 42 \n attempt to remove it.  Take them directly to hospital where it will be safely \nremoved.  \n  \nNose bleeds  \n \nNose bleeds are usually the result of weakened or dried out b lood tissues in the \nnose.  A nose bleed can be triggered by a bang to the nose, picking or blowing \nit.  However, it can be the symptom of a more serious problem such as high \nblood pressure or a fractured skull.  \n  \n Have the casualty sit with their head tip ped forward to allow the blood to \ndrain.  \n Gently pinch the soft part of the nose, and maintain constant pressure for 10 \nminutes.  \n Tell the casualty to breathe  through their mouth.  \n Give the casualty some tissues or a cloth to clean up the blood while yo u \nmaintain pressure on the  soft part of the nose.  \n Once the bleeding has stopped, recommend to the casualty that they try  to \ncontinue breathing through their mouth and not blow their nose for the next \ncouple of hours a s this may trigger another nose bleed ."
+      ],
+      "source": [
+        {
+          "page": 159,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 41,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "If someone has a nosebleed, first have them sit with their head tipped forward to allow blood to drain. Then, gently pinch the soft part of the nose and maintain constant pressure for about 10 minutes. Finally, advise them not to blow their nose for a few hours to prevent another bleed.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.0842455490492284,
+      "context": [
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops.",
+        "Page | 42 \n attempt to remove it.  Take them directly to hospital where it will be safely \nremoved.  \n  \nNose bleeds  \n \nNose bleeds are usually the result of weakened or dried out b lood tissues in the \nnose.  A nose bleed can be triggered by a bang to the nose, picking or blowing \nit.  However, it can be the symptom of a more serious problem such as high \nblood pressure or a fractured skull.  \n  \n Have the casualty sit with their head tip ped forward to allow the blood to \ndrain.  \n Gently pinch the soft part of the nose, and maintain constant pressure for 10 \nminutes.  \n Tell the casualty to breathe  through their mouth.  \n Give the casualty some tissues or a cloth to clean up the blood while yo u \nmaintain pressure on the  soft part of the nose.  \n Once the bleeding has stopped, recommend to the casualty that they try  to \ncontinue breathing through their mouth and not blow their nose for the next \ncouple of hours a s this may trigger another nose bleed ."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 159
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 41
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What should you do if someone has a nosebleed?",
+      "answer": "If someone has a nosebleed, have them sit with their head tilted forward and pinch the soft part of the nose gently with a thumb and index finger for about 10 minutes until the bleeding stops. If the blood is mixed with straw-colored fluid, suspect a skull fracture and avoid removing any foreign objects. After bleeding stops, advise the person not to blow their nose for a couple of hours to prevent further bleeding.",
+      "ground_truth": "Instruct them not to blow their nose and to breathe through their mouth. Have them sit down and lean slightly forward to avoid swallowing blood. Ask them to pinch their nostrils together and hold for about 10 minutes. Loosen any tight clothing around their neck, chest, and waist. If the bleeding continues, repeat the process. If bleeding persists, seek medical attention.",
+      "time": 1.5393933998420835,
+      "context": [
+        "5First aid for a nosebleed\nA nosebleed may start for no obvious reason, or may be caused by \nblowing the nose, an injury to the nose, or by an indirect injury, such \nas a fractured skull.\n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.\n2. Assess the bleeding from the nose. If the blood from the \nnose is mixed with straw-coloured fluid, suspect a skull \nfracture. Allow the nose to bleed and give first aid for a \nskull fracture.\n3. If a head or spinal injury is not suspected, place the casualty \nin a sitting position with the head slightly forward. Leaning \nforward allows blood to drain from the nose and mouth \ninstead of back into the throat and stomach where it will \ncause vomiting.\n4. Tell the casualty to compress the entire fleshy part below \nthe bridge of the nose firmly with the thumb and index \nfinger for about 10 minutes or until bleeding stops.",
+        "Page | 42 \n attempt to remove it.  Take them directly to hospital where it will be safely \nremoved.  \n  \nNose bleeds  \n \nNose bleeds are usually the result of weakened or dried out b lood tissues in the \nnose.  A nose bleed can be triggered by a bang to the nose, picking or blowing \nit.  However, it can be the symptom of a more serious problem such as high \nblood pressure or a fractured skull.  \n  \n Have the casualty sit with their head tip ped forward to allow the blood to \ndrain.  \n Gently pinch the soft part of the nose, and maintain constant pressure for 10 \nminutes.  \n Tell the casualty to breathe  through their mouth.  \n Give the casualty some tissues or a cloth to clean up the blood while yo u \nmaintain pressure on the  soft part of the nose.  \n Once the bleeding has stopped, recommend to the casualty that they try  to \ncontinue breathing through their mouth and not blow their nose for the next \ncouple of hours a s this may trigger another nose bleed ."
+      ],
+      "source": [
+        {
+          "page": 159,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 41
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is avoid touching the root and handle it by the crown only. Then, if possible, attempt to place the tooth back into its socket. If it doesn't fit, keep it moist in milk or a saltwater solution and seek immediate dental attention.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.1475976938381791,
+      "context": [
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using",
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings"
+      ],
+      "source": [
+        {
+          "page": 160,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 58
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to handle the tooth by the crown and avoid touching the root. Place the tooth in a balanced salt solution, coconut milk, or the casualty's own saliva, and attempt to reinsert it into the socket or store it in milk or a mild saltwater solution. Seek immediate dental assistance for the best chance of successful reimplantation.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.4675690182484686,
+      "context": [
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using",
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings"
+      ],
+      "source": [
+        {
+          "page": 160,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 58,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What is the first thing to do when a tooth is knocked out?",
+      "answer": "The first thing to do when a tooth is knocked out is to handle it by the crown, avoiding touching the root. Then, try to place the tooth back in its socket gently, using gauze or moistened paper towel if necessary. If the tooth cannot be re-inserted, keep it in a balanced salt solution or coconut milk and seek immediate dental attention.",
+      "ground_truth": "The first thing to do is to clean the tooth, ideally by having the casualty suck on it. If that is not possible, use milk or saliva that has not been warmed. If these are unavailable, clean the tooth under tap water.",
+      "time": 1.414975006133318,
+      "context": [
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using",
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings"
+      ],
+      "source": [
+        {
+          "page": 160,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 58,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because it can damage the root cells, decreasing the chances of successful re-implantation. Instead, it should be placed in a balanced salt solution, coconut milk, or the casualty's own saliva, ensuring not to touch the root. This preserves the tooth's vitality until professional dental care is provided.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.3839094480499625,
+      "context": [
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings",
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using"
+      ],
+      "source": [
+        {
+          "page": 58,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 160,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because water can damage the delicate cells in the root, reducing the chances of successful reimplantation. Instead, it's recommended to place the tooth in a balanced salt solution, coconut milk, or the casualty's own saliva, handling it only by the crown. Immediate dental consultation increases the likelihood of successful reimplantation.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.5174627141095698,
+      "context": [
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings",
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using"
+      ],
+      "source": [
+        {
+          "page": 58,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 160
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "Why should a knocked-out tooth not be placed in water?",
+      "answer": "A knocked-out tooth should not be placed in water because water can damage the delicate cells on the root surface, reducing the chances of successful re-implantation. Instead, it is recommended to place the tooth in a balanced salt solution, coconut milk, or even the casualty's own saliva, handling it by the crown without touching the root. This helps preserve the vitality of the tooth while waiting for dental intervention.",
+      "ground_truth": "Water should be avoided because it can damage the tooth's root cells, making it harder for the tooth to reattach successfully when reimplanted. Milk or saliva is preferred for keeping the tooth moist.",
+      "time": 1.5521714929491282,
+      "context": [
+        "sure to check on the status of your tetanus immunization.  \nTraumatic Tooth Loss  \nLosing a tooth due to trauma does not always mean that a tooth is lost forever. If a tooth is lost due to \ntrauma you should:  \n1. Avoid touching the roots of the tooth - handle it by the crown only.  \n2. Avoid rubbing the tooth in an effort to clean it of debris.  \n3. If debris is present, gently swish the tooth around for less than 10 seconds in a bowl of \nlukewarm water -do NOT rinse the tooth u nder running water.  \n4. Attempt to place the tooth back in its socket. Bite down gently on a piece of gauze or moistened \npaper towel if it will not go all the way in.  \n5. If the tooth will not go back into the socket, place it in some milk or a mild saltwater solu tion.  \n6. See a dentist as soon as possible - the sooner a dentist is consulted, the better the chance of \nsuccessful reimplantation.  \nBites and Stings",
+        "5First aid for a knocked-out tooth\nA knocked-out tooth can be re-implanted if the casualty receives \nmedical/dental help quickly. \n1. Perform a scene survey and assess the mechanism of injury. \nIf you suspect a head or spinal injury, tell the casualty not to \nmove. Do a primary survey.  \n2. Apply direct pressure to stop the bleeding from the socket \nof the tooth. Seat the casualty with the head forward so \nblood can drain out of the mouth. \n3. Place the knocked-out tooth in a balanced salt solution, or \ncoconut milk. If none of these are available, the casualties \nown saliva will do. Handle the tooth by the top—don’t \ntouch the root.\n4. Give ongoing casualty care.\nBleeding from the cheek, gums or tongue\nWhen there is bleeding from the gums or mouth, first assess the \nmechanism of injury to determine if there is a chance of a serious \nhead and/or spinal injury. Make sure the bleeding in the mouth \ndoesn’t block the airway.\nControl the bleeding in the mouth using"
+      ],
+      "source": [
+        {
+          "page": 58,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 160,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, transport the casualty with a suspected spinal injury as a unit by rolling their head, trunk, and legs together, or lifting their whole body at the same time to minimize movement. Have a second person steady and support the feet to prevent movement. Always keep the head and neck in line with the upper body during transport.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.3206998608075082,
+      "context": [
+        "40 41Emergency scene management\n2\n5. If a second bystander is available, show them how to steady \nand support the feet to prevent movement.\n6. Keep the head and neck supported (and the feet if \npossible) while giving further first aid until handover to \nmedical help.\nWhen moving a casualty  with a suspected head or spinal injury, \nmove them as a unit as much as possible. This means rolling the \nhead, trunk and legs together, or lifting the whole body at the same \ntime. Do what you can to prevent movement.",
+        "Page | 57 \n immediate danger.  \n Check their airway and breathing.  If they are breathing fi ne on their own, the \nairway is clear so there is no need to move the head back.  However, if need be \nyou can use the ‘jaw thrust’ technique to keep the  airway open without moving \nthe head ( this t echnique is explained on page 58 ).  Keep a close eye on their  \nbreathing.  \n Dial 999 for an ambulance immediately.  \n Using your hands, keep their head still and in line with their upper body.  \n If for any reason you have to leave  the casualty, if they begin to vomit  or if \nyou have concerns about their airway at all, place the casualty in the recovery \nposition .  Make sure you keep the head, neck and  upper body in line when you \nturn the casualty.  To do this effectively, you will inevitably need more  than \none res cuer, so get local help if you can ( see page 55 for instructions on how to \nplace a suspected  spinal injury casualty in the recovery position )."
+      ],
+      "source": [
+        {
+          "page": 42,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 56
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "If no spinal board is available, move the casualty as a unit as much as possible, using either a rolling motion or lifting the entire body simultaneously. Keep the head and neck supported, and the feet if possible, to minimize movement. If necessary, get additional help to place the casualty in the recovery position while maintaining alignment of the head, neck, and upper body.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.3174962950870395,
+      "context": [
+        "40 41Emergency scene management\n2\n5. If a second bystander is available, show them how to steady \nand support the feet to prevent movement.\n6. Keep the head and neck supported (and the feet if \npossible) while giving further first aid until handover to \nmedical help.\nWhen moving a casualty  with a suspected head or spinal injury, \nmove them as a unit as much as possible. This means rolling the \nhead, trunk and legs together, or lifting the whole body at the same \ntime. Do what you can to prevent movement.",
+        "Page | 57 \n immediate danger.  \n Check their airway and breathing.  If they are breathing fi ne on their own, the \nairway is clear so there is no need to move the head back.  However, if need be \nyou can use the ‘jaw thrust’ technique to keep the  airway open without moving \nthe head ( this t echnique is explained on page 58 ).  Keep a close eye on their  \nbreathing.  \n Dial 999 for an ambulance immediately.  \n Using your hands, keep their head still and in line with their upper body.  \n If for any reason you have to leave  the casualty, if they begin to vomit  or if \nyou have concerns about their airway at all, place the casualty in the recovery \nposition .  Make sure you keep the head, neck and  upper body in line when you \nturn the casualty.  To do this effectively, you will inevitably need more  than \none res cuer, so get local help if you can ( see page 55 for instructions on how to \nplace a suspected  spinal injury casualty in the recovery position )."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 42
+        },
+        {
+          "page": 56,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How should you transport a casualty with a suspected spinal injury if no spinal board is available?",
+      "answer": "Move the casualty as a unit, rolling their head, trunk, and legs together or lifting the whole body at once to minimize movement. Keep their head and neck supported, and if possible, support their feet as well. If necessary, place them in the recovery position with assistance from additional rescuers.",
+      "ground_truth": "If no spinal board is available, use another firm surface or stretcher and ensure that the head, neck, and spine are kept in a neutral position. Manual support may be required, but it is important to avoid twisting or bending the spine during transport.",
+      "time": 1.0461343778297305,
+      "context": [
+        "40 41Emergency scene management\n2\n5. If a second bystander is available, show them how to steady \nand support the feet to prevent movement.\n6. Keep the head and neck supported (and the feet if \npossible) while giving further first aid until handover to \nmedical help.\nWhen moving a casualty  with a suspected head or spinal injury, \nmove them as a unit as much as possible. This means rolling the \nhead, trunk and legs together, or lifting the whole body at the same \ntime. Do what you can to prevent movement.",
+        "Page | 57 \n immediate danger.  \n Check their airway and breathing.  If they are breathing fi ne on their own, the \nairway is clear so there is no need to move the head back.  However, if need be \nyou can use the ‘jaw thrust’ technique to keep the  airway open without moving \nthe head ( this t echnique is explained on page 58 ).  Keep a close eye on their  \nbreathing.  \n Dial 999 for an ambulance immediately.  \n Using your hands, keep their head still and in line with their upper body.  \n If for any reason you have to leave  the casualty, if they begin to vomit  or if \nyou have concerns about their airway at all, place the casualty in the recovery \nposition .  Make sure you keep the head, neck and  upper body in line when you \nturn the casualty.  To do this effectively, you will inevitably need more  than \none res cuer, so get local help if you can ( see page 55 for instructions on how to \nplace a suspected  spinal injury casualty in the recovery position )."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 42
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 56
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person with a suspected head or spinal injury can lead to life-long disability or even death, as any movement to the head or neck could exacerbate the injury. It is crucial to stabilize their head and neck, keeping elbows firmly supported on thighs or the ground, while assessing their responsiveness. In such cases, the recovery position is not recommended due to the potential risk to the spine.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.8014969611540437,
+      "context": [
+        " Try to obtain the help of others; they can support the head while you perform \nresuscitation.  \n  \nRemember  – if the resuscitation results in paralysis from a neck injury it is a \ntragedy, but failing to maintain an open airway will result in death.  \n  \nManaging the airway with a spinal injury casualty  \n \nIf an unconscious casualty is laid on their back, the airway is in d anger of \nbecoming blocked by vomit or their tongue sliding back.  \n  \nAn uninjured but unconscious casualty can simply be turned into the recovery \nposition to help protect the  airway.  However, if a spinal injury is suspected, you \nmust take great care not to move the spine.",
+        "38 39Emergency scene management\n2\nESM when a head or spinal injury is suspected\nIf you suspect a head or spinal injury, protect the head and neck \nfrom any movement. Head or neck movement could result in life-\nlong disability or death. Adjust your first aid to this situation as \nshown below\n1. As soon as you see there might be a head or spinal injury, \ntell the casualty not to move\n2. Once you have consent to help the casualty, steady and \nsupport the head and neck. Keep elbows firmly supported \non thighs or ground. Then, assess responsiveness."
+      ],
+      "source": [
+        {
+          "page": 56,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 40
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person with a suspected spinal injury can result in severe disability or death due to potential damage to the spinal cord. It's crucial to carefully stabilize the head and neck to prevent any movement that could exacerbate the injury. When assisting such an individual, always seek support from others to maintain the head's position while performing necessary resuscitation measures.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.4265960194170475,
+      "context": [
+        " Try to obtain the help of others; they can support the head while you perform \nresuscitation.  \n  \nRemember  – if the resuscitation results in paralysis from a neck injury it is a \ntragedy, but failing to maintain an open airway will result in death.  \n  \nManaging the airway with a spinal injury casualty  \n \nIf an unconscious casualty is laid on their back, the airway is in d anger of \nbecoming blocked by vomit or their tongue sliding back.  \n  \nAn uninjured but unconscious casualty can simply be turned into the recovery \nposition to help protect the  airway.  However, if a spinal injury is suspected, you \nmust take great care not to move the spine.",
+        "38 39Emergency scene management\n2\nESM when a head or spinal injury is suspected\nIf you suspect a head or spinal injury, protect the head and neck \nfrom any movement. Head or neck movement could result in life-\nlong disability or death. Adjust your first aid to this situation as \nshown below\n1. As soon as you see there might be a head or spinal injury, \ntell the casualty not to move\n2. Once you have consent to help the casualty, steady and \nsupport the head and neck. Keep elbows firmly supported \non thighs or ground. Then, assess responsiveness."
+      ],
+      "source": [
+        {
+          "page": 56,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 40,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What happens if you fail to support the neck and spine of an unconscious person while moving them?",
+      "answer": "Failing to support the neck and spine of an unconscious person with a suspected spinal injury can result in life-long disability or even death due to potential damage to the spinal cord. When moving such a person, it's crucial to stabilize their head and neck, often by seeking help from others and using techniques like the recovery position carefully. Ignoring this can lead to serious complications, including airway blockage from vomit or tongue sliding back.",
+      "ground_truth": "Failing to support the neck and spine can lead to severe spinal cord injuries, paralysis, or even death. Always prioritize spinal alignment and support during movement.",
+      "time": 1.5510471761226654,
+      "context": [
+        " Try to obtain the help of others; they can support the head while you perform \nresuscitation.  \n  \nRemember  – if the resuscitation results in paralysis from a neck injury it is a \ntragedy, but failing to maintain an open airway will result in death.  \n  \nManaging the airway with a spinal injury casualty  \n \nIf an unconscious casualty is laid on their back, the airway is in d anger of \nbecoming blocked by vomit or their tongue sliding back.  \n  \nAn uninjured but unconscious casualty can simply be turned into the recovery \nposition to help protect the  airway.  However, if a spinal injury is suspected, you \nmust take great care not to move the spine.",
+        "38 39Emergency scene management\n2\nESM when a head or spinal injury is suspected\nIf you suspect a head or spinal injury, protect the head and neck \nfrom any movement. Head or neck movement could result in life-\nlong disability or death. Adjust your first aid to this situation as \nshown below\n1. As soon as you see there might be a head or spinal injury, \ntell the casualty not to move\n2. Once you have consent to help the casualty, steady and \nsupport the head and neck. Keep elbows firmly supported \non thighs or ground. Then, assess responsiveness."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 56
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 40
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "To minimize pain while helping someone with a fractured leg, immobilize the lower leg using splints extending from the groin to below the foot. Position broad bandages around the thigh, knee, above and below the fracture, and at the ankle. Tie the bandages starting at the thigh and work down, ensuring circulation is not compromised.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.275762430857867,
+      "context": [
+        "66. Immobilize the lower leg. Position the bandages and \nsplints. Use splints long enough to extend from the groin to \nbelow the foot. The bystander doesn’t let go of the leg until \nthe first aider tells them to, which is after the last bandage \nis tied. Tie all knots on the splint for comfort. Position broad \nbandages to be tied at the thigh, knee, above and below \nthe fracture and at the ankle.\n7. Tie the bandages starting at the thigh (the stable end) and \nworking down. The bandage at the ankles is tied as a \nfigure-8. \n216 217Bone and joint injuries",
+        "remote part of the country ) immobilise the injury by gently bandaging the \ninjured leg to the uninjured one.  \n Check that their circulation has not been cut off beyond the injury and \nbandages.  If necessary, loo sen the bandages."
+      ],
+      "source": [
+        {
+          "page": 218,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 53
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "To minimize pain while helping someone with a fractured leg, immobilize the lower leg using bandages and splints, ensuring they extend from the groin to below the foot. Secure the bandages starting at the thigh and working down, tying the ankle bandage in a figure-8 pattern. Ensure circulation is not compromised beyond the injury by checking and adjusting if necessary.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.389298944734037,
+      "context": [
+        "66. Immobilize the lower leg. Position the bandages and \nsplints. Use splints long enough to extend from the groin to \nbelow the foot. The bystander doesn’t let go of the leg until \nthe first aider tells them to, which is after the last bandage \nis tied. Tie all knots on the splint for comfort. Position broad \nbandages to be tied at the thigh, knee, above and below \nthe fracture and at the ankle.\n7. Tie the bandages starting at the thigh (the stable end) and \nworking down. The bandage at the ankles is tied as a \nfigure-8. \n216 217Bone and joint injuries",
+        "remote part of the country ) immobilise the injury by gently bandaging the \ninjured leg to the uninjured one.  \n Check that their circulation has not been cut off beyond the injury and \nbandages.  If necessary, loo sen the bandages."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 218
+        },
+        {
+          "page": 53,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How can you minimize pain while helping someone with a fractured leg move to safety?",
+      "answer": "To minimize pain when helping someone with a fractured leg, gently immobilize the lower leg using bandages and splints extending from the groin to below the foot. Ensure circulation is not compromised beyond the injury before tying the bandages starting from the thigh and working down. Use a figure-8 knot at the ankles for additional stability.",
+      "ground_truth": "Avoid bending or twisting the leg. If movement is absolutely necessary, support the leg in its current position using rolled cloth or boards as splints. Move the person slowly using a drag from the upper body or wait for help if possible.",
+      "time": 1.2255923892371356,
+      "context": [
+        "66. Immobilize the lower leg. Position the bandages and \nsplints. Use splints long enough to extend from the groin to \nbelow the foot. The bystander doesn’t let go of the leg until \nthe first aider tells them to, which is after the last bandage \nis tied. Tie all knots on the splint for comfort. Position broad \nbandages to be tied at the thigh, knee, above and below \nthe fracture and at the ankle.\n7. Tie the bandages starting at the thigh (the stable end) and \nworking down. The bandage at the ankles is tied as a \nfigure-8. \n216 217Bone and joint injuries",
+        "remote part of the country ) immobilise the injury by gently bandaging the \ninjured leg to the uninjured one.  \n Check that their circulation has not been cut off beyond the injury and \nbandages.  If necessary, loo sen the bandages."
+      ],
+      "source": [
+        {
+          "page": 218,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 53
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "A person without first aid training can still help move a casualty safely by minimizing risks and using proper rescue carry techniques. They should always move the casualty the shortest distance to safety and, if possible, have bystanders assist to support any injuries. It's essential to prioritize safety and avoid making the situation worse.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.5807672538794577,
+      "context": [
+        "66 67  \n2\nLifting and moving\nAlways try to give necessary first aid where the casualty is found, \nthen wait for the paramedics to move the person. However, there \nare times when this is not possible.\nYou may have to move a casualty when:\n• There are life-threatening hazards to yourself or the casualty  \ne.g. danger from fire, explosion, gas or water\n• Essential first aid for wounds or other conditions cannot be \ngiven in the casualty’s present position or location\n• The casualty must be transported to a medical facility\nIf life-threatening hazards make it necessary to move a casualty \nright away, you may need to use a rescue carry.\nIn urgent and dangerous situations where casualties are moved with \nless than ideal support for injuries, the casualty’s injuries may be \nmade worse by improper movement and handling. The chance of \nfurther injury can be reduced with proper rescue carry techniques.\nAlways move the casualty the shortest possible distance to safety",
+        "Always move the casualty the shortest possible distance to safety \nand to provide essential first aid. Use bystanders to help you and \nsupport any injuries the best you can during the move. Keep the \nrisks to the casualty, yourself and others to a minimum.\nRolling Cots ( Stretchers)\nIf your workplace uses rolling cots to transport injured workers, it is \ncrucial that you have proper training on how to operate and handle \nthe cot before you use it. Failure can result in the cot tipping or \ndropping, and causing further injury.\nOccupational Hazards\nWhen working in and around occupational hazards such as confined \nspaces, trenches, machinery, and hazardous gases, workers \nshould know the proper response protocols. Ensure you have the \nappropriate training for the type or rescue you will be undertaking \nas well as the proper equipment to keep yourself safe while \nrescuing another worker."
+      ],
+      "source": [
+        {
+          "page": 67,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 67,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "Even without first aid training, a person can help move a casualty safely by minimizing risks, using the shortest route to safety, and enlisting others to assist in supporting any injuries during the move. Proper handling techniques, such as using a rescue carry, should be employed to reduce the chance of further injury. It's important to prioritize safety and avoid actions that could lead to additional harm.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.3828925900161266,
+      "context": [
+        "66 67  \n2\nLifting and moving\nAlways try to give necessary first aid where the casualty is found, \nthen wait for the paramedics to move the person. However, there \nare times when this is not possible.\nYou may have to move a casualty when:\n• There are life-threatening hazards to yourself or the casualty  \ne.g. danger from fire, explosion, gas or water\n• Essential first aid for wounds or other conditions cannot be \ngiven in the casualty’s present position or location\n• The casualty must be transported to a medical facility\nIf life-threatening hazards make it necessary to move a casualty \nright away, you may need to use a rescue carry.\nIn urgent and dangerous situations where casualties are moved with \nless than ideal support for injuries, the casualty’s injuries may be \nmade worse by improper movement and handling. The chance of \nfurther injury can be reduced with proper rescue carry techniques.\nAlways move the casualty the shortest possible distance to safety",
+        "Always move the casualty the shortest possible distance to safety \nand to provide essential first aid. Use bystanders to help you and \nsupport any injuries the best you can during the move. Keep the \nrisks to the casualty, yourself and others to a minimum.\nRolling Cots ( Stretchers)\nIf your workplace uses rolling cots to transport injured workers, it is \ncrucial that you have proper training on how to operate and handle \nthe cot before you use it. Failure can result in the cot tipping or \ndropping, and causing further injury.\nOccupational Hazards\nWhen working in and around occupational hazards such as confined \nspaces, trenches, machinery, and hazardous gases, workers \nshould know the proper response protocols. Ensure you have the \nappropriate training for the type or rescue you will be undertaking \nas well as the proper equipment to keep yourself safe while \nrescuing another worker."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 67
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 67
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "How can a person without first aid training still help move a casualty safely?",
+      "answer": "Even without first aid training, a person can still help move a casualty safely by ensuring they move the casualty the shortest distance to safety, using bystanders for support during the move, and minimizing risks to all involved. If available, it's important to use proper equipment like a rescue carry, especially in urgent situations, to prevent further injury. However, proper training on how to handle such equipment is crucial to avoid additional harm.",
+      "ground_truth": "Even without formal training, someone can follow basic principles: avoid jerking movements, support the head and neck, and move the casualty only if necessary. Observing calm behavior and calling emergency services should be their top priorities.",
+      "time": 1.5255048302933574,
+      "context": [
+        "66 67  \n2\nLifting and moving\nAlways try to give necessary first aid where the casualty is found, \nthen wait for the paramedics to move the person. However, there \nare times when this is not possible.\nYou may have to move a casualty when:\n• There are life-threatening hazards to yourself or the casualty  \ne.g. danger from fire, explosion, gas or water\n• Essential first aid for wounds or other conditions cannot be \ngiven in the casualty’s present position or location\n• The casualty must be transported to a medical facility\nIf life-threatening hazards make it necessary to move a casualty \nright away, you may need to use a rescue carry.\nIn urgent and dangerous situations where casualties are moved with \nless than ideal support for injuries, the casualty’s injuries may be \nmade worse by improper movement and handling. The chance of \nfurther injury can be reduced with proper rescue carry techniques.\nAlways move the casualty the shortest possible distance to safety",
+        "Always move the casualty the shortest possible distance to safety \nand to provide essential first aid. Use bystanders to help you and \nsupport any injuries the best you can during the move. Keep the \nrisks to the casualty, yourself and others to a minimum.\nRolling Cots ( Stretchers)\nIf your workplace uses rolling cots to transport injured workers, it is \ncrucial that you have proper training on how to operate and handle \nthe cot before you use it. Failure can result in the cot tipping or \ndropping, and causing further injury.\nOccupational Hazards\nWhen working in and around occupational hazards such as confined \nspaces, trenches, machinery, and hazardous gases, workers \nshould know the proper response protocols. Ensure you have the \nappropriate training for the type or rescue you will be undertaking \nas well as the proper equipment to keep yourself safe while \nrescuing another worker."
+      ],
+      "source": [
+        {
+          "page": 67,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 67
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "When performing rescue breathing, avoid giving more than two rescue breaths before returning to chest compressions. Also, ensure the airway is clear by tilting the head back and lifting the chin to facilitate effective ventilation. If an advanced airway is in place, provide one breath every 6 seconds continuously.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 1.0732778101228178,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants)."
+      ],
+      "source": [
+        {
+          "page": 6,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 15,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "Avoid giving more than two rescue breaths before resuming chest compressions to ensure continuous CPR and effective ventilation. Also, clear any visible obstructions in the casualty’s mouth to maintain an unobstructed airway. Lastly, ensure that the casualty's airway is clear by tilting their head back and lifting their chin for effective breath delivery.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 1.5974233360029757,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants)."
+      ],
+      "source": [
+        {
+          "page": 6,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 15
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "When performing rescue breathing, what should be avoided to ensure effective ventilation?",
+      "answer": "To ensure effective ventilation during rescue breathing, avoid giving more than two rescue breaths before resuming chest compressions. Also, be cautious not to give rescue breaths if the airway is not clear, as breaths will not fill the lungs properly. Additionally, if an advanced airway is in place, give 1 breath every 6 seconds while continuously performing compressions.",
+      "ground_truth": "Avoid excessive ventilation. Excessive ventilation may cause air to build up in the person’s stomach, which may lead to difficulty providing good compressions. Gastric distention may also lead to vomiting by the victim which can result in aspiration (inhalation of the vomited material) and pneumonia.",
+      "time": 1.3038071738556027,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants)."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 6
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 15
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "First, ensure that both you and the victim are in a safe location, without moving the victim if there are potential unseen injuries. Secondly, perform a quick assessment by shaking the victim's shoulder and shouting for them to respond, while checking for normal breathing. If the victim is not breathing normally, immediately summon help and prepare for CPR if necessary.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 1.3378192484378815,
+      "context": [
+        "One Rescuer Adult CPR  \n \nIf you are alone and come across an individual who is down, follow the steps below. If someone \nelse is in the area to assist, use the ‘Two Rescuer’ sequence.  \n \nStay Safe : If you come upon an individual who may need CPR, look around and make sure you \nand the victim are in a safe place. For example, if  the victim is in water or on a road, try to move \nthe victim to a safer area.  If you are in a safe area, do not try to move  the victim as he/she may \nhave other injuries  (i.e., to the head or neck)  that you cannot see.  Simply roll him over onto his \nback. Make sure the victim is on a firm surface, in case compressions are needed.  \nAssess the Victim : To quickly assess the victim,  shake his shoulder and yell at him.  Check for \nbreathing.  If he/she is not breathing, or is not breathing normally (i.e., only gasping), you must \nsummon help.  Note: Agonal breathing  is breathing that is very slow, shallow and/or gasping.",
+        "24 One Rescuer Adult CPR \n \nIf you are alone and come across an individual who is down, follow the steps below. \nIf someone else is in the area to assist, use the ǮTwo Rescuer ǯ sequence. \n \nStay Safe : If you come upon an individual who may need CPR, look around and \nmake sure you and the victim are in a safe place . If the victim is in water or on a \nroad, try to move the victim to a safer area.  If you are in a safe area, do not try to \nmove the victim as he/she may have other injuries that you cannot see.  Simply roll \nhim over onto his back. Make sure the victim is on a firm surface, in case \ncompressions are needed. \n \nAssess the Victim : To quickly assess the victim, shake his shoulder and yell at him.  \nCheck for breathing.  If he/she is not breathing, or is not breathing normally (i.e., \nonly gasping) , you must summon help. \n \nActivate the Emergency Response System and Find an AED : Yell for help. If someone"
+      ],
+      "source": [
+        {
+          "page": 19,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 128,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "The first thing you should do if you are alone and come across a person who may need CPR is to ensure your safety and the victim's by checking that both are in a secure location. Then, assess the victim by checking for normal breathing; if not, immediately call for emergency help. Remember to roll the victim onto their back on a firm surface.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 1.2445789040066302,
+      "context": [
+        "One Rescuer Adult CPR  \n \nIf you are alone and come across an individual who is down, follow the steps below. If someone \nelse is in the area to assist, use the ‘Two Rescuer’ sequence.  \n \nStay Safe : If you come upon an individual who may need CPR, look around and make sure you \nand the victim are in a safe place. For example, if  the victim is in water or on a road, try to move \nthe victim to a safer area.  If you are in a safe area, do not try to move  the victim as he/she may \nhave other injuries  (i.e., to the head or neck)  that you cannot see.  Simply roll him over onto his \nback. Make sure the victim is on a firm surface, in case compressions are needed.  \nAssess the Victim : To quickly assess the victim,  shake his shoulder and yell at him.  Check for \nbreathing.  If he/she is not breathing, or is not breathing normally (i.e., only gasping), you must \nsummon help.  Note: Agonal breathing  is breathing that is very slow, shallow and/or gasping.",
+        "24 One Rescuer Adult CPR \n \nIf you are alone and come across an individual who is down, follow the steps below. \nIf someone else is in the area to assist, use the ǮTwo Rescuer ǯ sequence. \n \nStay Safe : If you come upon an individual who may need CPR, look around and \nmake sure you and the victim are in a safe place . If the victim is in water or on a \nroad, try to move the victim to a safer area.  If you are in a safe area, do not try to \nmove the victim as he/she may have other injuries that you cannot see.  Simply roll \nhim over onto his back. Make sure the victim is on a firm surface, in case \ncompressions are needed. \n \nAssess the Victim : To quickly assess the victim, shake his shoulder and yell at him.  \nCheck for breathing.  If he/she is not breathing, or is not breathing normally (i.e., \nonly gasping) , you must summon help. \n \nActivate the Emergency Response System and Find an AED : Yell for help. If someone"
+      ],
+      "source": [
+        {
+          "page": 19,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 128
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "If you are alone and come across a person who may need CPR, what is the first thing you should do?",
+      "answer": "First, ensure your own safety and the victim's by checking the surroundings and moving them to a firm, safe area if necessary. Then, quickly assess the victim's breathing by shaking their shoulder and yelling, and shout for help if they are not breathing normally. If alone and the victim isn't breathing, activate the emergency response system immediately while waiting for assistance.",
+      "ground_truth": "Make sure the scene is safe. First, make sure that both you and the victim are safe. For example, if the victim is in the middle of the road, try to move him to the side of the road.",
+      "time": 1.428378907032311,
+      "context": [
+        "One Rescuer Adult CPR  \n \nIf you are alone and come across an individual who is down, follow the steps below. If someone \nelse is in the area to assist, use the ‘Two Rescuer’ sequence.  \n \nStay Safe : If you come upon an individual who may need CPR, look around and make sure you \nand the victim are in a safe place. For example, if  the victim is in water or on a road, try to move \nthe victim to a safer area.  If you are in a safe area, do not try to move  the victim as he/she may \nhave other injuries  (i.e., to the head or neck)  that you cannot see.  Simply roll him over onto his \nback. Make sure the victim is on a firm surface, in case compressions are needed.  \nAssess the Victim : To quickly assess the victim,  shake his shoulder and yell at him.  Check for \nbreathing.  If he/she is not breathing, or is not breathing normally (i.e., only gasping), you must \nsummon help.  Note: Agonal breathing  is breathing that is very slow, shallow and/or gasping.",
+        "24 One Rescuer Adult CPR \n \nIf you are alone and come across an individual who is down, follow the steps below. \nIf someone else is in the area to assist, use the ǮTwo Rescuer ǯ sequence. \n \nStay Safe : If you come upon an individual who may need CPR, look around and \nmake sure you and the victim are in a safe place . If the victim is in water or on a \nroad, try to move the victim to a safer area.  If you are in a safe area, do not try to \nmove the victim as he/she may have other injuries that you cannot see.  Simply roll \nhim over onto his back. Make sure the victim is on a firm surface, in case \ncompressions are needed. \n \nAssess the Victim : To quickly assess the victim, shake his shoulder and yell at him.  \nCheck for breathing.  If he/she is not breathing, or is not breathing normally (i.e., \nonly gasping) , you must summon help. \n \nActivate the Emergency Response System and Find an AED : Yell for help. If someone"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 19
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 128
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, the pathogen must gain access to the body through an entry site like broken skin, mucous membranes, or respiratory system. Direct contact with infected blood or body fluids is necessary for transmission. Bloodborne pathogens cannot be spread through casual contact, water, or food, but must involve a specific portal of entry.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 1.3787658722139895,
+      "context": [
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "One of your major concerns when providing first aid should be to protect yourself from \nbloodborne pathogens . Bloodborne pathogens  are infectious microorganism that have the \nability to cause disease in humans. They are spread through direct contact with infected blood. \nSome of these include hepatitis C and HIV, the virus that causes AIDS. Unive rsal precautions  are \nmeasures that help to protect against bloodborne pathogens and assume that all victims are \npotentially infectious. By observing universal precautions, you are protecting yourself against \nexposure to potentially disease -causing microorg anism present in another’s blood or body \nfluids. To protect yourself, you should use PPE, or personal protective equipment, such as \ngloves. If you do not have gloves, you can improvise by using a plastic bag to cover your hands. \nAlways follow these guideli nes when providing first aid to protect yourself:"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 101
+        },
+        {
+          "page": 40,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, the pathogen must gain entry into the body through a portal of entry like broken skin, mucous membranes, or respiratory system, and there must be direct contact with infected blood or body fluids. There are no vaccinations for some pathogens, such as HIV, increasing the risk of transmission. Bloodborne pathogens cannot be spread through casual contact, water, or food, emphasizing the importance of direct contact for transmission.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 1.7385202147997916,
+      "context": [
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "One of your major concerns when providing first aid should be to protect yourself from \nbloodborne pathogens . Bloodborne pathogens  are infectious microorganism that have the \nability to cause disease in humans. They are spread through direct contact with infected blood. \nSome of these include hepatitis C and HIV, the virus that causes AIDS. Unive rsal precautions  are \nmeasures that help to protect against bloodborne pathogens and assume that all victims are \npotentially infectious. By observing universal precautions, you are protecting yourself against \nexposure to potentially disease -causing microorg anism present in another’s blood or body \nfluids. To protect yourself, you should use PPE, or personal protective equipment, such as \ngloves. If you do not have gloves, you can improvise by using a plastic bag to cover your hands. \nAlways follow these guideli nes when providing first aid to protect yourself:"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 101
+        },
+        {
+          "page": 40,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the necessary conditions for a bloodborne pathogen infection to occur?",
+      "answer": "For a bloodborne pathogen infection to occur, the following conditions must be met: the pathogen must have access to the body through an entry site like broken skin, mucous membranes, or respiratory system; direct contact with infected blood or body fluids must occur; and the exposure must happen through the correct portal of entry. Personal protective equipment (PPE), such as gloves, is essential to prevent such infections during first aid or medical exposure.",
+      "ground_truth": "In order for infection to occur, there are four conditions that must be met: A pathogen must be present. A sufficient quantity of the pathogen must be present in order to cause disease/infection. Some pathogens are more virulent or potent than others and require fewer numbers of virus or bacteria to cause infection. A person must be susceptible to the pathogen in question. Individuals who have been vaccinated against a pathogen can still become infected as vaccinations are not always 100% effective, and effectiveness may decrease over time. There are no vaccinations for some pathogens, such as HIV.  The pathogen must have access to the body via an entry site: broken skin (abrasions or punctures), mucous membranes such  as the nose and mouth, or the respiratory system.",
+      "time": 1.6407156088389456,
+      "context": [
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "One of your major concerns when providing first aid should be to protect yourself from \nbloodborne pathogens . Bloodborne pathogens  are infectious microorganism that have the \nability to cause disease in humans. They are spread through direct contact with infected blood. \nSome of these include hepatitis C and HIV, the virus that causes AIDS. Unive rsal precautions  are \nmeasures that help to protect against bloodborne pathogens and assume that all victims are \npotentially infectious. By observing universal precautions, you are protecting yourself against \nexposure to potentially disease -causing microorg anism present in another’s blood or body \nfluids. To protect yourself, you should use PPE, or personal protective equipment, such as \ngloves. If you do not have gloves, you can improvise by using a plastic bag to cover your hands. \nAlways follow these guideli nes when providing first aid to protect yourself:"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 101
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 40
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "As a lone rescuer performing chest compressions on an infant, first ensure the airway by tilting the head and lifting the chin. Use two fingers to give 30 compressions below the nipple line at a depth of about 1.5 inches or one-third of the chest depth, maintaining a rate of 100-120 compressions per minute. Minimize interruptions and continue with 2 breaths after completing the compressions, repeating the cycle for 1 minute or until help arrives.\n\nIf the rescue breaths are not effective, maintain the chest compressions and reassess the child's condition while waiting for professional help.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 2.3879315010271966,
+      "context": [
+        "8Infant CPR/AED\nIn the case of the infant casualty, the rescuer may encircle the infant \ncasualty’s chest and use their thumbs side-by-side or one on top of \nthe other to provide compressions. The method used will depend \non the size of the infant casualty and the rescuer’s thumbs.\nOne rescuer 30:2\n1. Give 30 chest compressions just below the nipple line using \ntwo fingers.\n2. Push hard, push fast (100 to 120 per minute) to a depth of \nabout 1 1/2 inches (4 cm) or 1/3 of the depth of the chest. \nThe pressure and release phases take the same time. \nRelease pressure and completely remove your weight at \nthe top of each compression to allow chest to return to \nthe resting position after each compression. Minimize \ninterruptions.\n3. Give 2 breaths.\n4. Continue 30 compressions: 2 breaths. \n282 283Basic Life Support Resuscitation Skills Basic Life Support Resuscitation Skills",
+        " If you are not alone, ask the nearest person to dial 999 for an ambulance immediately .  If \nyou are alone and need to leave the child to ensure help is on the way , perform resuscitation \nfor about 1 minute first:  \n Maintain the child’s airway by tilting their head and lifting the chin  \n Pinch the fleshy part of the nose and seal your mouth around the child’s  \n Give 5 initial rescue breaths.  Blow in just enough air to make the child’s chest rise visibly  \nCombine rescue breaths with chest compressions:  \n Using 1 or 2 hands as required to depress the child’s chest a third of its depth  \n Give 30 chest compressions at a rate of 100 compressions per minute  \n Open the airwa y again by tilting the child’s head and lifting the chin, and give 2 more \nrescue breaths  \n Continue to administer 30 chest compressions followed by 2 rescue breaths  \n  \nIf your rescue breaths do not make the child’s chest rise effectively:"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 283
+        },
+        {
+          "page": 76,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "1. Ensure the infant's airway is clear by tilting the head and lifting the chin.\n2. Perform 30 chest compressions at a rate of 100-120 per minute, a depth of about 1 1/2 inches (4 cm), using two fingers or one on top of the other.\n3. After compressions, give 2 breaths, ensuring the chest rises visibly, and repeat the cycle.\n4. If rescue breaths are ineffective, continue with cycles of compressions and breaths, while ensuring minimal interruptions. If alone, call for help after about a minute of resuscitation.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 2.3498523072339594,
+      "context": [
+        "8Infant CPR/AED\nIn the case of the infant casualty, the rescuer may encircle the infant \ncasualty’s chest and use their thumbs side-by-side or one on top of \nthe other to provide compressions. The method used will depend \non the size of the infant casualty and the rescuer’s thumbs.\nOne rescuer 30:2\n1. Give 30 chest compressions just below the nipple line using \ntwo fingers.\n2. Push hard, push fast (100 to 120 per minute) to a depth of \nabout 1 1/2 inches (4 cm) or 1/3 of the depth of the chest. \nThe pressure and release phases take the same time. \nRelease pressure and completely remove your weight at \nthe top of each compression to allow chest to return to \nthe resting position after each compression. Minimize \ninterruptions.\n3. Give 2 breaths.\n4. Continue 30 compressions: 2 breaths. \n282 283Basic Life Support Resuscitation Skills Basic Life Support Resuscitation Skills",
+        " If you are not alone, ask the nearest person to dial 999 for an ambulance immediately .  If \nyou are alone and need to leave the child to ensure help is on the way , perform resuscitation \nfor about 1 minute first:  \n Maintain the child’s airway by tilting their head and lifting the chin  \n Pinch the fleshy part of the nose and seal your mouth around the child’s  \n Give 5 initial rescue breaths.  Blow in just enough air to make the child’s chest rise visibly  \nCombine rescue breaths with chest compressions:  \n Using 1 or 2 hands as required to depress the child’s chest a third of its depth  \n Give 30 chest compressions at a rate of 100 compressions per minute  \n Open the airwa y again by tilting the child’s head and lifting the chin, and give 2 more \nrescue breaths  \n Continue to administer 30 chest compressions followed by 2 rescue breaths  \n  \nIf your rescue breaths do not make the child’s chest rise effectively:"
+      ],
+      "source": [
+        {
+          "page": 283,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "page": 76,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "As a lone rescuer, what steps would you take when performing chest compressions on an infant?",
+      "answer": "As a lone rescuer performing chest compressions on an infant, you would encircle the infant's chest and give 30 compressions just below the nipple line using two fingers, ensuring a rate of 100 to 120 compressions per minute and a depth of about 1 1/2 inches or 1/3 of the chest depth. After compressions, if necessary, you would pinch the infant's nose, seal your mouth around the child's mouth, and give 2 rescue breaths, making sure the chest rises visibly. If this does not occur, you should continue with 30 compressions followed by 2 rescue breaths and consider leaving the area briefly to call for emergency assistance if needed.",
+      "ground_truth": "When one rescuer is present, the chest is compressed using two fingers on the lower half of the sternum, avoiding the xiphoid process (the very end of the sternum where it narrows and comes to a point). To landmark, place 2 fingers in the center of the infant’s chest, just below the nipple line. Push down on the infant’s chest one-third the depth of the chest, or approximately 1 ½ inches. Allow the chest to fully recoil (return to its neutral position) in between compressions. Compressions should be delivered at a rate of 100-120 compressions/minute.",
+      "time": 3.280061472207308,
+      "context": [
+        "8Infant CPR/AED\nIn the case of the infant casualty, the rescuer may encircle the infant \ncasualty’s chest and use their thumbs side-by-side or one on top of \nthe other to provide compressions. The method used will depend \non the size of the infant casualty and the rescuer’s thumbs.\nOne rescuer 30:2\n1. Give 30 chest compressions just below the nipple line using \ntwo fingers.\n2. Push hard, push fast (100 to 120 per minute) to a depth of \nabout 1 1/2 inches (4 cm) or 1/3 of the depth of the chest. \nThe pressure and release phases take the same time. \nRelease pressure and completely remove your weight at \nthe top of each compression to allow chest to return to \nthe resting position after each compression. Minimize \ninterruptions.\n3. Give 2 breaths.\n4. Continue 30 compressions: 2 breaths. \n282 283Basic Life Support Resuscitation Skills Basic Life Support Resuscitation Skills",
+        " If you are not alone, ask the nearest person to dial 999 for an ambulance immediately .  If \nyou are alone and need to leave the child to ensure help is on the way , perform resuscitation \nfor about 1 minute first:  \n Maintain the child’s airway by tilting their head and lifting the chin  \n Pinch the fleshy part of the nose and seal your mouth around the child’s  \n Give 5 initial rescue breaths.  Blow in just enough air to make the child’s chest rise visibly  \nCombine rescue breaths with chest compressions:  \n Using 1 or 2 hands as required to depress the child’s chest a third of its depth  \n Give 30 chest compressions at a rate of 100 compressions per minute  \n Open the airwa y again by tilting the child’s head and lifting the chin, and give 2 more \nrescue breaths  \n Continue to administer 30 chest compressions followed by 2 rescue breaths  \n  \nIf your rescue breaths do not make the child’s chest rise effectively:"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 283
+        },
+        {
+          "page": 76,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "When providing rescue breathing to an infant victim with a pulse but no breathing, you should give 1 breath every 5 to 6 seconds. It's essential to deliver each breath slowly over 1 second, ensuring enough air is given to make the chest rise. This method helps prevent cardiac arrest by sustaining adequate oxygenation.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.4292137762531638,
+      "context": [
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds.",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants)."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 32
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 15
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "When an infant victim has a pulse but is not breathing, you should provide one breath every 5 to 6 seconds while performing rescue breathing. This involves giving a breath slowly over 1 second to make the chest rise, ensuring adequate oxygenation without over-ventilation. It's important to maintain this rate to prevent deterioration into cardiac arrest.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.6140903243795037,
+      "context": [
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds.",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants)."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 32
+        },
+        {
+          "page": 15,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "If an infant victim has a pulse but is not breathing, how often would you need to provide a breath when performing rescue breathing?",
+      "answer": "When an infant victim has a pulse but is not breathing, you should provide one breath every 5 to 6 seconds during rescue breathing. This is done by delivering air slowly over 1 second to make the chest rise. It's crucial to intervene quickly as respiratory arrest can lead to cardiac arrest if untreated.",
+      "ground_truth": "If the victim has a pulse but is not breathing, provide rescue breathing by providing 1 breath every 3 to 5 seconds (12-20 breaths per minute). Check for a pulse every 2 minutes- if at any time the victim loses their pulse, start chest compressions along with ventilations at a rate of 30:2.",
+      "time": 1.2201736881397665,
+      "context": [
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds.",
+        "• Rescuers should provide 1 breath every 6 second s when an advanced airway is in place \nand compressions are ongoing continuously (rather than trying to remember a range of \nventilations for adults, children and infants)."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 32
+        },
+        {
+          "page": 15,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, continue with 30 chest compressions, remove any visible obstructions, and ensure the airway is clear by tilting the head back and lifting the chin. Then, check the victim's pulse every 2 minutes and begin chest compressions combined with breaths if needed. Remember, do not give more than two rescue breaths before resuming chest compressions.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.5912901773117483,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "breaths/minute) \nEach breath should last 1 second \nDid the chest rise?  If not, try again \nBe sure to check the victim ǯs pulse every 2 minutes and begin chest compressions \ncombined with breaths if needed"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 6
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 153
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, continue with 30 chest compressions, remove any visible obstructions in the mouth, and ensure the airway is clear by tilting the head back and lifting the chin. Then, reassess and attempt breaths again if necessary. If unsuccessful, you should switch to continuous chest compressions and check for a pulse every 2 minutes.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.5350550720468163,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "breaths/minute) \nEach breath should last 1 second \nDid the chest rise?  If not, try again \nBe sure to check the victim ǯs pulse every 2 minutes and begin chest compressions \ncombined with breaths if needed"
+      ],
+      "source": [
+        {
+          "page": 6,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 153
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What should you do if the victim's chest does not rise after two attempts to give breaths during CPR?",
+      "answer": "If the victim's chest does not rise after two attempts to give breaths during CPR, give a further 30 chest compressions, remove any visible obstructions from the victim's mouth, and ensure the airway is clear by tilting the head back and lifting the chin. Continue these steps, alternating between giving chest compressions and breaths, until emergency services arrive or you become too fatigued to continue. Remember to check the victim's pulse every 2 minutes if needed.",
+      "ground_truth": "Give one breath over 1 second, watching to see if the chest rises. If the chest doesn’t rise as you give the breath, repeat the head tilt-chin lift. Give a second breath over 1 second and watch for chest rise. If the second breath fails to go in, go immediately to chest compressions.",
+      "time": 1.7181467590853572,
+      "context": [
+        "Page | 7 \n Should your rescue breaths not be effective, follow the steps below:  \n Give a further 30 chest compressions.  \n Remove any visible obstructions in the casualty’s mouth.  \n Make certain their airway is clear by tilting their head back  and lifting the \nchin.  If the airway is not clear, the breath you give will not fill their lungs.  \n \nDo not give the casualty more than two rescue breaths before continuing \nwith chest compressions.  \n  \nIf you have someone with you, take it in turns to administer chest compressions.  \nEvery 1 -2 minutes, change over so one person administers chest compressions \nwhile the other gives the rescue breaths.  Ensure there is as little delay in \nswapping as possible, so the casualty is constantly receiving CPR.  \n  \nContinue CPR until:  \nThe emergency services arrive to take over.  \nYou become too fatigued to continue.  \n \n Resuscitation for babies and children:  \nUnderstandably, some people are reluctant to perform CPR on a child or baby",
+        "breaths/minute) \nEach breath should last 1 second \nDid the chest rise?  If not, try again \nBe sure to check the victim ǯs pulse every 2 minutes and begin chest compressions \ncombined with breaths if needed"
+      ],
+      "source": [
+        {
+          "page": 6,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        },
+        {
+          "page": 153,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, avoid excessive ventilations. Deliver each breath slowly over 1 second, and provide just enough air to make the chest rise. Excessive ventilation can lead to complications and should be avoided.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.0615886491723359,
+      "context": [
+        "and feel to determine whether a victim is breathing.  Rather, if the victim is not \nresponsive, has no pulse, and is not breathing or is breathing in an irregular  fashion (i.e. \nonly gasping), begin CPR immediately!  \n• Emphasis on high -quality CPR.  High -quality CPR is defined as:  \no Compression rate of 100 - 120 beats  per minute on victims  of all ages ; \no Compression depth of AT LEAST 2 inches in adults ( but no greate r than 2.4 \ninches). Allow  the chest to completely expand (recoil) after each compression \n(do not lean on the chest between compressions);  \no Not interrupting CPR except to use an AED (keep interruptions in chest \ncompressions to less than 10 seconds);  \no Avoiding excess ive ventilations;  \no Above all else, PUSH HARD AND FAST!  \n• Since many responders (even professionals) are unable to feel or palpate a pulse \nquickly, the recommendation is to feel for a pulse for NO MORE THAN 10 seconds. If you",
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 14
+        },
+        {
+          "page": 32,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, excessive ventilation should be avoided. Each breath should be given slowly over 1 second, delivering just enough air to make the chest rise. This helps maintain adequate cardiac output while preventing over-inflation of the lungs.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 1.050131217110902,
+      "context": [
+        "and feel to determine whether a victim is breathing.  Rather, if the victim is not \nresponsive, has no pulse, and is not breathing or is breathing in an irregular  fashion (i.e. \nonly gasping), begin CPR immediately!  \n• Emphasis on high -quality CPR.  High -quality CPR is defined as:  \no Compression rate of 100 - 120 beats  per minute on victims  of all ages ; \no Compression depth of AT LEAST 2 inches in adults ( but no greate r than 2.4 \ninches). Allow  the chest to completely expand (recoil) after each compression \n(do not lean on the chest between compressions);  \no Not interrupting CPR except to use an AED (keep interruptions in chest \ncompressions to less than 10 seconds);  \no Avoiding excess ive ventilations;  \no Above all else, PUSH HARD AND FAST!  \n• Since many responders (even professionals) are unable to feel or palpate a pulse \nquickly, the recommendation is to feel for a pulse for NO MORE THAN 10 seconds. If you",
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds."
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 14
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 32
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "When performing rescue breathing for an adult with a pulse, what action should be avoided?",
+      "answer": "When performing rescue breathing for an adult with a pulse, excessive ventilations should be avoided. Deliver breaths slowly over 1 second and ensure the chest rises with just enough air. Rapid, forceful breaths or excessive ventilation can be harmful.",
+      "ground_truth": "If you can see the object, turn the victim’s head to the side and sweep it out of the victim’s mouth with your index finger. Never perform a blind finger sweep—this may force the object farther down the victim’s airway.",
+      "time": 0.974454210139811,
+      "context": [
+        "and feel to determine whether a victim is breathing.  Rather, if the victim is not \nresponsive, has no pulse, and is not breathing or is breathing in an irregular  fashion (i.e. \nonly gasping), begin CPR immediately!  \n• Emphasis on high -quality CPR.  High -quality CPR is defined as:  \no Compression rate of 100 - 120 beats  per minute on victims  of all ages ; \no Compression depth of AT LEAST 2 inches in adults ( but no greate r than 2.4 \ninches). Allow  the chest to completely expand (recoil) after each compression \n(do not lean on the chest between compressions);  \no Not interrupting CPR except to use an AED (keep interruptions in chest \ncompressions to less than 10 seconds);  \no Avoiding excess ive ventilations;  \no Above all else, PUSH HARD AND FAST!  \n• Since many responders (even professionals) are unable to feel or palpate a pulse \nquickly, the recommendation is to feel for a pulse for NO MORE THAN 10 seconds. If you",
+        "each breath slowly over 1 second and deliver just enough air to make the chest rise.  \nRescue Breathing  \nRespiratory arrest is defined as the cessation of breathing. During respiratory arrest, as well as \ninadequate breathing, the victim will still hav e some amount of cardiac output, which you will \nbe able to detect as a palpable pulse.  \nIt is important to be able to recognize respiratory arrest, or impending respiratory arrest, which \nmay be seen as slow, irregular or gasping respirations. These abnormal  respirations are \ninadequate to support life. Respiratory arrest inevitably leads to cardiac arrest if not treated, \ntherefore healthcare providers should intervene quickly to prevent this deterioration by \nproviding rescue breathing . \nTo provide rescue breat hing when the victim has a pulse, give 1 breath every 5 to 6 seconds."
+      ],
+      "source": [
+        {
+          "page": 14,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 32,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions not considered risk factors for the transmission of bloodborne pathogens include casual contact like shaking hands or hugging, sharing water or food, and breathing air around an infected person. Bloodborne pathogens cannot be spread by saliva, tears, or insect bites. Personal items like razors, toothbrushes, or dishes shared with an infected person are also not associated with transmission risk, provided they are properly sterilized.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.730733335018158,
+      "context": [
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "to child particularly during the birth process.  \n• HBV can be transmitted through medical or dental practices if the doctor or dentist does \nnot practice the safety standards recommended by the CDC and OSHA.  \n• Tattooing or body piercing may present a potential risk of HBV transmission; however, if \nequipment is properly sterilized, this risk is almost non -existent.   \n• Sharing personal care items such as razors, toothbrushes or other items that might \nharbor HBV may present a risk for infection.  \nAs with HIV, HBV cannot be spread by insects, saliva, tears, casual contact, sharing dishes or \nutensils, or breathing air around an HBV infected person."
+      ],
+      "source": [
+        {
+          "page": 101,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 98,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions not considered risk factors for the transmission of bloodborne pathogens include casual contact like shaking hands or hugging, sharing water or food, insect bites, saliva, tears, sharing dishes or utensils, and breathing air around an infected person. The transmission of bloodborne pathogens requires direct contact with infected blood or body fluids via correct portals of entry, which casual contact cannot provide. Bloodborne pathogens like HBV cannot be spread by casual contact, sharing food or water, or insects.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 2.0012683221139014,
+      "context": [
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "to child particularly during the birth process.  \n• HBV can be transmitted through medical or dental practices if the doctor or dentist does \nnot practice the safety standards recommended by the CDC and OSHA.  \n• Tattooing or body piercing may present a potential risk of HBV transmission; however, if \nequipment is properly sterilized, this risk is almost non -existent.   \n• Sharing personal care items such as razors, toothbrushes or other items that might \nharbor HBV may present a risk for infection.  \nAs with HIV, HBV cannot be spread by insects, saliva, tears, casual contact, sharing dishes or \nutensils, or breathing air around an HBV infected person."
+      ],
+      "source": [
+        {
+          "page": 101,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 98,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are some actions that are not considered risk factors for the transmission of bloodborne pathogens?",
+      "answer": "Actions not considered risk factors for the transmission of bloodborne pathogens include casual contact like shaking hands or hugging, sharing food or water, and breathing air around an infected person. Bloodborne pathogens cannot be spread through insects, saliva, tears, or sharing dishes and utensils. Proper sterilization of tattooing or body piercing equipment also mitigates the risk of transmission.",
+      "ground_truth": "Sharing eating utensils, insects, casual contact, and breathing air around an infected person have NOT been shown to be risk factors for transmission of bloodborne pathogens.",
+      "time": 1.5010784310288727,
+      "context": [
+        "100% effective, and effectiveness may decrease over time. There are no vaccinations for \nsome pathogens, such as HIV.  \n• The pathogen must have access to the body  via an entry site.  An entry site, or portal of \nentry , may include broken skin (abrasions or punctures), mucous membranes such as \nthe nose and mouth, or the respiratory system.  \nBloodborne pathogens are primarily spread through direct contact  (infected blood or body fluid \nfrom an  infected individual enters another person’s body via the correct portal of entry). \nIndirect contact  occurs when an individual touches an item or surface that has been \ncontaminated by pathogens from another person’s body, and these pathogens enter the \npers on’s body via the correct portal of entry. Bloodborne pathogens cannot be spread by casual \ncontact (shaking hands or hugging), water or food, although other pathogens that are not \nbloodborne can. Droplet transmission  occurs when a person coughs or sneezes and pathogens",
+        "to child particularly during the birth process.  \n• HBV can be transmitted through medical or dental practices if the doctor or dentist does \nnot practice the safety standards recommended by the CDC and OSHA.  \n• Tattooing or body piercing may present a potential risk of HBV transmission; however, if \nequipment is properly sterilized, this risk is almost non -existent.   \n• Sharing personal care items such as razors, toothbrushes or other items that might \nharbor HBV may present a risk for infection.  \nAs with HIV, HBV cannot be spread by insects, saliva, tears, casual contact, sharing dishes or \nutensils, or breathing air around an HBV infected person."
+      ],
+      "source": [
+        {
+          "page": 101,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 98,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock include pale or blue-grey skin, anxiety, disorientation, shallow and rapid breathing, weak and rapid pulse, and changes in consciousness. The person may also experience extreme thirst, drowsiness, and cool, clammy skin. These symptoms indicate inadequate blood flow to the body's organs due to blood loss or fluid loss.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.3179721478372812,
+      "context": [
+        "56 57 \n2\nSigns and symptoms of shock\nSigns Symptoms\n• Pale skin at first, turns \nblue-grey*• Restless\n• blue-purple lips, tongue, \nearlobes, fingernails• Anxious\n• Cold and clammy skin • Disoriented\n• Breathing shallow and \nirregular, fast or gasping \nfor air• Confused\n• Changes in level of \nconsciousness• Afraid\n• Weak, rapid pulse—radial \npulse may be absent• Dizzy\n• Thirsty",
+        "calm and still. Raise the victim’s legs above the level of their heart.  \n7. Get the victim to emergency care as soon as possible.  \n \nShock  \nShock  is caused by inadequate blood flow to the body’s organs. It can be caused by blood loss \nor loss of body fl uids, as may occur following untreated severe vomiting or diarrhea. Symptoms \nof shock may include the following:  \n• Drowsiness  \n• Confusion  \n• Loss of consciousness  \n• Extreme thirst  \n• Pale skin color  \n• Rapid heart rate  \n• Cool, clammy skin  \n• Rapid breathing  \n• Anxiety"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 58
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 45
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "Symptoms of shock include pale or blue-grey skin, rapid and shallow breathing, anxiety, dizziness, rapid and weak pulse, extreme thirst, loss of consciousness, confusion, and cool, clammy skin. There may also be a loss of radial pulse and changes in level of consciousness. This condition is caused by inadequate blood flow to the body's organs, which can be due to blood loss or severe fluid loss.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.93774509197101,
+      "context": [
+        "56 57 \n2\nSigns and symptoms of shock\nSigns Symptoms\n• Pale skin at first, turns \nblue-grey*• Restless\n• blue-purple lips, tongue, \nearlobes, fingernails• Anxious\n• Cold and clammy skin • Disoriented\n• Breathing shallow and \nirregular, fast or gasping \nfor air• Confused\n• Changes in level of \nconsciousness• Afraid\n• Weak, rapid pulse—radial \npulse may be absent• Dizzy\n• Thirsty",
+        "calm and still. Raise the victim’s legs above the level of their heart.  \n7. Get the victim to emergency care as soon as possible.  \n \nShock  \nShock  is caused by inadequate blood flow to the body’s organs. It can be caused by blood loss \nor loss of body fl uids, as may occur following untreated severe vomiting or diarrhea. Symptoms \nof shock may include the following:  \n• Drowsiness  \n• Confusion  \n• Loss of consciousness  \n• Extreme thirst  \n• Pale skin color  \n• Rapid heart rate  \n• Cool, clammy skin  \n• Rapid breathing  \n• Anxiety"
+      ],
+      "source": [
+        {
+          "page": 58,
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf"
+        },
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 45
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "What are the symptoms of shock?",
+      "answer": "The symptoms of shock include pale or blue-grey skin, cold and clammy skin, rapid and shallow breathing, anxiety, weak and rapid pulse, confusion, dizziness, and changes in level of consciousness. In severe cases, it may lead to drowsiness, loss of consciousness, and extreme thirst. Shock is a serious condition that requires immediate medical attention.",
+      "ground_truth": "Thirst, pallor (pale skin) and Rapid heart rate are all symptoms of shock. Other symptoms may include drowsiness, confusion, cool and clammy skin, loss of consciousness, rapid breathing and anxiety.",
+      "time": 1.3326467480510473,
+      "context": [
+        "56 57 \n2\nSigns and symptoms of shock\nSigns Symptoms\n• Pale skin at first, turns \nblue-grey*• Restless\n• blue-purple lips, tongue, \nearlobes, fingernails• Anxious\n• Cold and clammy skin • Disoriented\n• Breathing shallow and \nirregular, fast or gasping \nfor air• Confused\n• Changes in level of \nconsciousness• Afraid\n• Weak, rapid pulse—radial \npulse may be absent• Dizzy\n• Thirsty",
+        "calm and still. Raise the victim’s legs above the level of their heart.  \n7. Get the victim to emergency care as soon as possible.  \n \nShock  \nShock  is caused by inadequate blood flow to the body’s organs. It can be caused by blood loss \nor loss of body fl uids, as may occur following untreated severe vomiting or diarrhea. Symptoms \nof shock may include the following:  \n• Drowsiness  \n• Confusion  \n• Loss of consciousness  \n• Extreme thirst  \n• Pale skin color  \n• Rapid heart rate  \n• Cool, clammy skin  \n• Rapid breathing  \n• Anxiety"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/First aid reference guide_V4.1_StJohnAmbulance.pdf",
+          "page": 58
+        },
+        {
+          "page": 45,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "Continue applying pressure to the wound and reinforce the pressure bandage without removing it, as blood continues to seep through. Elevate the affected forearm above the heart level if possible, to assist in controlling the bleeding. If the victim shows signs of shock or anxiety, keep them calm and follow the shock suspension protocol.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 1.1776169990189373,
+      "context": [
+        "1. Encoura ge the victim to lie down; if the victim is dizzy, raise th e victim’s  feet above \nhis/her  head.  \n2.  Do NOT remove any object that is deeply embedded in the wound.  \n3. If the source of blood is an extremity, raise the affected arm or leg above the level of the \nvictim’s heart. Apply pressure directly to the wound using a cl ean cloth or clean/ sterile \nbandage. Hold pressure for ten  minutes; do NOT peek to see if bleeding has stopped.   \n4. Apply a pressure bandage. If you note that there is blood coming through the pressure \nbandage, do not remove it - simply  reinforce the bandage i f you notice bleeding around \nthe original bandage.  \n5. Continue to apply pressure to the wound.  \n6. If the victim becomes drowsy,  extremely anxious, thirsty, or if his skin becomes very \ncool  and/or clammy , you should susp ect shock . If the victim is anxious, try to  keep them \ncalm and still. Raise the victim’s legs above the level of their heart.",
+        "Page | 40 \n   \nExamine  Examine the wound for foreign objects and make a note of how the \nwound  is bleeding.  Make sure to tell the medical staff how the \nwound was bleeding once it is covered with a bandage.  \n  \nElevate  Elevate the wound so that it is above the heart, which will use \ngravity to restrict the flow of blood to the injury.  \n \nPressure  Apply direct or indirect pressure to help slow the bleeding.  \n  \nDirect pressure:  \nDirect pressure to the wound is the best way of stemming a bleed.  You can use \nyour hands to do this, but you should take precautions to minimise the risk of \ncoming in contact with t he casualty’s blood, preferably by wearing disposable \ngloves.  Keep pressure on the wound continuously for at least ten minutes.  \nUsing a firm bandage usually stops the bleeding with most minor wounds (make \nsure the bandage is not so tight as to cut off th e circulation to the limb \naltogether).  If there is a foreign object embedded in the wound do not remove it"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 45
+        },
+        {
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf",
+          "page": 39
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "Continue applying direct pressure to the wound, use gloves if available, and reinforce the pressure bandage without removing it if blood seeps through. Elevate the injured forearm above the heart level if possible to aid in reducing blood flow to the wound. If the bleeding does not stop, seek immediate medical assistance.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 1.1268569836392999,
+      "context": [
+        "1. Encoura ge the victim to lie down; if the victim is dizzy, raise th e victim’s  feet above \nhis/her  head.  \n2.  Do NOT remove any object that is deeply embedded in the wound.  \n3. If the source of blood is an extremity, raise the affected arm or leg above the level of the \nvictim’s heart. Apply pressure directly to the wound using a cl ean cloth or clean/ sterile \nbandage. Hold pressure for ten  minutes; do NOT peek to see if bleeding has stopped.   \n4. Apply a pressure bandage. If you note that there is blood coming through the pressure \nbandage, do not remove it - simply  reinforce the bandage i f you notice bleeding around \nthe original bandage.  \n5. Continue to apply pressure to the wound.  \n6. If the victim becomes drowsy,  extremely anxious, thirsty, or if his skin becomes very \ncool  and/or clammy , you should susp ect shock . If the victim is anxious, try to  keep them \ncalm and still. Raise the victim’s legs above the level of their heart.",
+        "Page | 40 \n   \nExamine  Examine the wound for foreign objects and make a note of how the \nwound  is bleeding.  Make sure to tell the medical staff how the \nwound was bleeding once it is covered with a bandage.  \n  \nElevate  Elevate the wound so that it is above the heart, which will use \ngravity to restrict the flow of blood to the injury.  \n \nPressure  Apply direct or indirect pressure to help slow the bleeding.  \n  \nDirect pressure:  \nDirect pressure to the wound is the best way of stemming a bleed.  You can use \nyour hands to do this, but you should take precautions to minimise the risk of \ncoming in contact with t he casualty’s blood, preferably by wearing disposable \ngloves.  Keep pressure on the wound continuously for at least ten minutes.  \nUsing a firm bandage usually stops the bleeding with most minor wounds (make \nsure the bandage is not so tight as to cut off th e circulation to the limb \naltogether).  If there is a foreign object embedded in the wound do not remove it"
+      ],
+      "source": [
+        {
+          "page": 45,
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf"
+        },
+        {
+          "page": 39,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    },
+    {
+      "question": "You are attempting to control bleeding on a victim who sustained a deep cut to the forearm. You have help pressure for 10 minutes and applied a pressure dressing. You note that blood is beginning to seep through the pressure bandage. What should you do?",
+      "answer": "Continue applying pressure to the wound using a firm bandage without removing it, and reinforce the bandage if bleeding is noted around the original bandage. Elevate the affected limb above the level of the victim’s heart to use gravity to restrict blood flow to the injury. If the blood continues to seep through, focus on maintaining pressure and consider seeking immediate medical attention.",
+      "ground_truth": "If you note that there is blood coming through the pressure bandage, do not remove it- simply reinforce the bandage if you notice bleeding around the original bandage. Continue to apply pressure to the wound.",
+      "time": 1.394939220044762,
+      "context": [
+        "1. Encoura ge the victim to lie down; if the victim is dizzy, raise th e victim’s  feet above \nhis/her  head.  \n2.  Do NOT remove any object that is deeply embedded in the wound.  \n3. If the source of blood is an extremity, raise the affected arm or leg above the level of the \nvictim’s heart. Apply pressure directly to the wound using a cl ean cloth or clean/ sterile \nbandage. Hold pressure for ten  minutes; do NOT peek to see if bleeding has stopped.   \n4. Apply a pressure bandage. If you note that there is blood coming through the pressure \nbandage, do not remove it - simply  reinforce the bandage i f you notice bleeding around \nthe original bandage.  \n5. Continue to apply pressure to the wound.  \n6. If the victim becomes drowsy,  extremely anxious, thirsty, or if his skin becomes very \ncool  and/or clammy , you should susp ect shock . If the victim is anxious, try to  keep them \ncalm and still. Raise the victim’s legs above the level of their heart.",
+        "Page | 40 \n   \nExamine  Examine the wound for foreign objects and make a note of how the \nwound  is bleeding.  Make sure to tell the medical staff how the \nwound was bleeding once it is covered with a bandage.  \n  \nElevate  Elevate the wound so that it is above the heart, which will use \ngravity to restrict the flow of blood to the injury.  \n \nPressure  Apply direct or indirect pressure to help slow the bleeding.  \n  \nDirect pressure:  \nDirect pressure to the wound is the best way of stemming a bleed.  You can use \nyour hands to do this, but you should take precautions to minimise the risk of \ncoming in contact with t he casualty’s blood, preferably by wearing disposable \ngloves.  Keep pressure on the wound continuously for at least ten minutes.  \nUsing a firm bandage usually stops the bleeding with most minor wounds (make \nsure the bandage is not so tight as to cut off th e circulation to the limb \naltogether).  If there is a foreign object embedded in the wound do not remove it"
+      ],
+      "source": [
+        {
+          "source": "../PDF_files/National_CPR_Association_Certificate_StudyMaterial.pdf",
+          "page": 45
+        },
+        {
+          "page": 39,
+          "source": "../PDF_files/Actual_First_Aid_Training_Notes.pdf"
+        }
+      ],
+      "scores": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_errors": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "metric_durations_seconds": {
+        "judge_1": {},
+        "judge_2": {}
+      },
+      "evaluation_durations_seconds": {}
+    }
+  ]
+}
